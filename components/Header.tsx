@@ -1,10 +1,11 @@
+"use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useRouter, usePathname } from 'next/navigation';
 
 const Header: React.FC = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+  const router = useRouter();
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks: { path: string; label: string }[] = [
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
   ];
 
   const handleNavClick = (path: string) => {
-    navigate(path);
+    router.push(path);
     setIsMenuOpen(false);
   };
 
@@ -25,11 +26,11 @@ const Header: React.FC = () => {
      Nav Item Component
      ===================== */
   const NavItem: React.FC<{ path: string; label: string }> = ({ path, label }) => {
-    const isActive = location.pathname === path || (path === '/' && location.pathname === '/');
+    const isActive = pathname === path || (path === '/' && pathname === '/');
     return (
       <li>
-        <button
-          onClick={() => handleNavClick(path)}
+              <button
+                onClick={() => handleNavClick(path)}
           className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-all duration-300 serif relative pb-1
             ${isActive
               ? 'text-emerald-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-emerald-600'
@@ -72,7 +73,7 @@ const Header: React.FC = () => {
 
         {/* Logo */}
         <button
-          onClick={() => handleNavClick("home")}
+          onClick={() => handleNavClick('/')}
           className="flex items-center gap-3"
         >
           <span className="text-2xl md:text-3xl font-bold text-gray-900">

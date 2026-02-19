@@ -1,0 +1,49 @@
+:root {
+  --dark-green: #0F2D2A;
+  --gold: #C5A059;
+  --parchment: #fcfbf7;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--parchment);
+  color: #1a1a1a;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .serif {
+  font-family: 'GFS Didot', serif;
+}
+
+.text-gold { color: var(--gold); }
+.bg-gold { background-color: var(--gold); }
+.border-gold { border-color: var(--gold); }
+.bg-dark-green { background-color: var(--dark-green); }
+.text-dark-green { color: var(--dark-green); }
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+}
+
+/* Hardware acceleration for parallax */
+.parallax-layer {
+  will-change: transform;
+}

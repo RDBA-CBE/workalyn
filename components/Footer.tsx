@@ -1,9 +1,10 @@
 
+"use client";
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 const Footer: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   return (
     <footer id="contact" className="bg-[#1a1c21] text-white pt-24 pb-10 px-6 md:px-24 relative overflow-hidden">
       {/* Background Watermark */}
@@ -20,12 +21,12 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-xs font-bold uppercase tracking-[0.2em] mb-10 text-white">Navigation</h4>
             <ul className="space-y-4 text-sm text-gray-400 font-light">
-              <li><button onClick={() => navigate('/')} className="hover:text-white transition-colors">Home</button></li>
-              <li><button onClick={() => navigate('/about')} className="hover:text-white transition-colors">Our Legacy</button></li>
-              <li><button onClick={() => navigate('/locations')} className="hover:text-white transition-colors">Locations</button></li>
-              <li><button onClick={() => navigate('/gallery')} className="hover:text-white transition-colors">Gallery</button></li>
-              <li><button onClick={() => navigate('/workspaces')} className="hover:text-white transition-colors">Workspace Solutions</button></li>
-              <li><button onClick={() => navigate('/contact')} className="hover:text-white transition-colors">Contact</button></li>
+              <li><button onClick={() => router.push('/')} className="hover:text-white transition-colors">Home</button></li>
+              <li><button onClick={() => router.push('/about')} className="hover:text-white transition-colors">Our Legacy</button></li>
+              <li><button onClick={() => router.push('/locations')} className="hover:text-white transition-colors">Locations</button></li>
+              <li><button onClick={() => router.push('/gallery')} className="hover:text-white transition-colors">Gallery</button></li>
+              <li><button onClick={() => router.push('/workspaces')} className="hover:text-white transition-colors">Workspace Solutions</button></li>
+              <li><button onClick={() => router.push('/contact')} className="hover:text-white transition-colors">Contact</button></li>
             </ul>
           </div>
 

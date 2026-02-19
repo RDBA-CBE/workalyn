@@ -1,7 +1,8 @@
 
+"use client";
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 const slides = [
   {
@@ -28,7 +29,7 @@ const slides = [
 ];
 
 const Hero: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [current, setCurrent] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -111,13 +112,13 @@ const Hero: React.FC = () => {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4">
               <button
-                onClick={() => navigate('/workspaces')}
+                onClick={() => router.push('/workspaces')}
                 className="bg-[#00B398] text-white px-10 py-5 text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-dark-green transition-all duration-500 min-w-[200px]"
               >
                 Explore Spaces
               </button>
               <button
-                onClick={() => navigate('/about')}
+                onClick={() => router.push('/about')}
                 className="border border-white/20 bg-white/5 text-white px-10 py-5 text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-dark-green transition-all duration-500 min-w-[200px]"
               >
                 Our Legacy
