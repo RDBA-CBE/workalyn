@@ -139,7 +139,7 @@ const CommunitiesPage = () => {
             </div>
           </section>
 
-          <div className="space-y-10">
+          {/* <div className="space-y-10">
             {solutions.map((s, i) => (
               <div
                 key={i}
@@ -156,7 +156,7 @@ const CommunitiesPage = () => {
                 </div>
                 <div className="lg:w-1/2">
                   <RevealWrapper>
-                    {/* <span className="text-gold font-bold text-lg serif mb-4 block">{s.price}</span> */}
+                   
                     <h2 className="sub-head mb-6">{s.title}</h2>
                     <p className="mb-6  ">{s.desc}</p>
 
@@ -183,7 +183,7 @@ const CommunitiesPage = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
