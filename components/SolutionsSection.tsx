@@ -8,43 +8,43 @@ import { RevealWrapper } from "./ParallaxWrapper";
 const solutions: SolutionItem[] = [
   {
     id: "1",
-    title: "Memberships",
+    title: "HOT DESK – For the Global Nomad",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam consequuntur, aut saepe dolores fugit nesciunt eveniet recusandae alias atque vitae quod adipisci architecto facilis pariatur corrupti omnis deleniti impedit dignissimos?",
-    image:
-      "/workspace-solution/Image1.png",
+      "Arrive, connect, create—no strings attached. Perfect for consultants, creatives, and entrepreneurs who work on their own terms.",
+    image: "/workspace-solution/Image1.png",
     rating: 4.9,
     reviews: 42,
+    features: ["1‑Day Pass", "7‑Day Pass", "Monthly Hot Desk"],
   },
   {
     id: "2",
-    title: "Private Office",
+    title: "FIXED DESK – For the Resident Professional",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam consequuntur, aut saepe dolores fugit nesciunt eveniet recusandae alias atque vitae quod adipisci architecto facilis pariatur corrupti omnis deleniti impedit dignissimos?",
-    image:
-      "/workspace-solution/Image2.png",
+      "Your permanent workstation in our premium shared hall. Store your equipment, set your rhythm, and enjoy consistency without the long‑term lease.",
+    image: "/workspace-solution/Image2.png",
     rating: 4.9,
     reviews: 128,
+    features: ["Weekly Pass", "Monthly Pass", "3‑Month Tenure", "6‑Month Tenure"],
   },
   {
     id: "3",
-    title: "Fixed Desk",
+    title: "PRIVATE CABIN – For the Discerning Team",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam consequuntur, aut saepe dolores fugit nesciunt eveniet recusandae alias atque vitae quod adipisci architecto facilis pariatur corrupti omnis deleniti impedit dignissimos?",
-    image:
-      "/workspace-solution/Image3.png",
+      "YAbsolute privacy, absolute focus. Fully furnished rooms shared exclusively with your colleagues—no outsiders, no distractions. Choose your configuration:",
+    image: "/workspace-solution/Image3.png",
     rating: 4.8,
     reviews: 86,
+    features: ["3‑Table Cabin", "4‑Table Cabin", "5‑Table Cabin"],
   },
   {
     id: "4",
-    title: "Flexi Desk",
+    title: "MEETING & EVENT SUITES – For the Moment That Matters",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam consequuntur, aut saepe dolores fugit nesciunt eveniet recusandae alias atque vitae quod adipisci architecto facilis pariatur corrupti omnis deleniti impedit dignissimos?",
-    image:
-      "/workspace-solution/Image4.png",
+      "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
+    image: "/workspace-solution/Image4.png",
     rating: 5.0,
     reviews: 64,
+    features: ["6‑Seater Room – Intimate and intelligent. Perfect for one‑on‑ones and small team syncs.", "10‑Seater Room – Command presence. Equipped with 4K video conferencing and wireless presentation.", "Book by the hour – 2 hr | 4 hr | 8 hr"],
   },
 ];
 
@@ -99,26 +99,41 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
           <h3 className="sub-head  uppercase  mb-4 ">
             {item.title}
           </h3>
-          <p className=" mb-10 leading-[1.8]">
+          <p className="mb-4 leading-[1.8]">
             {item.description}
           </p>
 
-          <button className="flex items-center gap-6 bg-[#1B1C21] text-white  font-semibold px-6 py-4   w-fit hover:bg-gold transition-all duration-300 group/btn shadow-lg shadow-dark-green/10">
-            Enquire Now
-            <svg
-              className="w-4 h-4 transition-transform group-hover/btn:translate-x-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              ></path>
-            </svg>
-          </button>
+          <ul className="space-y-3 mb-8">
+            {item.features?.map((feature, i) => (
+              <li key={i} className="flex items-center gap-3">
+                <svg className="w-5 h-5 text-[#00998A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                <span className=" ">{feature}</span>
+              </li>
+            ))}
+          </ul>
+
+          {/* <p className=" mb-10 border-t border-gray-300 pt-4">
+            <span className="">Also Includes:</span> Ergonomic seating, high‑speed WiFi, unlimited coffee/tea, lounge access.
+          </p> */}
+
+          <a href="/contact">
+                      <button className="flex items-center gap-6 bg-[#1B1C21] text-white  font-semibold px-6 py-4   w-fit hover:bg-gold transition-all duration-300 group/btn shadow-lg shadow-dark-green/10">
+                        Enquire Now
+                        <svg
+                          className="w-4 h-4 transition-transform group-hover/btn:translate-x-2"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          ></path>
+                        </svg>
+                      </button>
+                    </a>
 
           
         </RevealWrapper>

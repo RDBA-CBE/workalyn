@@ -3,56 +3,76 @@ import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
 
 const solutions = [
   {
-    title: "HOT DESK – For the Global Nomad",
+    title: "THE POD ROOM",
 
-    desc: "Arrive, connect, create—no strings attached. Perfect for consultants, creatives, and entrepreneurs who work on their own terms.",
+    desc: "A soundproof sanctuary for private calls, video interviews, or moments of quiet focus. Book on‑demand, always available.",
     image:
       "/workspace-solution/Image1.png",
-    features: ["1‑Day Pass", "7‑Day Pass", "Monthly Hot Desk"],
-    includes:"Includes: Ergonomic seating, high‑speed WiFi, unlimited coffee/tea, lounge access."
+   
   },
-  {
-    title: "FIXED DESK – For the Resident Professional",
-    price: "From $550 / mo",
-    desc: "Your permanent workstation in our premium shared hall. Store your equipment, set your rhythm, and enjoy consistency without the long‑term lease.",
+
+    {
+    title: "THE DINING LOUNGE",
+
+    desc: "Refined, not rushed. A dedicated space with full fridge, microwave, and sink—so you can enjoy your meal without leaving the building.",
     image:
-      "/workspace-solution/Image2.png",
-    features: ["Weekly Pass", "Monthly Pass", "3‑Month Tenure", "6‑Month Tenure"],
-    includes:"*Includes: Lockable storage, ergonomic chair & round the clock accessibility."
+"/workspace-solution/Image1.png",    
   },
   {
-    title: "PRIVATE CABIN – For the Discerning Team",
-    price: "Inquire for Pricing",
-    desc: "YAbsolute privacy, absolute focus. Fully furnished rooms shared exclusively with your colleagues—no outsiders, no distractions. Choose your configuration:",
-      image: "/workspace-solution/Image3.png",
-     features: ["3‑Table Cabin", "4‑Table Cabin", "5‑Table Cabin"],
-     includes:"Pricing per table, with flexible monthly or quarterly commitments. Custom tenures available upon request."
+    title: "BARISTA‑GRADE COFFEE & ARTISAN TEAS",
+
+    desc: "Single‑origin espresso, loose‑leaf teas, and chilled purified water. Always complimentary.",
+    image:
+"/workspace-solution/Image1.png",    
+  },
+  {
+    title: "SMART FILTRATION",
+   
+    desc: "No plastic bottles. No waste. Just pure, alkaline water on tap.",
+ image:
+"/workspace-solution/Image1.png",     
   },
 
    {
-    title: "MEETING & EVENT SUITES – For the Moment That Matters",
-    price: "Inquire for Pricing",
-    desc:  "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
-     image: "/workspace-solution/Image4.png",
-     features: ["6‑Seater Room – Intimate and intelligent. Perfect for one‑on‑ones and small team syncs.", "10‑Seater Room – Command presence. Equipped with 4K video conferencing and wireless presentation.", "Book by the hour – 2 hr | 4 hr | 8 hr"],
-     includes:"*Includes: 65” 4K screen, whiteboard, flip chart, unlimited coffee/tea.*"
+    title: "ADJACENT PREMIER GYM",
+   
+    desc:  "Step next door for a lunch‑hour workout. Preferred member rates available exclusively for Workalyn members.",
+     image:
+"/workspace-solution/Image1.png",     
   },
+
+  {
+    title: "CURATED F&B DISTRICT",
+   
+    desc:  "From cherished Malaysian classics to distinguished South and North Indian kitchens, Michelin‑recommended dining rooms, refined Western fare, and intimate cafés and bars—all within 50 metres. ",
+    includes:"Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
+     
+     image:
+"/workspace-solution/Image1.png",     
+  },
+
+  
 
   
 ];
 
-const SolutionsPage: React.FC = () => {
+const AmenitiesPage = () => {
   return (
     <div className="bg-[#f8fffe]">
+      
+
+
       <section className="pt-24 pb-20 section-wid">
         <div className=" mx-auto">
           <RevealWrapper className="text-center mb-24">
             <h1 className="main-head serif text-dark-green mb-8">
-              Workspace Solutions
+               MEMBERSHIP AT A GLANCE
             </h1>
             <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
-              Membership Tiers as Fluid as Your Schedule
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              
             </p>
+            
           </RevealWrapper>
 
           <div className="space-y-10">
@@ -65,7 +85,7 @@ const SolutionsPage: React.FC = () => {
                   <ParallaxWrapper offset={30}>
                     <img
                       src={s.image}
-                      className="w-full aspect-[4/2] object-cover shadow-2xl"
+                      className="w-full object-cover shadow-2xl"
                       alt={s.title}
                     />
                   </ParallaxWrapper>
@@ -75,7 +95,7 @@ const SolutionsPage: React.FC = () => {
                     {/* <span className="text-gold font-bold text-lg serif mb-4 block">{s.price}</span> */}
                     <h2 className="sub-head mb-6">{s.title}</h2>
                     <p className="mb-6  ">{s.desc}</p>
-                    <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
+                    {s.features && <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
                       {s.features.map((f) => (
                         <li
                           key={f}
@@ -97,9 +117,9 @@ const SolutionsPage: React.FC = () => {
                           {f}
                         </li>
                       ))}
-                    </ul>
+                    </ul>}
 
-                    <p className="mb-8  ">{s.includes}</p>
+                    {s.includes && <p className="mb-8  ">{s.includes}</p>}
                     <a href="/contact">
                       <button className="flex items-center gap-6 bg-[#1B1C21] text-white  font-semibold px-6 py-4   w-fit hover:bg-gold transition-all duration-300 group/btn shadow-lg shadow-dark-green/10">
                         Enquire Now
@@ -129,4 +149,4 @@ const SolutionsPage: React.FC = () => {
   );
 };
 
-export default SolutionsPage;
+export default AmenitiesPage;

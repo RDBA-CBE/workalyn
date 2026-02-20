@@ -6,6 +6,7 @@ export interface SolutionItem {
   image: string;
   rating: number;
   reviews: number;
+  features?: string[];
 }
 
 export interface AmenityItem {

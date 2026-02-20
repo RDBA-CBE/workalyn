@@ -77,10 +77,12 @@ const Footer: React.FC = () => {
                   <span className="text-[15px] block text-white/90 tracking-widest mb-1">
                     Phone:{" "}
                     <a
-                      href="tel:(987) 654-3210"
+                      href="tel:+60312345678
+"
                       className="hover:text-white transition-colors"
                     >
-                      (987) 654-3210
+                      +603 1234 5678
+
                     </a>
                   </span>
                 </li>
@@ -88,16 +90,22 @@ const Footer: React.FC = () => {
                   <span className="text-[15px] block text-white/90 tracking-widest mb-1">
                     Email:{" "}
                     <a
-                      href="mailto:pinehillsuppor@pinehills.com"
+                      href="mailto:hello@workalyn.com"
                       className="hover:text-white transition-colors"
                     >
-                      pinehillsuppor@pinehills.com
+                      hello@workalyn.com
+
                     </a>
                   </span>
                 </li>
                 <li>
                   <span className="text-[15px] block text-white/90 tracking-widest mb-1">
-                    Address: 123 Main Street, Suite 101 Cityville, CA 90001
+                    Address: PL 02 & 03, Block A,
+Plaza Damansara,
+Jalan Medan Setia 1,
+Bukit Damansara,
+50490 Kuala Lumpur
+
                   </span>
                 </li>
               </ul>
@@ -155,7 +163,7 @@ const Footer: React.FC = () => {
           <div className="w-full h-[1.4px] bg-white/20 mb-8"></div>
 
           <div className="text-center text-[14px] font-bold tracking-[0.1em] text-white/50 uppercase">
-            Copyright 2026 © Workalyn. Concept by Repute
+            Copyright 2026 © Workalyn. Concept <a href="https://irepute.in/" target="_blank" className="lowercase">by repute</a>
           </div>
         </div>
       </div>

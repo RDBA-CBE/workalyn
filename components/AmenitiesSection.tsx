@@ -109,14 +109,14 @@ const AmenitiesSection: React.FC = () => {
               <div className="flex items-center  justify-center gap-4 mb-4">
                 <div className="pb-0 first-head text-white/90 flex items-center gap-4">
                   <span className="w-[7px] h-[7px] bg-[#fff] rotate-45 mt-[-1px]" />
-                  Premium Amenities
+                  PREMIUM AMENITIES
                   <span className="w-[7px] h-[7px] bg-[#fff] rotate-45 mt-[-1px]" />
                 </div>
               </div>
 
               {/* Main Heading */}
               <h2 className="!leading-[1.6] text-4xl md:text-5xl lg:text-3xl xl:text-4xl  mb-8  max-w-xs">
-                A Glimpse Into Life At Workalyn
+                Details That Define Luxury.
               </h2>
 
               {/* Description Text */}
@@ -127,9 +127,11 @@ const AmenitiesSection: React.FC = () => {
               </p>
 
               {/* Action Button */}
-              <button className="border border-white/40 text-white px-10 py-4 text-[14px] font-semibold tracking-[0.2em] uppercase hover:bg-white hover:text-[#1a1c21] transition-all duration-500 shadow-xl ">
-                View Our Spaces
-              </button>
+              <a href="/amenities">
+                <button className="border border-white/40 text-white px-10 py-4 text-[14px] font-semibold tracking-[0.2em] uppercase hover:bg-white hover:text-[#1a1c21] transition-all duration-500 shadow-xl ">
+                  View Our Spaces
+                </button>
+              </a>
             </RevealWrapper>
 
             {/* Bottom Line Decoration */}

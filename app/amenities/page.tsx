@@ -1,6 +1,6 @@
 import React from 'react';
-import Gallery from '../../components/Gallery';
+import AmenitiesPage from '../../components/AmenitiesPage';
 
 export default function GalleryPage() {
-  return <Gallery />;
+  return <AmenitiesPage />;
 }

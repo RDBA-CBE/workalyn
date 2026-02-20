@@ -18,20 +18,16 @@ const OurStory: React.FC = () => {
                 <div className="mt-[100px] lg:mt-10">
                   <div className=" first-head flex items-center gap-4">
                     <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]"></span>{" "}
-                    Our Legacy{" "}
+                    OUR PHILOSOPHY{" "}
                     <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]"></span>
                   </div>
 
                   <h3 className="mt-4 main-head">
-                    Building Spaces Where Ideas Grow And People Connect
+                    Designed for Influence. Built for Connection.
                   </h3>
 
                   <p className="mt-4  ">
-                    Workalyn was created with a simple vision—to design
-                    workspaces that go beyond desks and walls. We believe a
-                    great workspace should inspire creativity, encourage
-                    collaboration, and support businesses at every stage of
-                    growth.
+                    At Workalyn, we believe that environment shapes outcome. A sterile, impersonal office breeds mediocre work. A space that feels intentional, warm, and exclusive—that is where deals are signed, ideas are born, and legacies are built. <a href="/about" className="text-[#00998A]">read more...</a>
                   </p>
 
                   {/* STATS */}
@@ -39,7 +35,7 @@ const OurStory: React.FC = () => {
                     className="
     relative ourstory-stats mt-8
     flex flex-nowrap items-start
-    justify-between
+    justify-between 2xl:justify-start
     gap-2 sm:gap-4 lg:gap-0 2xl:gap-8
     lg:border-t pt-6 lg:pt-10
   "
@@ -97,10 +93,12 @@ const OurStory: React.FC = () => {
                 </h3>
 
                 <p className="mt-4 ">
-                  At Workalyn, we believe work is better when people feel
-                  inspired, supported, and connected. Our spaces are crafted to
-                  encourage productivity while fostering meaningful
-                  collaboration among diverse professionals.
+                  We built Workalyn because we refused to believe that
+                  productivity required isolation in a tower. For years, we
+                  watched Kuala Lumpur’s most talented individuals trade their
+                  most valuable asset—time—for the daily elevator commute. They
+                  waited in crowded lobbies, pressed buttons, and stared at
+                  closing doors, all before a single email was sent. <a href="/about" className="text-[#00998A]">read more...</a>
                 </p>
 
                 <div className="mt-10">

@@ -4,24 +4,26 @@ import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
 
 const advantages = [
   {
-    icon: "/Advantage-icon/effortless-flow.svg",
+    icon: "/Advantage-icon/instant-access.svg",
+   
     title: "Instant Access",
-    desc: "Seamless entry to all our premium workspaces worldwide, with 24/7 flexibility.",
+    desc: "Step directly from your car or ride into a refined workspace. No turnstiles, no security queues, no waiting for lifts.",
+  },
+  {
+     icon: "/Advantage-icon/natural-light.svg",
+    
+    title: "Natural Light",
+    desc: "Floor‑to‑ceiling windows flood our interiors with daylight—a rarity in high‑rise spaces where lower floors often lack sun.",
+  },
+  { icon: "/Advantage-icon/effortless-flow.svg",
+   
+    title: "Effortless Flow",
+    desc: "Walk to client meetings, lunch reservations, or gym sessions—all within 50 metres of your desk.",
   },
   {
     icon: "/Advantage-icon/exclusive-enclave.svg",
-    title: "Natural Light",
-    desc: "Floor-to-ceiling windows designed to maximize daylight and boost your focus.",
-  },
-  {
-    icon: "/Advantage-icon/instant-access.svg",
-    title: "Effortless Flow",
-    desc: "Intelligently designed floor plans that facilitate movement and spontaneous meetings.",
-  },
-  {
-    icon: "/Advantage-icon/natural-light.svg",
     title: "Exclusive Enclave",
-    desc: "Private suites and quiet zones curated for executives and focused deep work sessions.",
+    desc: "Nestled within a prestigious residential neighbourhood, Workalyn offers serenity without sacrificing centrality.",
   },
 ];
 
@@ -37,7 +39,7 @@ const AdvantageSection: React.FC = () => {
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className=" first-head text-white flex items-center gap-4">
                 <span className="w-[7px] h-[7px] bg-[#fff] rotate-45 mt-[-1px]"></span>{" "}
-                Advantage{" "}
+                THE WORKALYN DIFFERENCE{" "}
                 <span className="w-[7px] h-[7px] bg-[#fff] rotate-45 mt-[-1px]"></span>
               </div>
               
@@ -46,8 +48,8 @@ const AdvantageSection: React.FC = () => {
               The Plaza Level Advantage
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto leading-relaxed  tracking-wider">
-              Curated environments that prioritize your performance, mental
-              clarity, and professional connectivity.
+              In a city of skyscrapers, standing out often means standing apart. Workalyn is the only premium coworking space in Kuala Lumpur deliberately positioned on the Plaza Level—a distinction that transforms every visit into a seamless, stress‑free experience.
+
             </p>
           </RevealWrapper>
         </div>

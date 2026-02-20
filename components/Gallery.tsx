@@ -27,8 +27,8 @@ const Gallery: React.FC = () => {
               <span className="text-gold tracking-[0.4em] uppercase text-[10px] font-bold">Visual Showcase</span>
               <div className="w-2 h-2 bg-gold rotate-45"></div>
             </div>
-            <h1 className="text-5xl md:text-7xl serif text-dark-green mb-8">Workalyn Life</h1>
-            <p className="text-gray-500 text-sm max-w-2xl mx-auto leading-relaxed font-light">
+            <h1 className="main-head serif text-dark-green mb-8">Workalyn Life</h1>
+            <p className="sub-head text-gray-500 max-w-2xl mx-auto leading-relaxed font-light">
               Experience the atmosphere of our premium spaces through this curated visual journey. 
               Every corner is designed to inspire the next generation of industry leaders.
             </p>
@@ -59,9 +59,9 @@ const Gallery: React.FC = () => {
       </section>
 
       {/* Grid footer */}
-      <section className="py-24 text-center bg-white">
+      <section className="py-24 text-center bg-white section-wid mx-auto">
         <RevealWrapper>
-           <h2 className="text-3xl serif text-dark-green mb-10">See these spaces in person</h2>
+           <h2 className="main-head serif text-dark-green mb-10">See these spaces in person</h2>
            <button className="bg-dark-green text-white px-12 py-5 text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-gold transition-all duration-300">
              Book A Physical Tour
            </button>

@@ -3,23 +3,23 @@ import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
 
 const points = [
   {
-    title: "Traditional High-Rise Spaces",
-    desc: "Secure, fully furnished offices ideal for teams seeking privacy with flexibility.",
+    title: "Workalyn",
+    desc: "Traditional High‑Rise Spaces",
     border: true,
   },
   {
-    title: "Often Limited Window Access",
-    desc: "Your own desk in a shared workspace—perfect for consistency and focus.",
+    title: "Plaza Level – direct ground access",
+    desc: "Upper floors – lift dependent",
     border: true,
   },
   {
-    title: "Isolated Within Office Towers",
-    desc: "Work on your own terms with hot desks and day passes.",
+    title: "No queues, no waiting",
+    desc: "Peak‑hour lift congestion",
     border: true,
   },
   {
-    title: "Meeting & Event Spaces",
-    desc: "Modern rooms designed for meetings, workshops, and presentations.",
+    title: "Natural light, high ceilings",
+    desc: "Often limited window access",
   },
 ];
 
@@ -35,19 +35,19 @@ const WhySection: React.FC = () => {
           <div className="flex items-center gap-3 mb-4">
             <div className="pb-0 first-head flex items-center gap-4">
               <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]" />
-              Why WorkAlyn
+             WHY WORKALYN
               <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]" />
             </div>
           </div>
 
           <h2 className="main-head mb-4">
-            The Clear Alternative To High-Rise Coworking
+           The Clear Alternative to High‑Rise Coworking
+
           </h2>
 
           <p className="mb-4 leading-[1.8]">
-            From focused individual work to team collaboration, our
-            workspaces are flexible, functional, and thoughtfully designed
-            to help you perform at your best.
+            Workalyn offers what no other coworking space in Kuala Lumpur can—a ground‑floor address that respects your time and elevates your status.
+
           </p>
 
           <div className="space-y-4">

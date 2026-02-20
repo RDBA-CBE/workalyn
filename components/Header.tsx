@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 const Header: React.FC = () => {
   const router = useRouter();
@@ -71,8 +72,11 @@ const Header: React.FC = () => {
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex text-sm font-medium text-gray-800">
-            (987) 654-3210
+          <div className="hidden md:flex text-md font-medium text-gray-800 font-sans">
+          <FaPhone className="text-[18px] me-3 mt-1"/> <a href="tel:60312345678">
+            (603) 1234 5678
+</a>  
+
           </div>
 
           {/* Mobile Toggle */}
@@ -116,6 +120,9 @@ const Header: React.FC = () => {
           <NavItem path="/about" label="About" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
           <NavItem path="/workspaces" label="Workspaces Solutions" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
           <NavItem path="/amenities" label="Amenities" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
+
+                    <NavItem path="/community-and-clientele" label="Community & Clientele" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
+
           
           <NavItem path="/contact" label="Contact Us" />
         </ul>
@@ -164,6 +171,17 @@ const Header: React.FC = () => {
                 }`}
               >
                 Workspaces
+              </button>
+
+              <button
+                onClick={() => handleNavClick("/community-and-clientele")}
+                className={`text-lg font-bold uppercase tracking-widest ${
+                  pathname === "/community-and-clientele"
+                    ? "text-emerald-600"
+                    : "text-gray-800"
+                }`}
+              >
+                Community & Clientele
               </button>
 
               <button
