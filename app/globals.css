@@ -1,31 +1,47 @@
 :root {
-  --dark-green: #0F2D2A;
-  --gold: #C5A059;
+  --dark-green: #0f2d2a;
+  --gold: #c5a059;
   --parchment: #fcfbf7;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  background-color: var(--parchment);
-  color: #1a1a1a;
+  font-family: "Raleway", sans-serif;
+  background-color: #ffff;
+  color: #666666;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
 }
 
-h1, h2, h3, h4, .serif {
-  font-family: 'GFS Didot', serif;
+h1,
+h2,
+h3,
+h4,
+.serif {
+  font-family: "GFS Didot", serif;
 }
 
-.text-gold { color: var(--gold); }
-.bg-gold { background-color: var(--gold); }
-.border-gold { border-color: var(--gold); }
-.bg-dark-green { background-color: var(--dark-green); }
-.text-dark-green { color: var(--dark-green); }
+.text-gold {
+  color: var(--gold);
+}
+.bg-gold {
+  background-color: var(--gold);
+}
+.border-gold {
+  border-color: var(--gold);
+}
+.bg-dark-green {
+  background-color: var(--dark-green);
+}
+.text-dark-green {
+  color: var(--dark-green);
+}
 
 /* Smooth Scroll */
 html {
@@ -46,4 +62,105 @@ html {
 /* Hardware acceleration for parallax */
 .parallax-layer {
   will-change: transform;
+}
+
+.section-wid {
+  width: 90%;
+  margin: auto;
+}
+
+.section-b-bg {
+  background-color: #1b1c21;
+}
+
+.section-w-bg {
+  background-color: #dddddd;
+}
+
+.first-head {
+  font-size: 14px;
+  letter-spacing: 4;
+  color: #00998a;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main-head {
+  font-size: 48px;
+  color: #1b1c21;
+  line-height: 1.2;
+}
+
+.sub-head {
+  font-size: 24px;
+  color: #1b1c21;
+}
+
+@media (max-width: 1024px) {
+  .section-wid {
+    width: 92%;
+  }
+
+  .first-head {
+    font-size: 13px;
+    letter-spacing: 0.22em;
+  }
+
+  .main-head {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+
+  .sub-head {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-wid {
+    width: 94%;
+  }
+
+  .first-head {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  }
+
+  .main-head {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .sub-head {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-wid {
+    width: 96%;
+  }
+
+  .first-head {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+  }
+
+  .main-head {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  .sub-head {
+    font-size: 16px;
+  }
+}
+
+.ourstory-bg-title {
+  top: -45px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }

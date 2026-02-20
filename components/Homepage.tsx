@@ -5,12 +5,14 @@ import AdvantageSection from "./AdvantageSection";
 import SolutionsSection from "./SolutionsSection";
 import WhySection from "./WhySection";
 import AmenitiesSection from "./AmenitiesSection";
+import OurStory from "./OurStory";
 
 const Homepage: React.FC = () => {
   return (
     <>
       <Hero />
-      <AboutSection />
+      <OurStory/>
+      
       <AdvantageSection />
       <SolutionsSection />
       <WhySection />

@@ -7,24 +7,24 @@ import { useRouter } from 'next/navigation';
 const slides = [
   {
     label: "COMMUNITY FIRST",
-    title: "Collaborate With Like-Minded",
+    title: "Collaborate With Like-Minded People",
     highlight: "People",
     description: "Join a vibrant ecosystem of entrepreneurs, creatives, and tech innovators. Networking built into your routine.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000",
+    image: "/banner1.png",
   },
   {
     label: "ARCHITECTURAL EXCELLENCE",
-    title: "Discover Your New Creative",
+    title: "Discover Your New Creative Sanctuary",
     highlight: "Sanctuary",
     description: "More than just a workspace. An environment designed to inspire clarity and catalyze your most ambitious goals.",
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2000",
+    image: "/banner2.png",
   },
   {
     label: "GLOBAL CONNECTIVITY",
-    title: "Work From Anywhere In The",
+    title: "Work From Anywhere In The World",
     highlight: "World",
     description: "Access our global network of premium hubs with a single membership. Your office follows you everywhere.",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=2000",
+    image: "/banner3.png",
   }
 ];
 
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
           style={{ y: bgY }}
           className="absolute inset-0 z-0 h-[120%]"
         >
-          <div className="absolute inset-0 bg-black/60 z-10"></div>
+          <div className="absolute inset-0 bg-black/45 z-10"></div>
           <img
             src={slides[current].image}
             alt="Workspace"
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
       {/* Main Content Area */}
       <motion.div 
         style={{ opacity: contentOpacity }}
-        className="relative z-20 h-full max-w-[1440px] mx-auto w-full px-6 md:px-24 flex flex-col justify-center"
+        className="relative z-20 h-full section-wid mx-auto w-full px-6 md:px-24 flex flex-col justify-center"
       >
         <AnimatePresence mode="wait">
           <motion.div
@@ -92,20 +92,21 @@ const Hero: React.FC = () => {
           >
             {/* Label */}
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-8 h-[1px] bg-gold opacity-60"></div>
-              <span className="text-gold tracking-[0.3em] uppercase text-[10px] md:text-[11px] font-bold">
-                {slides[current].label}
+              {/* <div className="w-8 h-[1px] bg-gold opacity-60"></div> */}<div className="w-[5.5px] h-[5.5px] bg-[#fff] rotate-45 mt-[-1px]" ></div>
+              <span className="text-[#fff] tracking-[0.3em] uppercase text-[10px] md:text-[12px] font-semibold">
+                {slides[current].label} 
               </span>
+              <div className="w-[5.5px] h-[5.5px] bg-[#fff] rotate-45 mt-[-1px]"></div>
             </div>
 
             {/* Title */}
-            <h1 className="text-5xl md:text-8xl text-white mb-8 leading-[1.05] font-light serif">
+            <h1 className="text-5xl md:text-[64px] text-white mb-6 leading-[1.05] font-light serif">
               {slides[current].title}<br />
-              <span className="text-gold italic font-normal">{slides[current].highlight}</span>
+              {/* <span className="text-gold italic font-normal">{slides[current].highlight}</span> */}
             </h1>
 
             {/* Description */}
-            <p className="text-gray-300 text-sm md:text-lg mb-12 max-w-xl font-light leading-relaxed opacity-80">
+            <p className="text-[#fff]  mb-10 max-w-xl  leading-relaxed font-semibold">
               {slides[current].description}
             </p>
 
@@ -113,16 +114,16 @@ const Hero: React.FC = () => {
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={() => router.push('/workspaces')}
-                className="bg-[#00B398] text-white px-10 py-5 text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-dark-green transition-all duration-500 min-w-[200px]"
+                className="bg-[#1B1C21] text-white px-8 py-4 font-bold  uppercase hover:bg-white hover:text-black transition-all duration-500 min-w-[200px]"
               >
                 Explore Spaces
               </button>
-              <button
+              {/* <button
                 onClick={() => router.push('/about')}
                 className="border border-white/20 bg-white/5 text-white px-10 py-5 text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-dark-green transition-all duration-500 min-w-[200px]"
               >
                 Our Legacy
-              </button>
+              </button> */}
             </div>
           </motion.div>
         </AnimatePresence>
@@ -130,7 +131,7 @@ const Hero: React.FC = () => {
 
       {/* Left Sidebar: Scroll Indicator */}
       <div className="absolute left-8 md:left-12 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-4">
-        <span className="[writing-mode:vertical-lr] text-[9px] uppercase tracking-[0.4em] text-white/40 font-bold rotate-180">
+        <span className="[writing-mode:vertical-lr] text-[9px] uppercase tracking-[0.4em] text-white font-bold rotate-180">
           SCROLL
         </span>
         <div className="w-[1px] h-24 bg-white/20 relative overflow-hidden">
@@ -144,7 +145,7 @@ const Hero: React.FC = () => {
 
       {/* Bottom Left: Pagination */}
       <div className="absolute bottom-12 left-6 md:left-24 z-30">
-        <span className="text-2xl md:text-3xl text-gold serif font-bold">0{current + 1}</span>
+        <span className="text-2xl md:text-3xl text-white serif font-bold">0{current + 1}</span>
         <span className="text-white/30 text-lg md:text-xl font-light ml-2">/ 0{slides.length}</span>
       </div>
 
@@ -167,7 +168,7 @@ const Hero: React.FC = () => {
               <button
                 key={idx}
                 onClick={() => setCurrent(idx)}
-                className={`w-2 h-2 rotate-45 transition-all duration-500 ${current === idx ? 'bg-gold scale-125' : 'bg-white/20'}`}
+                className={`w-2 h-2 rotate-45 transition-all duration-500 ${current === idx ? 'bg-white scale-125' : 'bg-white/20'}`}
               />
             ))}
           </div>
