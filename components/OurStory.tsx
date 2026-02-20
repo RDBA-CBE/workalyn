@@ -5,7 +5,7 @@ const OurStory: React.FC = () => {
     <section className="section-wid">
       <div className=" ourstory-section   py-16 md:py-24">
         <div className="ourstory-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-12 items-start">
             {/* LEFT COLUMN */}
             <div className="ourstory-left ">
               <div className="relative z-10">
@@ -15,7 +15,7 @@ const OurStory: React.FC = () => {
                   className="w-full  object-cover"
                 />
 
-                <div className="mt-10">
+                <div className="mt-[100px] lg:mt-10">
                   <div className=" first-head flex items-center gap-4">
                     <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]"></span>{" "}
                     Our Legacy{" "}
@@ -35,29 +35,42 @@ const OurStory: React.FC = () => {
                   </p>
 
                   {/* STATS */}
-                  <div className="relative ourstory-stats mt-8 flex flex-wrap gap-8 border-t pt-10">
-                    <h2 className="ourstory-bg-title absolute  md:text-[180px]  text-gray-200 uppercase pointer-events-none z-[-1]">
+                  <div
+                    className="
+    relative ourstory-stats mt-8
+    flex flex-nowrap items-start
+    justify-between
+    gap-2 sm:gap-4 lg:gap-0 2xl:gap-8
+    lg:border-t pt-6 lg:pt-10
+  "
+                  >
+                    <h2 className="ourstory-bg-title absolute  text-[50px] md:text-[60px] lg:text-[80px] xl:text-[120px] 2xl:text-[160px]  text-gray-200 uppercase pointer-events-none z-[-1]">
                       About
                     </h2>
-                    <div className="px-5">
-                      <h4 className="text-4xl  text-[#1B1C21]">
-                        150 K+
+
+                    <div className="px-2 sm:px-3 xl:px-5">
+                      <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
+                        150K+
                       </h4>
-                      <p className="text-[#1B1C21] pt-2">Active Members</p>
+                      <p className="pt-1 text-[13px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                        Active Members
+                      </p>
                     </div>
 
-                    <div className="border-s border-e px-10 border-[#1B1C21]">
-                      <h4 className="text-4xl  text-[#1B1C21]">
-                        25 +
+                    <div className="px-2 sm:px-4 xl:px-10 md:border-s md:border-e border-[#1B1C21]">
+                      <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
+                        25+
                       </h4>
-                      <p className="pt-2 text-[#1B1C21]">Partner Companies</p>
+                      <p className="pt-1 text-[13px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                        Partner Companies
+                      </p>
                     </div>
 
-                    <div className="px-5">
-                      <h4 className="text-4xl  text-[#1B1C21]">
-                        12 +
+                    <div className="px-2 sm:px-3 xl:px-5">
+                      <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
+                        12+
                       </h4>
-                      <p className="pt-2 text-[#1B1C21]">
+                      <p className="pt-1 text-[13px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
                         Fully Equipped Spaces
                       </p>
                     </div>
@@ -68,7 +81,7 @@ const OurStory: React.FC = () => {
 
             {/* RIGHT COLUMN */}
             <div className="ourstory-right relative">
-              <h2 className="ourstory-bg-title ms-5  md:text-[160px]  text-gray-200   tracking-0 uppercase pointer-events-none whitespace-nowrap">
+              <h2 className="ms-[-15px] text-[50px] md:text-[60px] lg:text-[80px] xl:text-[120px] 2xl:text-[160px]  text-gray-200   tracking-0 uppercase pointer-events-none whitespace-nowrap">
                 Our Story
               </h2>
 
