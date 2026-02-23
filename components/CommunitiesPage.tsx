@@ -8,7 +8,7 @@ const solutions = [
 
     features: ["1‑Day Pass", "7‑Day Pass", "Monthly Pass"],
     includes: "Ideal For : Nomads, freelancers",
-    image: "/workspace-solution/Image1.png",
+    image: "/community/hot-desk.webp",
   },
 
   {
@@ -16,45 +16,45 @@ const solutions = [
 
     features: ["Weekly Pass", "Monthly Pass", " 3‑Month Pass", "6‑Month Pass"],
     includes: "Ideal For : Long‑term residents",
-    image: "/workspace-solution/Image1.png",
+    image: "/community/fixed-desk.webp",
   },
 
   {
     title: "Private Cabin",
     features: ["3, 4, or 5 tables", "Per‑table billing"],
     includes: "Ideal For : Teams requiring privacy",
-    image: "/workspace-solution/Image1.png",
+    image: "/community/private-cabin.webp",
   },
 
   {
     title: "Meeting Room",
     features: ["6 or 10 seats", " 1/4/8 hr blocks"],
     includes: "Ideal For : Client meetings, workshops",
-    image: "/workspace-solution/Image1.png",
+    image: "/community/meeting-event-suites.webp",
   },
 ];
 
 const advantages = [
   {
-    icon: "/Advantage-icon/instant-access.svg",
+    icon: "/community/icon/1.svg",
 
     title: "Private call pods",
     desc: "Legal consultants preparing for trial in the quiet of a private cabin.",
   },
   {
-    icon: "/Advantage-icon/natural-light.svg",
+    icon: "/community/icon/2.svg",
 
     title: "A lounge ",
     desc: "Tech founders scaling their startups from a dedicated desk.",
   },
   {
-    icon: "/Advantage-icon/effortless-flow.svg",
+    icon: "/community/icon/3.svg",
 
     title: "Dining alcoves",
     desc: "CEOs hosting board meetings in our 10‑seater suites.",
   },
   {
-    icon: "/Advantage-icon/exclusive-enclave.svg",
+    icon: "/community/icon/4.svg",
     title: "Meeting suites",
     desc: "Global nomads touching down in KL for a week, armed with a 7‑day pass.",
   },
@@ -66,7 +66,7 @@ const CommunitiesPage = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            src="/community/community-banner.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />

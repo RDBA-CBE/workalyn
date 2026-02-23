@@ -6,33 +6,33 @@ const solutions = [
     title: "THE POD ROOM",
 
     desc: "A soundproof sanctuary for private calls, video interviews, or moments of quiet focus. Book on‑demand, always available.",
-    image: "/workspace-solution/Image1.png",
+    image: "/amenities/subpage/pod-room.webp",
   },
 
   {
     title: "THE DINING LOUNGE",
 
     desc: "Refined, not rushed. A dedicated space with full fridge, microwave, and sink—so you can enjoy your meal without leaving the building.",
-    image: "/workspace-solution/Image1.png",
+    image: "/amenities/subpage/dining-lounge.webp",
   },
   {
     title: "BARISTA‑GRADE COFFEE & ARTISAN TEAS",
 
     desc: "Single‑origin espresso, loose‑leaf teas, and chilled purified water. Always complimentary.",
-    image: "/workspace-solution/Image1.png",
+    image: "/amenities/subpage/barista.webp",
   },
   {
     title: "SMART FILTRATION",
 
     desc: "No plastic bottles. No waste. Just pure, alkaline water on tap.",
-    image: "/workspace-solution/Image1.png",
+     image: "/amenities/subpage/smart-filteration.webp",
   },
 
   {
     title: "ADJACENT PREMIER GYM",
 
     desc: "Step next door for a lunch‑hour workout. Preferred member rates available exclusively for Workalyn members.",
-    image: "/workspace-solution/Image1.png",
+     image: "/amenities/subpage/adjacent-premier-gym.webp",
   },
 
   {
@@ -42,7 +42,7 @@ const solutions = [
     includes:
       "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
 
-    image: "/workspace-solution/Image1.png",
+    image: "/amenities/subpage/curated-f&b-district.webp",
   },
 ];
 
@@ -52,7 +52,7 @@ const AmenitiesPage = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            src="/amenities/subpage/amenities-banner.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />

@@ -9,7 +9,7 @@ const ContactPage: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            src="/Contact/Contact-banner.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />
@@ -137,7 +137,7 @@ const ContactPage: React.FC = () => {
             <div className="relative h-full w-full">
               <RevealWrapper className="w-full h-full">
                 <img
-                  src="/workspace-solution/Image4.png"
+                  src="/Contact/experience-workalyn.webp"
                   alt="A modern and bright meeting room at Workalyn"
                   className="w-full h-full object-cover shadow-xl rounded-md"
                 />

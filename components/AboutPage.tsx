@@ -4,25 +4,25 @@ import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
 
 const advantages = [
   {
-    icon: "/Advantage-icon/instant-access.svg",
+    icon: "/about/icons/1.svg",
 
     title: "Private call pods",
     desc: "Private call pods upholstered in acoustic felt—because confidentiality is non‑negotiable.",
   },
   {
-    icon: "/Advantage-icon/natural-light.svg",
+   icon: "/about/icons/2.svg",
 
     title: "A lounge ",
     desc: "A lounge with barista‑grade coffee, artisanal teas, and chilled purified water.",
   },
   {
-    icon: "/Advantage-icon/effortless-flow.svg",
+    icon: "/about/icons/3.svg",
 
     title: "Dining alcoves",
     desc: "Dining alcoves with full fridge and microwave facilities—refined, not utilitarian.",
   },
   {
-    icon: "/Advantage-icon/exclusive-enclave.svg",
+    icon: "/about/icons/4.svg",
     title: "Meeting suites",
     desc: "Meeting suites equipped with 4K video conferencing, designed to impress remote stakeholders.",
   },
@@ -73,7 +73,7 @@ const AboutPage: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            src="/about/about-banner.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />
@@ -145,7 +145,7 @@ const AboutPage: React.FC = () => {
           <ParallaxWrapper offset={40} direction="down">
             <div className="relative aspect-square">
               <img
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1200"
+                src="/about/welcome.webp"
                 className="w-full h-full object-cover shadow-3xl"
                 alt="Founder Story"
               />
