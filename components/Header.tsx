@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       <li>
         <button
           onClick={() => handleNavClick(path)}
-          className={`text-[20px] uppercase  transition-all duration-300 serif relative
+          className={`text-[16px] xl:text-[20px] uppercase  transition-all duration-300 serif relative
             ${
               isActive
                 ? "text-[#00998A] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#00998A]"
@@ -47,22 +47,20 @@ const Header: React.FC = () => {
          ===================== */}
       <div className="section-wid py-4 md:py-6 flex justify-between items-center">
         {/* Social Icons */}
-        <div className="hidden md:flex items-center gap-3 text-gray-800">
+        <div className="hidden lg:flex items-center gap-3 text-gray-800">
           <a href="#" className="hover:text-emerald-600 transition-colors">
-           
-           <FaInstagram className="text-[24px]"/>
+            <FaInstagram className="text-[24px]" />
           </a>
           <a href="#" className="hover:text-emerald-600 transition-colors">
-            <FaLinkedin className="text-[24px]"/>
+            <FaLinkedin className="text-[24px]" />
           </a>
 
           <a href="#" className="hover:text-emerald-600 transition-colors">
-            <FaFacebook className="text-[24px]"/>
+            <FaFacebook className="text-[24px]" />
           </a>
           <a href="#" className="hover:text-emerald-600 transition-colors">
-            <FaTwitter className="text-[24px]"/>
+            <FaTwitter className="text-[24px]" />
           </a>
-          
         </div>
 
         {/* Logo */}
@@ -72,17 +70,15 @@ const Header: React.FC = () => {
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex text-md font-medium text-gray-800 font-sans">
-          <FaPhone className="text-[18px] me-3 mt-1"/> <a href="tel:60312345678">
-            (603) 1234 5678
-</a>  
-
+          <div className="hidden lg:flex text-md font-medium text-gray-800 font-sans">
+            <FaPhone className="text-[18px] me-3 mt-1" />{" "}
+            <a href="tel:60312345678">(603) 1234 5678</a>
           </div>
 
           {/* Mobile Toggle */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
           >
             <svg
               className="w-6 h-6"
@@ -115,15 +111,19 @@ const Header: React.FC = () => {
       {/* =====================
           DESKTOP NAV
          ===================== */}
-      <nav className="hidden md:flex justify-center py-4">
+      <nav className="hidden lg:flex justify-center py-4">
         <ul className="flex items-center gap-8">
-          <NavItem path="/about" label="About" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
-          <NavItem path="/workspaces" label="Workspaces Solutions" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
-          <NavItem path="/amenities" label="Amenities" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
-
-                    <NavItem path="/community-and-clientele" label="Community & Clientele" /> <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
-
-          
+          <NavItem path="/about" label="About" />{" "}
+          <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
+          <NavItem path="/workspaces" label="Workspaces Solutions" />{" "}
+          <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
+          <NavItem path="/amenities" label="Amenities" />{" "}
+          <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
+          <NavItem
+            path="/community-and-clientele"
+            label="Community & Clientele"
+          />{" "}
+          <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
           <NavItem path="/contact" label="Contact Us" />
         </ul>
       </nav>
@@ -137,18 +137,16 @@ const Header: React.FC = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden bg-white overflow-hidden shadow-lg"
+            className="lg:hidden bg-white overflow-hidden shadow-lg"
           >
             <nav className="flex flex-col items-center py-8 space-y-6">
               <button
                 onClick={() => handleNavClick("/about")}
                 className={`text-lg font-bold uppercase tracking-widest ${
-                  pathname === "/about"
-                    ? "text-emerald-600"
-                    : "text-gray-800"
+                  pathname === "/about" ? "text-emerald-600" : "text-gray-800"
                 }`}
               >
-                About 
+                About
               </button>
 
               <button
@@ -187,9 +185,7 @@ const Header: React.FC = () => {
               <button
                 onClick={() => handleNavClick("/contact")}
                 className={`text-lg font-bold uppercase tracking-widest ${
-                  pathname === "/contact"
-                    ? "text-emerald-600"
-                    : "text-gray-800"
+                  pathname === "/contact" ? "text-emerald-600" : "text-gray-800"
                 }`}
               >
                 Contact

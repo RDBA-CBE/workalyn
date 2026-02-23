@@ -14,7 +14,6 @@ const solutions = [
   {
     title: "Fixed Desk",
 
-   
     features: ["Weekly Pass", "Monthly Pass", " 3‑Month Pass", "6‑Month Pass"],
     includes: "Ideal For : Long‑term residents",
     image: "/workspace-solution/Image1.png",
@@ -27,15 +26,12 @@ const solutions = [
     image: "/workspace-solution/Image1.png",
   },
 
-   {
+  {
     title: "Meeting Room",
     features: ["6 or 10 seats", " 1/4/8 hr blocks"],
     includes: "Ideal For : Client meetings, workshops",
     image: "/workspace-solution/Image1.png",
   },
-
- 
-
 ];
 
 const advantages = [
@@ -67,26 +63,45 @@ const advantages = [
 const CommunitiesPage = () => {
   return (
     <div className="bg-[#f8fffe]">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
+        <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            className="w-full h-full object-cover"
+            alt="About Header"
+          />
+        </ParallaxWrapper>
+        <div className="relative z-10 text-center text-white px-6">
+          <RevealWrapper>
+            <h1 className="main-head  mb-6 text-white">
+              Community & Clientele
+            </h1>
+            <p className="first-head text-white uppercase  font-bold">
+              DetLorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </RevealWrapper>
+        </div>
+      </section>
       <section className="pt-24  ">
         <div className=" mx-auto">
-          <RevealWrapper className="text-center mb-24">
+          {/* <RevealWrapper className="text-center mb-24">
             <h1 className="main-head   mb-8">Community & Clientele</h1>
             <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-          </RevealWrapper>
+          </RevealWrapper> */}
 
-          <section className="section-b-bg">
-            <div className="section-wid pt-28 pb-20 relative overflow-hidden">
+          <section className="">
+            <div className="section-wid   relative overflow-hidden">
               {/* Background decoration */}
               {/* <div className="absolute top-0 right-0 w-1/3 h-full bg-white/[0.02] -skew-x-12 transform translate-x-1/2"></div> */}
 
               <div className="text-center mb-10 relative z-10">
                 <RevealWrapper>
-                  <h2 className="main-head text-white mb-6 ">
+                  <h2 className="main-head  mb-6 ">
                     The Visionaries, The Executives, The Entrepreneurs
                   </h2>
-                  <p className="text-white/80 max-w-2xl mx-auto leading-relaxed  tracking-wider">
+                  <p className="max-w-2xl mx-auto leading-relaxed  tracking-wider">
                     Workalyn is home to a carefully cultivated membership of
                     individual professionals, boutique firms, and corporate
                     teams who value time, taste, and trajectory.
@@ -101,29 +116,29 @@ const CommunitiesPage = () => {
                     // offset={idx % 2 === 0 ? 30 : 60}
                     // direction={idx % 2 === 0 ? "up" : "down"}
                   >
-                    <div className="bg-white/5  p-10 h-full hover:bg-white/10 transition-all duration-500 group relative">
+                    <div className="bg-[#00998a]/20  p-10 h-full hover:bg-[#00998a]/10 transition-all duration-500 group relative">
                       <div className="mb-8 flex justify-center">
                         <div className="flex flex-col items-center justify-center gap-5">
                           {/* {adv.icon} */}
                           <img src={adv.icon} alt="" />
                           {/* <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1 h-1 bg-gold rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div> */}
-                          <div className="w-[7px] h-[7px] bg-[#00998A] rotate-45  "></div>{" "}
+                          <div className="w-[7px] h-[7px] bg-black rotate-45  "></div>{" "}
                         </div>
                       </div>
 
-                      <h3 className="text-white sub-head uppercase  text-center mb-6">
+                      <h3 className=" sub-head uppercase  text-center mb-6">
                         {adv.title}
                       </h3>
-                      <p className="text-center text-white/80">{adv.desc}</p>
+                      <p className="text-center ">{adv.desc}</p>
 
                       {/* Corner accent */}
-                      <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-gold/0 group-hover:border-gold/30 transition-all duration-500"></div>
+                      <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-black group-hover:border-black/30 transition-all duration-500"></div>
                     </div>
                   </ParallaxWrapper>
                 ))}
               </div>
 
-              <p className="text-white/80 max-w-2xl mx-auto leading-relaxed  tracking-wider text-center mt-10">
+              <p className=" max-w-2xl mx-auto leading-relaxed  tracking-wider text-center mt-10">
                 What unites them is a refusal to compromise. They choose
                 Workalyn because it offers the prestige of a private office with
                 the agility of a flexible membership—all without stepping into a
@@ -133,14 +148,14 @@ const CommunitiesPage = () => {
           </section>
 
           <div className="space-y-10 pt-24 pb-20 section-wid">
-            <RevealWrapper className="text-center mb-12">
-              <h1 className="main-head  ">MEMBERSHIP AT A GLANCE</h1>
+            <RevealWrapper className="text-center mb-14">
+              <h1 className="main-head  ">Membership at a Glance</h1>
               {/* <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </p> */}
             </RevealWrapper>
 
-            {solutions.map((s:any, i) => (
+            {solutions.map((s: any, i) => (
               <div
                 key={i}
                 className={`flex flex-col lg:flex-row gap-16 items-center ${i % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}

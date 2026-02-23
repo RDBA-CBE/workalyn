@@ -47,18 +47,22 @@ const points = [
   {
     title: "Natural light, high ceilings",
     desc: "Often limited window access",
+    border: true,
   },
   {
     title: "Integrated with luxury F&B & gym",
     desc: "Isolated within office towers",
+    border: true,
   },
   {
     title: "Residential enclave – quiet, exclusive",
     desc: "Commercial district – crowded, noisy",
+    border: true,
   },
   {
     title: "Concierge‑level hospitality",
     desc: "Standardised, impersonal service",
+    border: true,
   },
 ];
 
@@ -271,14 +275,14 @@ const AboutPage: React.FC = () => {
                   The Clear Alternative to High‑Rise Coworking
                 </h2>
 
-                <p className="mb-4 leading-[1.8]">
+                <p className="mb-10 leading-[1.8]">
                   Workalyn offers what no other coworking space in Kuala Lumpur
                   can—a ground‑floor address that respects your time and
                   elevates your status.
                 </p>
 
                 <div className="space-y-4">
-                  {points.slice(0, 3).map((p, idx) => (
+                  {points.slice(0, 2).map((p, idx) => (
                     <div
                       key={idx}
                       className={`flex gap-6 items-start pt-4 pb-5 ${
@@ -297,7 +301,7 @@ const AboutPage: React.FC = () => {
             </div>
 
             {/* Right Side - Image */}
-            <div className="relative w-full lg:w-1/2 flex-shrink-0">
+            {/* <div className="relative w-full lg:w-1/2 flex-shrink-0">
               <ParallaxWrapper offset={40} className="z-10">
                 <img
                   src="/why-workalyn.png"
@@ -305,24 +309,12 @@ const AboutPage: React.FC = () => {
                   alt=""
                 />
               </ParallaxWrapper>
-            </div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-10 md:gap-14 lg:gap-20 items-center mt-10">
-            <div className="relative w-full lg:w-1/2 flex-shrink-0">
-              <ParallaxWrapper offset={40} className="z-10">
-                <img
-                  src="/why-workalyn.png"
-                  className="w-full h-auto object-cover"
-                  alt=""
-                />
-              </ParallaxWrapper>
-            </div>
+            </div> */}
 
             <div className="w-full lg:w-1/2 flex-shrink-0">
               <RevealWrapper>
                 <div className="space-y-4">
-                  {points.slice(3, 7).map((p, idx) => (
+                  {points.slice(2, 7).map((p, idx) => (
                     <div
                       key={idx}
                       className={`flex gap-6 items-start pt-4 pb-5 ${
@@ -340,6 +332,8 @@ const AboutPage: React.FC = () => {
               </RevealWrapper>
             </div>
           </div>
+
+         
         </div>
       </section>
     </div>

@@ -6,74 +6,79 @@ const solutions = [
     title: "THE POD ROOM",
 
     desc: "A soundproof sanctuary for private calls, video interviews, or moments of quiet focus. Book on‑demand, always available.",
-    image:
-      "/workspace-solution/Image1.png",
-   
+    image: "/workspace-solution/Image1.png",
   },
 
-    {
+  {
     title: "THE DINING LOUNGE",
 
     desc: "Refined, not rushed. A dedicated space with full fridge, microwave, and sink—so you can enjoy your meal without leaving the building.",
-    image:
-"/workspace-solution/Image1.png",    
+    image: "/workspace-solution/Image1.png",
   },
   {
     title: "BARISTA‑GRADE COFFEE & ARTISAN TEAS",
 
     desc: "Single‑origin espresso, loose‑leaf teas, and chilled purified water. Always complimentary.",
-    image:
-"/workspace-solution/Image1.png",    
+    image: "/workspace-solution/Image1.png",
   },
   {
     title: "SMART FILTRATION",
-   
+
     desc: "No plastic bottles. No waste. Just pure, alkaline water on tap.",
- image:
-"/workspace-solution/Image1.png",     
+    image: "/workspace-solution/Image1.png",
   },
 
-   {
+  {
     title: "ADJACENT PREMIER GYM",
-   
-    desc:  "Step next door for a lunch‑hour workout. Preferred member rates available exclusively for Workalyn members.",
-     image:
-"/workspace-solution/Image1.png",     
+
+    desc: "Step next door for a lunch‑hour workout. Preferred member rates available exclusively for Workalyn members.",
+    image: "/workspace-solution/Image1.png",
   },
 
   {
     title: "CURATED F&B DISTRICT",
-   
-    desc:  "From cherished Malaysian classics to distinguished South and North Indian kitchens, Michelin‑recommended dining rooms, refined Western fare, and intimate cafés and bars—all within 50 metres. ",
-    includes:"Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
-     
-     image:
-"/workspace-solution/Image1.png",     
+
+    desc: "From cherished Malaysian classics to distinguished South and North Indian kitchens, Michelin‑recommended dining rooms, refined Western fare, and intimate cafés and bars—all within 50 metres. ",
+    includes:
+      "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
+
+    image: "/workspace-solution/Image1.png",
   },
-
-  
-
-  
 ];
 
 const AmenitiesPage = () => {
   return (
     <div className="bg-[#f8fffe]">
-      
-
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
+        <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            className="w-full h-full object-cover"
+            alt="About Header"
+          />
+        </ParallaxWrapper>
+        <div className="relative z-10 text-center text-white px-6">
+          <RevealWrapper>
+            <h1 className="main-head  mb-6 text-white">Premium Amenities</h1>
+            <p className="first-head text-white uppercase  font-bold">
+              Details That Define Luxury.
+            </p>
+          </RevealWrapper>
+        </div>
+      </section>
 
       <section className="pt-24 pb-20 section-wid">
         <div className=" mx-auto">
-          <RevealWrapper className="text-center mb-24">
+          {/* <RevealWrapper className="text-center mb-24">
             <h1 className="main-head serif text-dark-green mb-8">
-               Membership at Glance
+               PREMIUM AMENITIES
             </h1>
             <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               
             </p>
             
-          </RevealWrapper>
+          </RevealWrapper> */}
 
           <div className="space-y-10">
             {solutions.map((s, i) => (
@@ -95,29 +100,31 @@ const AmenitiesPage = () => {
                     {/* <span className="text-gold font-bold text-lg serif mb-4 block">{s.price}</span> */}
                     <h2 className="sub-head mb-6">{s.title}</h2>
                     <p className="mb-6  ">{s.desc}</p>
-                    {s.features && <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
-                      {s.features.map((f) => (
-                        <li
-                          key={f}
-                          className="flex items-center gap-3   tracking-wider"
-                        >
-                          <svg
-                            className="w-5 h-5 text-[#00998A] flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
+                    {s.features && (
+                      <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
+                        {s.features.map((f) => (
+                          <li
+                            key={f}
+                            className="flex items-center gap-3   tracking-wider"
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            ></path>
-                          </svg>
-                          {f}
-                        </li>
-                      ))}
-                    </ul>}
+                            <svg
+                              className="w-5 h-5 text-[#00998A] flex-shrink-0"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              ></path>
+                            </svg>
+                            {f}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
 
                     {s.includes && <p className="mb-8  ">{s.includes}</p>}
                     <a href="/contact">

@@ -6,54 +6,80 @@ const solutions = [
     title: "HOT DESK – For the Global Nomad",
 
     desc: "Arrive, connect, create—no strings attached. Perfect for consultants, creatives, and entrepreneurs who work on their own terms.",
-    image:
-      "/workspace-solution/Image1.png",
+    image: "/workspace-solution/Image1.png",
     features: ["1‑Day Pass", "7‑Day Pass", "Monthly Hot Desk"],
-    includes:"Includes: Ergonomic seating, high‑speed WiFi, unlimited coffee/tea, lounge access."
+    includes:
+      "Includes: Ergonomic seating, high‑speed WiFi, unlimited coffee/tea, lounge access.",
   },
   {
     title: "FIXED DESK – For the Resident Professional",
     price: "From $550 / mo",
     desc: "Your permanent workstation in our premium shared hall. Store your equipment, set your rhythm, and enjoy consistency without the long‑term lease.",
-    image:
-      "/workspace-solution/Image2.png",
-    features: ["Weekly Pass", "Monthly Pass", "3‑Month Tenure", "6‑Month Tenure"],
-    includes:"*Includes: Lockable storage, ergonomic chair & round the clock accessibility."
+    image: "/workspace-solution/Image2.png",
+    features: [
+      "Weekly Pass",
+      "Monthly Pass",
+      "3‑Month Tenure",
+      "6‑Month Tenure",
+    ],
+    includes:
+      "*Includes: Lockable storage, ergonomic chair & round the clock accessibility.",
   },
   {
     title: "PRIVATE CABIN – For the Discerning Team",
     price: "Inquire for Pricing",
     desc: "YAbsolute privacy, absolute focus. Fully furnished rooms shared exclusively with your colleagues—no outsiders, no distractions. Choose your configuration:",
-      image: "/workspace-solution/Image3.png",
-     features: ["3‑Table Cabin", "4‑Table Cabin", "5‑Table Cabin"],
-     includes:"Pricing per table, with flexible monthly or quarterly commitments. Custom tenures available upon request."
+    image: "/workspace-solution/Image3.png",
+    features: ["3‑Table Cabin", "4‑Table Cabin", "5‑Table Cabin"],
+    includes:
+      "Pricing per table, with flexible monthly or quarterly commitments. Custom tenures available upon request.",
   },
 
-   {
+  {
     title: "MEETING & EVENT SUITES – For the Moment That Matters",
     price: "Inquire for Pricing",
-    desc:  "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
-     image: "/workspace-solution/Image4.png",
-     features: ["6‑Seater Room – Intimate and intelligent. Perfect for one‑on‑ones and small team syncs.", "10‑Seater Room – Command presence. Equipped with 4K video conferencing and wireless presentation.", "Book by the hour – 2 hr | 4 hr | 8 hr"],
-     includes:"*Includes: 65” 4K screen, whiteboard, flip chart, unlimited coffee/tea.*"
+    desc: "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
+    image: "/workspace-solution/Image4.png",
+    features: [
+      "6‑Seater Room – Intimate and intelligent. Perfect for one‑on‑ones and small team syncs.",
+      "10‑Seater Room – Command presence. Equipped with 4K video conferencing and wireless presentation.",
+      "Book by the hour – 2 hr | 4 hr | 8 hr",
+    ],
+    includes:
+      "*Includes: 65” 4K screen, whiteboard, flip chart, unlimited coffee/tea.*",
   },
-
-  
 ];
 
 const SolutionsPage: React.FC = () => {
   return (
     <div className="bg-[#f8fffe]">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
+        <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            className="w-full h-full object-cover"
+            alt="About Header"
+          />
+        </ParallaxWrapper>
+        <div className="relative z-10 text-center text-white px-6">
+          <RevealWrapper>
+            <h1 className="main-head  mb-6 text-white"> Workspace Solutions</h1>
+            <p className="first-head text-white uppercase  font-bold">
+              Membership Tiers as Fluid as Your Schedule
+            </p>
+          </RevealWrapper>
+        </div>
+      </section>
       <section className="pt-24 pb-20 section-wid">
         <div className=" mx-auto">
-          <RevealWrapper className="text-center mb-24">
+          {/* <RevealWrapper className="text-center mb-24">
             <h1 className="main-head serif text-dark-green mb-8">
               Workspace Solutions
             </h1>
             <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
               Membership Tiers as Fluid as Your Schedule
             </p>
-          </RevealWrapper>
+          </RevealWrapper> */}
 
           <div className="space-y-10">
             {solutions.map((s, i) => (

@@ -138,14 +138,14 @@ const Hero: React.FC = () => {
           <motion.div 
             animate={{ y: ["-100%", "100%"] }}
             transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-            className="absolute top-0 left-0 w-full h-1/2 bg-gold"
+            className="absolute top-0 left-0 w-full h-1/2 bg-[#00998a]"
           />
         </div>
       </div>
 
       {/* Bottom Left: Pagination */}
       <div className="absolute bottom-12 left-6 md:left-24 z-30">
-        <span className="text-2xl md:text-3xl text-white serif font-bold">0{current + 1}</span>
+        <span className="text-2xl md:text-3xl text-[#00998a] serif font-bold">0{current + 1}</span>
         <span className="text-white/30 text-lg md:text-xl font-light ml-2">/ 0{slides.length}</span>
       </div>
 
@@ -168,7 +168,7 @@ const Hero: React.FC = () => {
               <button
                 key={idx}
                 onClick={() => setCurrent(idx)}
-                className={`w-2 h-2 rotate-45 transition-all duration-500 ${current === idx ? 'bg-white scale-125' : 'bg-white/20'}`}
+                className={`w-2 h-2 rotate-45 transition-all duration-500 ${current === idx ? 'bg-[#00998a] scale-125' : 'bg-white/20'}`}
               />
             ))}
           </div>

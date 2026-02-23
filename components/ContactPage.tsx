@@ -1,11 +1,32 @@
 "use client";
 
 import React from "react";
-import { RevealWrapper } from "./ParallaxWrapper";
+import { ParallaxWrapper, RevealWrapper } from "./ParallaxWrapper";
 
 const ContactPage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
+        <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+            className="w-full h-full object-cover"
+            alt="About Header"
+          />
+        </ParallaxWrapper>
+        <div className="relative z-10 text-center text-white px-6">
+          <RevealWrapper>
+            <h1 className="main-head  mb-6 text-white">
+              Contact us
+            </h1>
+            <p className="first-head text-white uppercase  font-bold">
+              Plaza Damansara – Ground Floor, Plaza Level
+
+            </p>
+          </RevealWrapper>
+        </div>
+      </section>
+
       <section className="py-24">
         <div className="section-wid px-6 md:px-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
@@ -112,8 +133,7 @@ const ContactPage: React.FC = () => {
       <section className="bg-gray-50 py-24">
         <div className="section-wid px-6 md:px-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-              {/* Right side: Image */}
+            {/* Right side: Image */}
             <div className="relative h-full w-full">
               <RevealWrapper className="w-full h-full">
                 <img
@@ -123,7 +143,6 @@ const ContactPage: React.FC = () => {
                 />
               </RevealWrapper>
             </div>
-
 
             {/* Left side: Text */}
             <div className="text-center lg:text-left">
@@ -136,10 +155,9 @@ const ContactPage: React.FC = () => {
                   same. But you are not everyone.
                 </p>
                 <p className="max-w-xl mx-auto lg:mx-0 leading-relaxed mb-12 text-gray-700">
-                  We invite you to visit our Plaza Level sanctuary. Walk
-                  through our doors, feel the natural light, and taste the
-                  coffee. Meet our community and imagine your business thriving
-                  here.
+                  We invite you to visit our Plaza Level sanctuary. Walk through
+                  our doors, feel the natural light, and taste the coffee. Meet
+                  our community and imagine your business thriving here.
                 </p>
 
                 <div className="inline-block bg-white p-10 shadow-md">
@@ -160,8 +178,6 @@ const ContactPage: React.FC = () => {
                 </div>
               </RevealWrapper>
             </div>
-
-          
           </div>
         </div>
       </section>
@@ -170,14 +186,14 @@ const ContactPage: React.FC = () => {
       <section className="h-[400px] bg-gray-200 relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           {/* <span className="text-gray-400 sub-head  font-bold uppercase tracking-widest"> */}
-           <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7888796779785!2d101.64830868324835!3d3.1503172449777734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49025bc42019%3A0x804e968b8e38d7f7!2sPlaza%20Damansara%2C%2051%2C%20Jalan%20Medan%20Setia%201%2C%20Bukit%20Damansara%2C%2050490%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sin!4v1771589911221!5m2!1sen!2sin"
-        className="w-full h-full border-0"
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Plaza Damansara Location"
-      />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7888796779785!2d101.64830868324835!3d3.1503172449777734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49025bc42019%3A0x804e968b8e38d7f7!2sPlaza%20Damansara%2C%2051%2C%20Jalan%20Medan%20Setia%201%2C%20Bukit%20Damansara%2C%2050490%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sin!4v1771589911221!5m2!1sen!2sin"
+            className="w-full h-full border-0"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Plaza Damansara Location"
+          />
 
           {/* </span> */}
         </div>

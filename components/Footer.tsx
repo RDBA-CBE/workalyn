@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               <p className="text-[15px] font-bold uppercase tracking-[0.1em] mb-8 text-white">
                 Navigation
               </p>
-              <ul className="space-y-2 text-white/90 text-[15px]">
+              <ul className="space-y-2 text-white/70 text-[15px]">
                 <li>
                   <button
                     onClick={() => router.push("/")}
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => router.push("/locations")}
+                    onClick={() => router.push("/amenities")}
                     className="hover:text-white transition-colors"
                   >
                     Amenities
@@ -69,12 +69,12 @@ const Footer: React.FC = () => {
 
             {/* Column 2: Contact */}
             <div>
-              <h4 className="text-[15px] font-bold uppercase tracking-[0.1em] mb-8 text-white">
+              <p className="text-[15px] font-bold uppercase tracking-[0.1em] mb-8 text-white">
                 Contact
-              </h4>
-              <ul className="space-y-2 text-white/90">
+              </p>
+              <ul className="space-y-2 text-white/70">
                 <li>
-                  <span className="text-[15px] block text-white/90 tracking-widest mb-1">
+                  <span className="text-[15px] block text-white/70 tracking-widest mb-1">
                     Phone:{" "}
                     <a
                       href="tel:+60312345678
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
                   </span>
                 </li>
                 <li>
-                  <span className="text-[15px] block text-white/90 tracking-widest mb-1">
+                  <span className="text-[15px] block text-white/70 tracking-widest mb-1">
                     Email:{" "}
                     <a
                       href="mailto:hello@workalyn.com"
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                   </span>
                 </li>
                 <li>
-                  <span className="text-[15px] block text-white/90 tracking-widest mb-1">
+                  <span className="text-[15px] block text-white/70 tracking-widest mb-1">
                     Address: PL 02 & 03, Block A,
 Plaza Damansara,
 Jalan Medan Setia 1,
@@ -146,7 +146,7 @@ Bukit Damansara,
                   {/* <span className=""/> */}
                 </a>
               </div>
-              <div className="flex gap-3 text-[15px]  tracking-wider text-white">
+              <div className="flex gap-3 text-[15px]  tracking-wider text-white/70">
                 <a href="#" className="hover:text-white transition-colors">
                   Terms of Use
                 </a>

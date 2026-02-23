@@ -48,7 +48,7 @@ const OurStory: React.FC = () => {
                       <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
                         150K+
                       </h4>
-                      <p className="pt-1 text-[13px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                      <p className="pt-1 text-[10px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
                         Active Members
                       </p>
                     </div>
@@ -57,7 +57,7 @@ const OurStory: React.FC = () => {
                       <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
                         25+
                       </h4>
-                      <p className="pt-1 text-[13px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                      <p className="pt-1 text-[10px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
                         Partner Companies
                       </p>
                     </div>
@@ -66,7 +66,7 @@ const OurStory: React.FC = () => {
                       <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
                         12+
                       </h4>
-                      <p className="pt-1 text-[13px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                      <p className="pt-1 text-[10px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
                         Fully Equipped Spaces
                       </p>
                     </div>

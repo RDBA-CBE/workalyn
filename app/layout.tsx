@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Header />
-        <main className="pt-[100px] md:pt-[140px]">{children}</main>
+        <main className="pt-[75px] lg:pt-[140px]">{children}</main>
         <Footer />
       </body>
     </html>
