@@ -206,9 +206,16 @@ html {
   }
 }
 
+@media (max-width: 500px) {
+  .ourstory-bg-title {
+    top: -375px;
+    left: 0px;
+    justify-content: start;
+  }
+}
 @media (max-width: 400px) {
   .ourstory-bg-title {
-    top: -420px;
+    top: -380px;
     left: 0px;
     justify-content: start;
   }

@@ -6,6 +6,7 @@ import SolutionsSection from "./SolutionsSection";
 import WhySection from "./WhySection";
 import AmenitiesSection from "./AmenitiesSection";
 import OurStory from "./OurStory";
+import AmenitiesSectionCopy from "./AmenitiesSectionCopy";
 
 const Homepage: React.FC = () => {
   return (
@@ -16,7 +17,8 @@ const Homepage: React.FC = () => {
       <AdvantageSection />
       <SolutionsSection />
       <WhySection />
-      <AmenitiesSection />
+      {/* <AmenitiesSection /> */}
+      <AmenitiesSectionCopy/>
     </>
   );
 };
