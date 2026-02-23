@@ -66,7 +66,7 @@ const AmenitiesPage = () => {
         <div className=" mx-auto">
           <RevealWrapper className="text-center mb-24">
             <h1 className="main-head serif text-dark-green mb-8">
-               MEMBERSHIP AT A GLANCE
+               Membership at Glance
             </h1>
             <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
              Lorem ipsum, dolor sit amet consectetur adipisicing elit.

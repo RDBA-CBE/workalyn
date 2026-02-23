@@ -108,6 +108,64 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Tour Invitation Section */}
+      <section className="bg-gray-50 py-24">
+        <div className="section-wid px-6 md:px-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+              {/* Right side: Image */}
+            <div className="relative h-full w-full">
+              <RevealWrapper className="w-full h-full">
+                <img
+                  src="/workspace-solution/Image4.png"
+                  alt="A modern and bright meeting room at Workalyn"
+                  className="w-full h-full object-cover shadow-xl rounded-md"
+                />
+              </RevealWrapper>
+            </div>
+
+
+            {/* Left side: Text */}
+            <div className="text-center lg:text-left">
+              <RevealWrapper>
+                <h2 className="main-head mb-6">
+                  Experience Workalyn. One Floor Down, One Step Ahead.
+                </h2>
+                <p className="max-w-xl mx-auto lg:mx-0 leading-relaxed mb-4 text-gray-700">
+                  The elevator is the great equaliser—it treats everyone the
+                  same. But you are not everyone.
+                </p>
+                <p className="max-w-xl mx-auto lg:mx-0 leading-relaxed mb-12 text-gray-700">
+                  We invite you to visit our Plaza Level sanctuary. Walk
+                  through our doors, feel the natural light, and taste the
+                  coffee. Meet our community and imagine your business thriving
+                  here.
+                </p>
+
+                <div className="inline-block bg-white p-10 shadow-md">
+                  <h3 className="sub-head uppercase mb-4">
+                    Schedule a Private Tour
+                  </h3>
+                  <div className="space-y-2">
+                    <p className="font-sans text-gray-600">
+                      Monday–Saturday | By appointment
+                    </p>
+                    <p className="font-sans text-gray-600 hover:text-black">
+                      <a href="mailto:hello@workalyn.my">hello@workalyn.my</a>
+                    </p>
+                    <p className="font-sans text-gray-600 hover:text-black">
+                      <a href="tel:+60312345678">+603 1234 5678</a>
+                    </p>
+                  </div>
+                </div>
+              </RevealWrapper>
+            </div>
+
+          
+          </div>
+        </div>
+      </section>
+
       {/* Map Placeholder */}
       <section className="h-[400px] bg-gray-200 relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">

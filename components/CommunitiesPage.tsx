@@ -1,49 +1,41 @@
 import React from "react";
 import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
+import { features } from "process";
 
 const solutions = [
   {
-    title: "THE POD ROOM",
+    title: "Hot Desk",
 
-    desc: "A soundproof sanctuary for private calls, video interviews, or moments of quiet focus. Book on‑demand, always available.",
+    features: ["1‑Day Pass", "7‑Day Pass", "Monthly Pass"],
+    includes: "Ideal For : Nomads, freelancers",
     image: "/workspace-solution/Image1.png",
   },
 
   {
-    title: "THE DINING LOUNGE",
+    title: "Fixed Desk",
 
-    desc: "Refined, not rushed. A dedicated space with full fridge, microwave, and sink—so you can enjoy your meal without leaving the building.",
-    image: "/workspace-solution/Image1.png",
-  },
-  {
-    title: "BARISTA‑GRADE COFFEE & ARTISAN TEAS",
-
-    desc: "Single‑origin espresso, loose‑leaf teas, and chilled purified water. Always complimentary.",
-    image: "/workspace-solution/Image1.png",
-  },
-  {
-    title: "SMART FILTRATION",
-
-    desc: "No plastic bottles. No waste. Just pure, alkaline water on tap.",
+   
+    features: ["Weekly Pass", "Monthly Pass", " 3‑Month Pass", "6‑Month Pass"],
+    includes: "Ideal For : Long‑term residents",
     image: "/workspace-solution/Image1.png",
   },
 
   {
-    title: "ADJACENT PREMIER GYM",
-
-    desc: "Step next door for a lunch‑hour workout. Preferred member rates available exclusively for Workalyn members.",
+    title: "Private Cabin",
+    features: ["3, 4, or 5 tables", "Per‑table billing"],
+    includes: "Ideal For : Teams requiring privacy",
     image: "/workspace-solution/Image1.png",
   },
 
-  {
-    title: "CURATED F&B DISTRICT",
-
-    desc: "From cherished Malaysian classics to distinguished South and North Indian kitchens, Michelin‑recommended dining rooms, refined Western fare, and intimate cafés and bars—all within 50 metres. ",
-    includes:
-      "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
-
+   {
+    title: "Meeting Room",
+    features: ["6 or 10 seats", " 1/4/8 hr blocks"],
+    includes: "Ideal For : Client meetings, workshops",
     image: "/workspace-solution/Image1.png",
   },
+
+ 
+
 ];
 
 const advantages = [
@@ -75,16 +67,13 @@ const advantages = [
 const CommunitiesPage = () => {
   return (
     <div className="bg-[#f8fffe]">
-      <section className="pt-24 pb-20 ">
+      <section className="pt-24  ">
         <div className=" mx-auto">
           <RevealWrapper className="text-center mb-24">
-            <h1 className="main-head serif text-dark-green mb-8">
-              Community & Clientele
-            </h1>
+            <h1 className="main-head   mb-8">Community & Clientele</h1>
             <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-           
           </RevealWrapper>
 
           <section className="section-b-bg">
@@ -94,12 +83,13 @@ const CommunitiesPage = () => {
 
               <div className="text-center mb-10 relative z-10">
                 <RevealWrapper>
-                  
                   <h2 className="main-head text-white mb-6 ">
                     The Visionaries, The Executives, The Entrepreneurs
                   </h2>
                   <p className="text-white/80 max-w-2xl mx-auto leading-relaxed  tracking-wider">
-                    Workalyn is home to a carefully cultivated membership of individual professionals, boutique firms, and corporate teams who value time, taste, and trajectory.
+                    Workalyn is home to a carefully cultivated membership of
+                    individual professionals, boutique firms, and corporate
+                    teams who value time, taste, and trajectory.
                   </p>
                 </RevealWrapper>
               </div>
@@ -134,13 +124,23 @@ const CommunitiesPage = () => {
               </div>
 
               <p className="text-white/80 max-w-2xl mx-auto leading-relaxed  tracking-wider text-center mt-10">
-               What unites them is a refusal to compromise. They choose Workalyn because it offers the prestige of a private office with the agility of a flexible membership—all without stepping into a high‑rise elevator.
+                What unites them is a refusal to compromise. They choose
+                Workalyn because it offers the prestige of a private office with
+                the agility of a flexible membership—all without stepping into a
+                high‑rise elevator.
               </p>
             </div>
           </section>
 
-          {/* <div className="space-y-10">
-            {solutions.map((s, i) => (
+          <div className="space-y-10 pt-24 pb-20 section-wid">
+            <RevealWrapper className="text-center mb-12">
+              <h1 className="main-head  ">MEMBERSHIP AT A GLANCE</h1>
+              {/* <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p> */}
+            </RevealWrapper>
+
+            {solutions.map((s:any, i) => (
               <div
                 key={i}
                 className={`flex flex-col lg:flex-row gap-16 items-center ${i % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}
@@ -156,11 +156,33 @@ const CommunitiesPage = () => {
                 </div>
                 <div className="lg:w-1/2">
                   <RevealWrapper>
-                   
                     <h2 className="sub-head mb-6">{s.title}</h2>
-                    <p className="mb-6  ">{s.desc}</p>
+                    <p className="mb-6  ">{s?.desc}</p>
+                    <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
+                      {s.features.map((f) => (
+                        <li
+                          key={f}
+                          className="flex items-center gap-3   tracking-wider"
+                        >
+                          <svg
+                            className="w-5 h-5 text-[#00998A] flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
 
-                    {s.includes && <p className="mb-8  ">{s.includes}</p>}
+                    <p className="mb-8  ">{s.includes}</p>
                     <a href="/contact">
                       <button className="flex items-center gap-6 bg-[#1B1C21] text-white  font-semibold px-6 py-4   w-fit hover:bg-gold transition-all duration-300 group/btn shadow-lg shadow-dark-green/10">
                         Enquire Now
@@ -183,7 +205,7 @@ const CommunitiesPage = () => {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
     </div>
