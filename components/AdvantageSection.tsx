@@ -30,7 +30,7 @@ const advantages = [
 const AdvantageSection: React.FC = () => {
   return (
     <section className="section-b-bg">
-      <div className="section-wid pt-28 pb-20 relative overflow-hidden">
+      <div className="section-wid py-20 md:pt-28 md:pb-20 relative overflow-hidden">
         {/* Background decoration */}
         {/* <div className="absolute top-0 right-0 w-1/3 h-full bg-white/[0.02] -skew-x-12 transform translate-x-1/2"></div> */}
 

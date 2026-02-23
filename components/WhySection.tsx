@@ -26,7 +26,7 @@ const points = [
 const WhySection: React.FC = () => {
   return (
     <section className="section-wid">
-  <div className="py-24 px-0 xl:px-10 2xl:px-16 bg-white overflow-hidden">
+  <div className="py-0 pb-20 md:py-24 px-0 xl:px-10 2xl:px-16 bg-white overflow-hidden">
     <div className="flex flex-col lg:flex-row gap-10 md:gap-14 lg:gap-20 items-center">
       
       {/* Left Side - Text */}

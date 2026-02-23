@@ -144,7 +144,7 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
 
 const SolutionsSection: React.FC = () => {
   return (
-    <section id="solutions" className="pt-36 section-wid">
+    <section id="solutions" className="py-20 md:pt-36 section-wid">
       <div className="text-center mb-10">
         <RevealWrapper>
           <div className="flex items-center justify-center gap-3 mb-4">
