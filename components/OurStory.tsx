@@ -27,8 +27,9 @@ const OurStory: React.FC = () => {
                   </h3>
 
                   <p className="mt-4  ">
-                    At Workalyn, we believe that environment shapes outcome. A sterile, impersonal office breeds mediocre work. A space that feels intentional, warm, and exclusive—that is where deals are signed, ideas are born, and legacies are built. <a href="/about" className="text-[#00998A]">read more...</a>
+                    At Workalyn, we believe that environment shapes outcome. A sterile, impersonal office breeds mediocre work. A space that feels intentional, warm, and exclusive—that is where deals are signed, ideas are born, and legacies are built.  
                   </p>
+                <p className="mt-4"><a href="/about" className="text-[#00998A]"> Read More <span className="ml-1">→</span> </a></p>
 
                   {/* STATS */}
                   <div
@@ -93,13 +94,10 @@ const OurStory: React.FC = () => {
                 </h3>
 
                 <p className="mt-4 ">
-                  We built Workalyn because we refused to believe that
-                  productivity required isolation in a tower. For years, we
-                  watched Kuala Lumpur’s most talented individuals trade their
-                  most valuable asset—time—for the daily elevator commute. They
-                  waited in crowded lobbies, pressed buttons, and stared at
-                  closing doors, all before a single email was sent. <a href="/about" className="text-[#00998A]">read more...</a>
+                  We built Workalyn because we refused to believe that productivity required isolation in a tower. For years, we watched Kuala Lumpur’s most talented individuals trade their most valuable asset—time—for the daily elevator commute. They
+                  waited in crowded lobbies, pressed buttons, and stared at closing doors, all before a single email was sent.
                 </p>
+                  <p className="mt-4"><a href="/about" className="text-[#00998A]"> Read More <span className="ml-1">→</span> </a></p>
 
                 <div className="mt-10">
                   <img
