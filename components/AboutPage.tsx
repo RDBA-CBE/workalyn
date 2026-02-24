@@ -91,57 +91,68 @@ const AboutPage: React.FC = () => {
       {/* Narrative Section */}
       <section className="py-32">
         <div className="section-wid grid grid-cols-1 lg:grid-cols-2 gap-24 items-center px-6 md:px-12">
-          <div>
-            <RevealWrapper>
-              <div className=" first-head flex items-center gap-4 mb-4">
-                <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]"></span>{" "}
-                Welcome{" "}
-                <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]"></span>
-              </div>
-              <h2 className="main-head mb-10 ">
-                It started with a single desk and a vision for more.
-              </h2>
-              <div className="leading-[1.8]">
-                <p>
-                  We built Workalyn because we refused to believe that
-                  productivity required isolation in a tower.
-                </p>
-                <p>
-                  For years, we watched Kuala Lumpur’s most talented individuals
-                  trade their most valuable asset—time—for the daily elevator
-                  commute. They waited in crowded lobbies, pressed buttons, and
-                  stared at closing doors, all before a single email was sent.
-                </p>
-                <p className="font-bold mt-4">
-                  We asked ourselves: Why must the workspace be vertical?
-                </p>
-                <p>Workalyn is our answer.</p>
+          <div className="max-w-3xl mx-auto">
+  <RevealWrapper>
+    {/* Welcome Highlight */}
+    <div className="first-head flex items-center justify-center gap-4 mb-6 text-sm tracking-widest uppercase text-[#00998A]">
+      <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45"></span>
+      <span>Welcome</span>
+      <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45"></span>
+    </div>
 
-                <br />
+    {/* Main Heading */}
+    <h2 className="main-head text-center mb-12 text-3xl md:text-4xl font-light leading-tight">
+      It started with a single desk and a vision for more.
+    </h2>
 
-                <p>
-                  We searched for a location that embodied effortless elegance
-                  and found it on the <strong>Plaza Level</strong> of an
-                  exclusive residential enclave—surrounded by
-                  Michelin‑recommended dining, a premier gym, and luxury retail.
-                  Here, on the ground floor, we designed a coworking sanctuary
-                  that feels less like an office and more like a private
-                  members’ club.
-                </p>
+    {/* Content */}
+    <div className="leading-[1.9] text-gray-700 space-y-6 text-base md:text-lg">
+      <p>
+        We built Workalyn because we refused to believe that productivity required
+        isolation in a tower.
+      </p>
 
-                <p>
-                  This is not coworking. This is{" "}
-                  <strong>Workalyn living.</strong>
-                </p>
+      <p>
+        For years, we watched Kuala Lumpur’s most talented individuals trade their
+        most valuable asset—time—for the daily elevator commute. They waited in
+        crowded lobbies, pressed buttons, and stared at closing doors, all before a
+        single email was sent.
+      </p>
 
-                <p>
-                  We invite you to experience the difference. No lift queues. No
-                  wasted minutes. Just pure, refined productivity—from the
-                  moment you arrive.
-                </p>
-              </div>
-            </RevealWrapper>
-          </div>
+      {/* Highlight Question */}
+      <p className="font-semibold text-gray-900 border-l-2 border-[#00998A] pl-4">
+        We asked ourselves: Why must the workspace be vertical?
+      </p>
+
+      <p className="font-medium text-gray-900">
+        Workalyn is our answer.
+      </p>
+
+      <p>
+        We searched for a location that embodied effortless elegance and found it
+        on the <strong>Plaza Level</strong> of an exclusive residential enclave—
+        surrounded by Michelin-recommended dining, a premier gym, and luxury
+        retail.
+      </p>
+
+      <p>
+        Here, on the ground floor, we designed a coworking sanctuary that feels
+        less like an office and more like a private members’ club.
+      </p>
+
+      {/* Brand Statement */}
+      <p className="font-semibold text-gray-900">
+        This is not coworking. This is{" "}
+        <span className="text-[#00998A]">Workalyn living.</span>
+      </p>
+
+      <p>
+        We invite you to experience the difference. No lift queues. No wasted
+        minutes. Just pure, refined productivity—from the moment you arrive.
+      </p>
+    </div>
+  </RevealWrapper>
+</div>
           <ParallaxWrapper offset={40} direction="down">
             <div className="relative aspect-square">
               <img
@@ -250,92 +261,85 @@ const AboutPage: React.FC = () => {
             ))}
           </div>
 
-          <p className="text-white/80 max-w-2xl mx-auto leading-relaxed  tracking-wider text-center mt-10">
-            Every element is chosen to elevate your workday, never distract from
-            it.
-          </p>
+         <p className="text-white/85 max-w-xl mx-auto mt-12 text-center text-sm md:text-base tracking-[0.15em] uppercase">
+  Every element is chosen to elevate your workday, never distract from it.
+</p>
+
         </div>
       </section>
 
-      <section className="section-wid">
-        <div className="pt-24 pb-20 px-0 xl:px-10 2xl:px-16 bg-white overflow-hidden">
-          <div className="flex flex-col lg:flex-row gap-10 md:gap-14 lg:gap-20 items-center">
-            {/* Left Side - Text */}
-            <div className="w-full lg:w-1/2 flex-shrink-0">
-              <RevealWrapper>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="pb-0 first-head flex items-center gap-4">
-                    <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]" />
-                    WHY WORKALYN
-                    <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]" />
-                  </div>
+ <section className="section-wid">
+  <div className="pt-24 pb-20 px-4 xl:px-10 2xl:px-16 bg-white overflow-hidden">
+
+    {/* CENTERED SECTION HEADER */}
+    <div className="max-w-3xl mx-auto text-center mb-16">
+      <div className="flex items-center justify-center gap-4 mb-6 first-head">
+        <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45" />
+        <span className="tracking-widest">WHY WORKALYN</span>
+        <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45" />
+      </div>
+
+      <h2 className="main-head mb-6">
+        The Clear Alternative to High-Rise Coworking
+      </h2>
+
+      <p className="leading-[1.9] text-gray-700">
+        Workalyn offers what no other coworking space in Kuala Lumpur can—a
+        ground-floor address that respects your time and elevates your status.
+      </p>
+    </div>
+
+    {/* CONTENT GRID */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+
+      {/* LEFT COLUMN – POINTS */}
+      <div>
+        <RevealWrapper>
+          <div className="space-y-8">
+            {points.map((p, idx) => (
+              <div
+                key={idx}
+                className={`flex gap-6 items-start ${
+                  p.border ? "border-b border-[#666666]/30 pb-6" : ""
+                }`}
+              >
+               <img
+  src="/why-workalyn-icon.svg"
+  alt=""
+  className="mt-1 w-8 h-8 flex-shrink-0"
+  style={{
+    filter:
+      "invert(43%) sepia(77%) saturate(490%) hue-rotate(131deg) brightness(90%) contrast(90%)",
+  }}
+/>
+                <div>
+                  <h4 className="sub-head uppercase mb-2 tracking-wide">
+                    {p.title}
+                  </h4>
+                  <p className="leading-relaxed text-gray-600">
+                    {p.desc}
+                  </p>
                 </div>
-
-                <h2 className="main-head mb-4">
-                  The Clear Alternative to High‑Rise Coworking
-                </h2>
-
-                <p className="mb-10 leading-[1.8]">
-                  Workalyn offers what no other coworking space in Kuala Lumpur
-                  can—a ground‑floor address that respects your time and
-                  elevates your status.
-                </p>
-
-                <div className="space-y-4">
-                  {points.slice(0, 2).map((p, idx) => (
-                    <div
-                      key={idx}
-                      className={`flex gap-6 items-start pt-4 pb-5 ${
-                        p.border ? "border-b border-[#666666]/30" : ""
-                      }`}
-                    >
-                      <img src="/why-workalyn-icon.svg" alt="" />
-                      <div>
-                        <h4 className="sub-head uppercase mb-2">{p.title}</h4>
-                        <p className="leading-relaxed">{p.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </RevealWrapper>
-            </div>
-
-            {/* Right Side - Image */}
-            {/* <div className="relative w-full lg:w-1/2 flex-shrink-0">
-              <ParallaxWrapper offset={40} className="z-10">
-                <img
-                  src="/why-workalyn.png"
-                  className="w-full h-auto object-cover"
-                  alt=""
-                />
-              </ParallaxWrapper>
-            </div> */}
-
-            <div className="w-full lg:w-1/2 flex-shrink-0">
-              <RevealWrapper>
-                <div className="space-y-4">
-                  {points.slice(2, 7).map((p, idx) => (
-                    <div
-                      key={idx}
-                      className={`flex gap-6 items-start pt-4 pb-5 ${
-                        p.border ? "border-b border-[#666666]/30" : ""
-                      }`}
-                    >
-                      <img src="/why-workalyn-icon.svg" alt="" />
-                      <div>
-                        <h4 className="sub-head uppercase mb-2">{p.title}</h4>
-                        <p className="leading-relaxed">{p.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </RevealWrapper>
-            </div>
+              </div>
+            ))}
           </div>
+        </RevealWrapper>
+      </div>
 
-         
-        </div>
-      </section>
+      {/* RIGHT COLUMN – IMAGE */}
+      <div className="relative">
+        <ParallaxWrapper offset={40} className="z-10">
+          <img
+            src="/about/why-workalyn.webp"
+            className="w-full h-auto object-cover"
+            alt=""
+          />
+        </ParallaxWrapper>
+      </div>
+
+    </div>
+  </div>
+</section>
     </div>
   );
 };

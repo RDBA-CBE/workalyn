@@ -125,25 +125,35 @@ const SolutionsPage: React.FC = () => {
                       ))}
                     </ul>
 
-                    <p className="mb-8  ">{s.includes}</p>
-                    <a href="/contact">
-                      <button className="flex items-center gap-6 bg-[#1B1C21] text-white  font-semibold px-6 py-4   w-fit hover:bg-gold transition-all duration-300 group/btn shadow-lg shadow-dark-green/10">
-                        Enquire Now
-                        <svg
-                          className="w-4 h-4 transition-transform group-hover/btn:translate-x-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          ></path>
-                        </svg>
-                      </button>
-                    </a>
+<div className="mb-8 rounded-lg border border-[#00998A]/25 bg-[#00998A]/5 px-5 py-4">
+  <p className="text leading-relaxed tracking-wide text-[#1B1C21] italic">
+    <span className="font-bold text-[#00998A] not-italic mr-1">
+      Includes:
+    </span>
+    <span className="text-[#1B1C21]">
+      {s.includes.replace(/^(\*?Includes:\s*)/i, "")}
+    </span>
+  </p>
+</div>
+<a
+  href="/contact"
+  className="inline-flex items-center gap-3 font-semibold tracking-wide text-[#00998A] group transition-colors duration-300 hover:text-[#007f73]"
+>
+  Enquire Now
+  <svg
+    className="w-4 h-4 transition-all duration-300 group-hover:translate-x-2 group-hover:scale-110"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M17 8l4 4m0 0l-4 4m4-4H3"
+    />
+  </svg>
+</a>
                   </RevealWrapper>
                 </div>
               </div>
