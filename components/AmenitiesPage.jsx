@@ -67,10 +67,10 @@ const AmenitiesPage = () => {
         {solutions.map((s, i) => (
           <div
             key={i}
-            className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform duration-500 transform hover:-translate-y-2"
+            className="group relative bg-white shadow-md hover:shadow-xl transition-transform duration-500 transform hover:-translate-y-2"
           >
             {/* Theme accent line */}
-            <div className="h-1 w-full bg-[#00998A] rounded-t-2xl"></div>
+            <div className="h-1 w-full bg-[#00998A] "></div>
 
             {/* Image */}
             <div className="relative overflow-hidden">
@@ -109,7 +109,7 @@ const AmenitiesPage = () => {
 
     {/* GLOBAL CTA */}
     <RevealWrapper>
-  <div className="mt-20 relative max-w-4xl mx-auto px-8 py-12 rounded-3xl bg-white/30 backdrop-blur-md border border-[#00998A]/20 shadow-lg text-center overflow-hidden">
+  <div className="mt-20 relative max-w-4xl mx-auto px-8 py-12 bg-white/30 backdrop-blur-md border border-[#00998A]/20 shadow-lg text-center overflow-hidden">
     
     {/* Decorative floating circles */}
     <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#00998A]/20 rounded-full animate-pulse-slow"></div>

@@ -167,7 +167,7 @@ const CommunitiesPage = () => {
       <div className="h-full rounded-2xl border border-gray-200 bg-white shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col">
 
         {/* Card Header */}
-        <div className="rounded-t-2xl bg-[#1B1C21] text-white text-center py-6">
+        <div className="bg-[#1B1C21] text-white text-center py-6">
           <h3 className="text-lg font-semibold tracking-wide">
             {s.title}
           </h3>
@@ -209,7 +209,7 @@ const CommunitiesPage = () => {
 {/* Includes Box */}
 <div
   className="mt-auto mb-4
-    rounded-xl border border-[#00998A]/25 bg-[#00998A]/5
+    border border-[#00998A]/25 bg-[#00998A]/5
     p-3
     min-h-[56px]
     flex items-center justify-center text-center
@@ -223,9 +223,7 @@ const CommunitiesPage = () => {
   <button
     className="inline-flex items-center justify-center gap-3
       bg-[#1B1C21] text-white font-semibold
-      px-6 py-3 text-sm
-      rounded-lg
-      w-auto min-w-[160px]
+      px-6 py-3 text-sm w-auto min-w-[160px]
       hover:bg-gold transition-all duration-300 group"
   >
     Enquire Now
