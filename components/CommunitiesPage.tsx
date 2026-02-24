@@ -138,16 +138,22 @@ const CommunitiesPage = () => {
                 ))}
               </div>
 
-              <p className=" max-w-2xl mx-auto leading-relaxed  tracking-wider text-center mt-10">
-                What unites them is a refusal to compromise. They choose
-                Workalyn because it offers the prestige of a private office with
-                the agility of a flexible membership—all without stepping into a
-                high‑rise elevator.
-              </p>
-            </div>
+<section className="w-full bg-gray-50 py-10">
+  <div className="max-w-5xl mx-auto px-6 text-center">
+    <div className="inline-block border-t-4 border-b-4 border-[#00998A] py-4 px-6 rounded-xl bg-white">
+      <p className="text-gray-900 text-lg md:text-2xl font-semibold leading-relaxed tracking-wide italic">
+        What unites them is a refusal to compromise. They choose
+        <span className="text-[#00998A] font-bold"> Workalyn </span>
+        because it offers the prestige of a private office with
+        the agility of a flexible membership—all without stepping into a
+        high‑rise elevator.
+      </p>
+    </div>
+  </div>
+</section>    </div>
           </section>
 
-          <div className="space-y-10 pt-24 pb-20 section-wid">
+          <div className="space-y-10 pt-12 pb-20 section-wid">
             <RevealWrapper className="text-center mb-14">
               <h1 className="main-head  ">Membership at a Glance</h1>
               {/* <p className="sub-head  max-w-2xl mx-auto leading-relaxed ">
