@@ -48,9 +48,9 @@ const Header: React.FC = () => {
       <div className="section-wid py-4 md:py-6 flex justify-between items-center">
         {/* Social Icons */}
         <div className="hidden lg:flex items-center gap-3 text-gray-800">
-          <a href="#" className="hover:text-emerald-600 transition-colors">
-            <FaInstagram className="text-[24px]" />
-          </a>
+         <a href="https://www.instagram.com/workalyn/" target="_blank" className="hover:text-emerald-600 transition-colors">
+  <FaInstagram className="text-[24px]" />
+</a>
           <a href="#" className="hover:text-emerald-600 transition-colors">
             <FaLinkedin className="text-[24px]" />
           </a>

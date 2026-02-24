@@ -121,7 +121,7 @@ Bukit Damansara,
               </div>
               <div className="flex gap-8 mb-12">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/workalyn/" target="_blank"
                   className="text-white hover:text-emerald-500 transition-colors"
                 >
                   <FaInstagram className="text-[25px]" />
