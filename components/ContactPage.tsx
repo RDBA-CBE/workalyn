@@ -3,6 +3,7 @@
 import React from "react";
 import { ParallaxWrapper, RevealWrapper } from "./ParallaxWrapper";
 
+
 const ContactPage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
@@ -27,107 +28,137 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="section-wid px-6 md:px-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
-            {/* Left: Info */}
-            <div>
-              <RevealWrapper>
-                <h1 className="main-head mb-3">
-                  Plaza Damansara’s Most Coveted Professional Enclave
-                </h1>
-                <p className="mb-6">
-                  Whether you have a question about our memberships, locations,
-                  or want to discuss a custom suite, we're here to help.
-                </p>
+<section className="py-12">
+  <div className="section-wid px-6 md:px-24">
+    {/* Section Heading */}
+    <div className="max-w-3xl mx-auto text-center mb-20">
+      <h1 className="main-head mb-4">
+        Plaza Damansara’s Most Coveted Professional Enclave
+      </h1>
+      <p className="text-[#666666]">
+        Whether you have a question about our memberships, locations,
+        or want to discuss a custom suite, we're here to help.
+      </p>
+    </div>
 
-                <div className="space-y-8">
-                  <div>
-                    <h3 className="sub-head uppercase  mb-4">
-                      General Inquiries
-                    </h3>
-                    <p className=" text-[#666666] hover:text-[#000]">
-                      <a
-                        href="mailto:hello@workalyn.com
-"
-                      >
-                        hello@workalyn.com
-                      </a>
-                    </p>
-                    <p className=" font-sans text-[#666666] hover:text-[#000]">
-                      <a href="tel:60312345678">+603 1234 5678</a>
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="sub-head uppercase  mb-4">
-                      Workalyn at Plaza Damansara
-                    </h3>
-                    <p className=" font-sans text-[#666666] ">
-                      PL 02 & 03, Block A,
-                      <br />
-                      Plaza Damansara, <br /> Jalan Medan Setia 1,
-                      <br />
-                      Bukit Damansara, <br /> 50490 Kuala Lumpur
-                    </p>
-                    <p className=" font-sans text-[#666666] hover:text-[#000]"></p>
-                  </div>
+    {/* Content Grid */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+      {/* Left: Info */}
+      <RevealWrapper>
+        <div className="space-y-10">
+          <div>
+            <h3 className="sub-head uppercase mb-4">
+              Workalyn at Plaza Damansara
+            </h3>
+            <p className="font-sans text-[#666666] leading-relaxed">
+              PL 02 & 03, Block A, Plaza Damansara,<br />
+              Jalan Medan Setia 1,<br />
+              Bukit Damansara, 50490 Kuala Lumpur
+            </p>
+          </div>
 
-                  <div>
-                    <h3 className="sub-head uppercase  mb-4">
-                      Operating Hours:
-                    </h3>
-                    <p className=" font-sans text-[#666666] ">
-                      Monday – Friday: 8:00 AM – 8:00 PM
-                      <br />
-                      Saturday: 9:00 AM – 5:00 PM
-                      <br />
-                      Sunday & Public Holidays: By Appointment Only
-                    </p>
-                    <p className=" font-sans text-[#666666] hover:text-[#000]"></p>
-                  </div>
-                </div>
-              </RevealWrapper>
-            </div>
-
-            {/* Right: Form */}
-            <div className="bg-gray-50 p-12 shadow-sm">
-              <RevealWrapper>
-                <h2 className="main-head  mb-10">Send Us A Message</h2>
-                <form
-                  className="space-y-8"
-                  onSubmit={(e) => e.preventDefault()}
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <input
-                      type="text"
-                      placeholder="Full Name"
-                      className="w-full bg-transparent border-b border-gray-200 py-4 text-sm focus:border-gold outline-none transition-colors"
-                    />
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      className="w-full bg-transparent border-b border-gray-200 py-4 text-sm focus:border-gold outline-none transition-colors"
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full bg-transparent border-b border-gray-200 py-4 text-sm focus:border-gold outline-none transition-colors"
-                  />
-                  <textarea
-                    placeholder="Your Message"
-                    rows={4}
-                    className="w-full bg-transparent border-b border-gray-200 py-4 text-sm focus:border-gold outline-none transition-colors resize-none"
-                  ></textarea>
-                  <button className="w-full bg-[#00998a] text-white py-6 text-[11px] font-bold tracking-[0.3em] uppercase hover:bg-gold transition-all duration-500">
-                    Submit Inquiry
-                  </button>
-                </form>
-              </RevealWrapper>
-            </div>
+          <div>
+            <h3 className="sub-head uppercase mb-4">
+              Operating Hours
+            </h3>
+            <p className="font-sans text-[#666666] leading-relaxed">
+             <b> Monday – Friday: </b>8:00 AM – 8:00 PM<br />
+              <b>Saturday:</b> 9:00 AM – 5:00 PM<br />
+              <b>Sunday & Public Holidays:</b> By Appointment Only
+            </p>
           </div>
         </div>
-      </section>
+      </RevealWrapper>
+
+      {/* Right: Contact */}
+     <RevealWrapper>
+  <div className="relative bg-gray-50 p-12 shadow-sm h-full flex flex-col justify-center border-l-4 border-[#00998A]">
+    
+    {/* Highlighted Heading */}
+    <div className="flex items-center gap-3 mb-6">
+      <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#00998A]/10 text-[#00998A] group">
+        <svg
+          className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
+          />
+        </svg>
+      </span>
+
+      <h3 className="sub-head uppercase text-[#00998A] tracking-wide">
+        General Enquiry
+      </h3>
+    </div>
+
+    {/* Contact Details */}
+   {/* Contact Details */}
+<p className="text-[#666666] hover:text-[#000] mb-4 transition-colors">
+  <a
+    href="mailto:hello@workalyn.com"
+    className="inline-flex items-center gap-4 group"
+  >
+    {/* Email Icon */}
+    <span className="flex items-center justify-center w-11 h-11 rounded-full bg-[#00998A]/10 text-[#00998A] transition-transform duration-300 group-hover:scale-110">
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z"
+        />
+      </svg>
+    </span>
+
+    <span className="text-base group-hover:underline">
+      hello@workalyn.com
+    </span>
+  </a>
+</p>
+
+<p className="text-[#666666] hover:text-[#000] transition-colors">
+  <a
+    href="tel:60312345678"
+    className="inline-flex items-center gap-4 group"
+  >
+    {/* Phone Icon */}
+    <span className="flex items-center justify-center w-11 h-11 rounded-full bg-[#00998A]/10 text-[#00998A] transition-transform duration-300 group-hover:scale-110">
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.2 1.1a11.04 11.04 0 005.52 5.52l1.1-2.2a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"
+        />
+      </svg>
+    </span>
+
+    <span className="text-base group-hover:underline">
+      +603 1234 5678
+    </span>
+  </a>
+</p>
+  </div>
+</RevealWrapper>
+    </div>
+  </div>
+</section>
 
       {/* Tour Invitation Section */}
       <section className="bg-gray-50 py-24">
@@ -160,22 +191,81 @@ const ContactPage: React.FC = () => {
                   our community and imagine your business thriving here.
                 </p>
 
-                <div className="inline-block bg-white p-10 shadow-md">
-                  <h3 className="sub-head uppercase mb-4">
-                    Schedule a Private Tour
-                  </h3>
-                  <div className="space-y-2">
-                    <p className="font-sans text-gray-600">
-                      Monday–Saturday | By appointment
-                    </p>
-                    <p className="font-sans text-gray-600 hover:text-black">
-                      <a href="mailto:hello@workalyn.my">hello@workalyn.my</a>
-                    </p>
-                    <p className="font-sans text-gray-600 hover:text-black">
-                      <a href="tel:+60312345678">+603 1234 5678</a>
-                    </p>
-                  </div>
-                </div>
+<div className="inline-block rounded-xl border border-gray-200 bg-white px-10 py-8">
+  <h3 className="sub-head uppercase mb-5 tracking-wide">
+    Schedule a Private Tour
+  </h3>
+
+  <div className="space-y-4 text-gray-700 text-base">
+
+    {/* Time */}
+    <p className="flex items-center gap-4">
+      <svg
+        className="w-5 h-5 text-gray-700 flex-shrink-0"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        viewBox="0 0 24 24"
+      >
+        <circle cx="12" cy="12" r="9" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 7v5l3 2"
+        />
+      </svg>
+      Monday–Saturday · By appointment
+    </p>
+
+    {/* Email */}
+    <p className="flex items-center gap-4">
+      <svg
+        className="w-5 h-5 text-gray-700 flex-shrink-0"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        viewBox="0 0 24 24"
+      >
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 7l9 6 9-6"
+        />
+      </svg>
+      <a
+        href="mailto:hello@workalyn.my"
+        className="hover:text-black transition"
+      >
+        hello@workalyn.my
+      </a>
+    </p>
+
+    {/* Phone */}
+    <p className="flex items-center gap-4">
+      <svg
+        className="w-5 h-5 text-gray-700 flex-shrink-0"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 5.5l3-1.5 4 4-1.5 3a14 14 0 006 6l3-1.5 4 4-1.5 3A20 20 0 013 5.5z"
+        />
+      </svg>
+      <a
+        href="tel:+60312345678"
+        className="hover:text-black transition"
+      >
+        +603 1234 5678
+      </a>
+    </p>
+
+  </div>
+</div>
               </RevealWrapper>
             </div>
           </div>

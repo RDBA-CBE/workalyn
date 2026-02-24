@@ -155,71 +155,95 @@ const CommunitiesPage = () => {
             </p> */}
             </RevealWrapper>
 
-            {solutions.map((s: any, i) => (
-              <div
-                key={i}
-                className={`flex flex-col lg:flex-row gap-16 items-center ${i % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}
-              >
-                <div className="lg:w-1/2">
-                  <ParallaxWrapper offset={30}>
-                    <img
-                      src={s.image}
-                      className="w-full object-cover shadow-2xl"
-                      alt={s.title}
-                    />
-                  </ParallaxWrapper>
-                </div>
-                <div className="lg:w-1/2">
-                  <RevealWrapper>
-                    <h2 className="sub-head mb-6">{s.title}</h2>
-                    <p className="mb-6  ">{s?.desc}</p>
-                    <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
-                      {s.features.map((f) => (
-                        <li
-                          key={f}
-                          className="flex items-center gap-3   tracking-wider"
-                        >
-                          <svg
-                            className="w-5 h-5 text-[#00998A] flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            ></path>
-                          </svg>
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  {solutions.map((s: any, i) => (
+    <RevealWrapper key={i}>
+      <div className="h-full rounded-2xl border border-gray-200 bg-white shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col">
 
-                    <p className="mb-8  ">{s.includes}</p>
-                    <a href="/contact">
-                      <button className="flex items-center gap-6 bg-[#1B1C21] text-white  font-semibold px-6 py-4   w-fit hover:bg-gold transition-all duration-300 group/btn shadow-lg shadow-dark-green/10">
-                        Enquire Now
-                        <svg
-                          className="w-4 h-4 transition-transform group-hover/btn:translate-x-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          ></path>
-                        </svg>
-                      </button>
-                    </a>
-                  </RevealWrapper>
-                </div>
-              </div>
+        {/* Card Header */}
+        <div className="rounded-t-2xl bg-[#1B1C21] text-white text-center py-6">
+          <h3 className="text-lg font-semibold tracking-wide">
+            {s.title}
+          </h3>
+        </div>
+
+        {/* Card Body */}
+        <div className="flex flex-col flex-grow p-6 text-center">
+
+          {/* Description */}
+          <p className="mb-6 text-gray-600 leading-relaxed">
+            {s.desc}
+          </p>
+
+          {/* Features */}
+          <ul className="space-y-3 mb-6 text-left mx-auto">
+            {s.features.map((f) => (
+              <li
+                key={f}
+                className="flex items-start gap-3 text-sm text-gray-700"
+              >
+                <svg
+                  className="w-5 h-5 text-[#00998A] mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                {f}
+              </li>
             ))}
+          </ul>
+
+{/* Includes Box */}
+<div
+  className="mt-auto mb-4
+    rounded-xl border border-[#00998A]/25 bg-[#00998A]/5
+    p-3
+    min-h-[56px]
+    flex items-center justify-center text-center
+    text-[15px] text-[#1B1C21] font-medium whitespace-nowrap overflow-hidden"
+>
+  {s.includes}
+</div>
+
+          {/* CTA */}
+<a href="/contact" className="mt-auto flex justify-center">
+  <button
+    className="inline-flex items-center justify-center gap-3
+      bg-[#1B1C21] text-white font-semibold
+      px-6 py-3 text-sm
+      rounded-lg
+      w-auto min-w-[160px]
+      hover:bg-gold transition-all duration-300 group"
+  >
+    Enquire Now
+
+    <svg
+      className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </button>
+</a>
+        </div>
+      </div>
+    </RevealWrapper>
+  ))}
+</div>
           </div>
         </div>
       </section>

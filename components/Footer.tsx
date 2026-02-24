@@ -133,18 +133,12 @@ Bukit Damansara,
                   <FaLinkedin className="text-[25px]" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/people/Workalyn/61579702261230/" target="_blank"
                   className="text-white hover:text-emerald-500 transition-colors"
                 >
                   <FaFacebook className="text-[25px]" />
                 </a>
-                <a
-                  href="#"
-                  className=" text-[25px] mt-[-5px] text-white hover:text-emerald-500 transition-colors"
-                >
-                  𝕏
-                  {/* <span className=""/> */}
-                </a>
+              
               </div>
               <div className="flex gap-3 text-[15px]  tracking-wider text-white/70">
                 <a href="#" className="hover:text-white transition-colors">

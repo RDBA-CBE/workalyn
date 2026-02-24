@@ -55,12 +55,10 @@ const Header: React.FC = () => {
             <FaLinkedin className="text-[24px]" />
           </a>
 
-          <a href="#" className="hover:text-emerald-600 transition-colors">
+          <a href="https://www.facebook.com/people/Workalyn/61579702261230/" target="_blank" className="hover:text-emerald-600 transition-colors">
             <FaFacebook className="text-[24px]" />
           </a>
-          <a href="#" className="hover:text-emerald-600 transition-colors">
-            <FaTwitter className="text-[24px]" />
-          </a>
+         
         </div>
 
         {/* Logo */}
