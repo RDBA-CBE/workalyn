@@ -130,8 +130,8 @@ const Hero: React.FC = () => {
       </motion.div>
 
       {/* Left Sidebar: Scroll Indicator */}
-      <div className="absolute left-8 md:left-12 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-4">
-        <span className="[writing-mode:vertical-lr] text-[9px] uppercase tracking-[0.4em] text-white font-bold rotate-180">
+      <div className="hidden md:flex absolute left-8 md:left-12 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-4">
+        <span className=" [writing-mode:vertical-lr] text-[9px] uppercase tracking-[0.4em] text-white font-bold rotate-180">
           SCROLL
         </span>
         <div className="w-[1px] h-24 bg-white/20 relative overflow-hidden">
