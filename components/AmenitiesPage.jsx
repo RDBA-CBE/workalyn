@@ -60,15 +60,18 @@ const AmenitiesPage = () => {
 
       {/* AMENITIES */}
    {/* AMENITIES – EDITORIAL GRID */}
-<section className="pt-24 pb-20 section-wid">
+<section className="pt-24 pb-20 section-wid bg-gray-50">
   <div className="mx-auto">
     <RevealWrapper>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {solutions.map((s, i) => (
           <div
             key={i}
-            className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
+            className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform duration-500 transform hover:-translate-y-2"
           >
+            {/* Theme accent line */}
+            <div className="h-1 w-full bg-[#00998A] rounded-t-2xl"></div>
+
             {/* Image */}
             <div className="relative overflow-hidden">
               <ParallaxWrapper offset={20}>
@@ -81,17 +84,15 @@ const AmenitiesPage = () => {
             </div>
 
             {/* Content */}
-            <div className="p-8">
+            <div className="p-6 md:p-8">
               <RevealWrapper>
                 <h2 className="sub-head mb-4">{s.title}</h2>
 
-                <p className="text-[#1B1C21]/90 leading-relaxed mb-4">
-                  {s.desc}
-                </p>
+                <p className="text-gray-800 leading-relaxed mb-4">{s.desc}</p>
 
                 {s.includes && (
                   <div className="mt-4 rounded-md border border-[#00998A]/25 bg-[#00998A]/5 px-4 py-3">
-                    <p className="text-sm italic text-[#1B1C21]">
+                    <p className="text-sm italic text-gray-800">
                       <span className="font-bold text-[#00998A] not-italic mr-1">
                         Note:
                       </span>
@@ -107,19 +108,24 @@ const AmenitiesPage = () => {
     </RevealWrapper>
 
     {/* GLOBAL CTA */}
-<RevealWrapper>
-  <div className="mt-32 rounded-2xl bg-[#00998A]/5 border border-[#00998A]/25 px-10 py-14 text-center">
-    <p className="mb-6 text-xl text-[#1B1C21] font-medium">
+    <RevealWrapper>
+  <div className="mt-20 relative max-w-4xl mx-auto px-8 py-12 rounded-3xl bg-white/30 backdrop-blur-md border border-[#00998A]/20 shadow-lg text-center overflow-hidden">
+    
+    {/* Decorative floating circles */}
+    <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#00998A]/20 rounded-full animate-pulse-slow"></div>
+    <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-[#00998A]/10 rounded-full animate-pulse-slow"></div>
+
+    <p className="mb-6 text-2xl md:text-3xl main-head" >
       Experience a workspace where every detail is considered.
     </p>
 
     <a
       href="/contact"
-      className="inline-flex items-center gap-3 text-lg font-semibold tracking-wide text-[#00998A] group transition-all duration-300 hover:text-[#007f73]"
+      className="relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00B3A3] to-[#007B72] text-white font-semibold text-lg md:text-xl rounded-full shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl overflow-hidden"
     >
-      Enquire About Membership
+      <span className="relative z-10">Enquire About Membership</span>
       <svg
-        className="w-5 h-5 transition-all duration-300 group-hover:translate-x-2 group-hover:scale-110"
+        className="w-6 h-6 relative z-10 transition-all duration-300 group-hover:translate-x-2"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -131,6 +137,8 @@ const AmenitiesPage = () => {
           d="M17 8l4 4m0 0l-4 4m4-4H3"
         />
       </svg>
+      {/* Animated overlay */}
+      <span className="absolute inset-0 bg-white/10 rounded-full opacity-0 transition-opacity duration-500 hover:opacity-20"></span>
     </a>
   </div>
 </RevealWrapper>
