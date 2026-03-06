@@ -16,7 +16,7 @@ const Homepage: React.FC = () => {
       
       <AdvantageSection />
       <SolutionsSection />
-      <WhySection />
+      {/* <WhySection /> */}
       {/* <AmenitiesSection /> */}
       <AmenitiesSectionCopy/>
     </>

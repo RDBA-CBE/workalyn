@@ -8,17 +8,17 @@ import { RevealWrapper } from "./ParallaxWrapper";
 const amenities: AmenityItem[] = [
   {
     id: "1",
-    title: "THE POD ROOM",
+    title: "THE DINING LOUNGE",
     image: "/amenities/card-amentities1.png",
   },
   {
     id: "2",
-    title: "THE DINING LOUNGE",
+    title: "THE POD ROOM",
     image: "/amenities/card-amentities2.png",
   },
   {
     id: "3",
-    title: "SMART FILTRATION",
+    title: "BARISTA-GRADE COFFEE & ARTISAN TEAS",
     image: "/amenities/card-amentities3.png",
   },
   {
@@ -33,7 +33,7 @@ const amenities: AmenityItem[] = [
   },
   {
     id: "6",
-    title: "BARISTA-GRADE COFFEE & ARTISAN TEAS",
+    title: "BANKING",
     image: "/workspace-solution/Image2.png",
   },
 ];
@@ -111,15 +111,15 @@ const AmenitiesSectionCopy: React.FC = () => {
                 {/* Label with Diamonds */}
                 <div className="flex items-center  justify-center gap-4 mb-4">
                   <div className="pb-0 first-head text-white/90 flex items-center gap-4">
-                    <span className="w-[7px] h-[7px] bg-[#fff] rotate-45 mt-[-1px]" />
-                    PREMIUM AMENITIES
+                    <span className="w-[7px] h-[7px] bg-[#fff] rotate-45 mt-[-1px] uppercase" />
+                    Thoughtful amenities 
                     <span className="w-[7px] h-[7px] bg-[#fff] rotate-45 mt-[-1px]" />
                   </div>
                 </div>
 
                 {/* Main Heading */}
-                <h2 className="!leading-[1.6] text-4xl md:text-5xl lg:text-3xl xl:text-4xl  mb-8  max-w-xs">
-                  Details That Define Luxury.
+                <h2 className="!leading-[1.2] text-4xl md:text-5xl lg:text-3xl xl:text-[32px]  mb-8  ">
+                  Designed to support focused, uninterrupted work.
                 </h2>
 
                 {/* Description Text */}

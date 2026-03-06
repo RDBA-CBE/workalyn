@@ -19,13 +19,13 @@ const slides = [
     description: "More than just a workspace. An environment designed to inspire clarity and catalyze your most ambitious goals.",
     image: "/banner2.png",
   },
-  {
-    label: "GLOBAL CONNECTIVITY",
-    title: "Work From Anywhere In The World",
-    highlight: "World",
-    description: "Access our global network of premium hubs with a single membership. Your office follows you everywhere.",
-    image: "/banner3.png",
-  }
+  // {
+  //   label: "GLOBAL CONNECTIVITY",
+  //   title: "Work From Anywhere In The World",
+  //   highlight: "World",
+  //   description: "Access our global network of premium hubs with a single membership. Your office follows you everywhere.",
+  //   image: "/banner3.png",
+  // }
 ];
 
 const Hero: React.FC = () => {

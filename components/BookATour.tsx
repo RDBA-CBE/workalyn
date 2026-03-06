@@ -1,46 +1,9 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
 import { ParallaxWrapper, RevealWrapper } from "./ParallaxWrapper";
 
-const testimonials = [
-  {
-    quote:
-      "Workalyn isn't just an office; it's a strategic advantage. The Plaza Level access means I'm in and out without delay, and the environment itself commands respect. It's where my most critical work gets done.",
-    name: "Ahmad Zulkifli",
-    title: "CEO, Quantum Ventures",
-    image: "/testimonials/ahmad.webp",
-  },
-  {
-    quote:
-      "The attention to detail at Workalyn is unparalleled. From the ergonomic chairs to the ambient lighting, every element is designed for focus. It has fundamentally changed how my team collaborates.",
-    name: "Dr. Arina Sofea",
-    title: "Founder, BioInnovate",
-    image: "/testimonials/arina.webp",
-  },
-  {
-    quote:
-      "As a creative professional, the aesthetic and atmosphere are crucial. Workalyn provides a sophisticated backdrop that impresses clients and inspires my best work. The community is an added bonus.",
-    name: "Chen Wei",
-    title: "Lead Architect, Urban Form",
-    image: "/testimonials/chen.webp",
-  },
-];
-
 const ContactPage: React.FC = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
-  const nextTestimonial = useCallback(() => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  }, []);
-
-  const prevTestimonial = useCallback(() => {
-    setCurrentTestimonial(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
-    );
-  }, []);
-
   return (
     <div className="bg-white min-h-screen">
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
@@ -210,7 +173,7 @@ const ContactPage: React.FC = () => {
             </div>
 
             {/* Left side: Text */}
-            <div className="text-center lg:text-left" id="book-a-tour">
+            <div className="text-center lg:text-left">
               <RevealWrapper>
                 <h2 className="main-head mb-6">
                   Experience Workalyn. One Floor Down, One Step Ahead.
@@ -298,29 +261,6 @@ const ContactPage: React.FC = () => {
                       </a>
                     </p>
                   </div>
-                  <a
-                    href="#"
-                    className="relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00B3A3] to-[#007B72] text-white font-semibold text-lg md:text-xl rounded-full shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl overflow-hidden mt-8"
-                  >
-                    <span className="relative z-10">
-                      Book a tour
-                    </span>
-                    <svg
-                      className="w-6 h-6 relative z-10 transition-all duration-300 group-hover:translate-x-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                    {/* Animated overlay */}
-                    <span className="absolute inset-0 bg-white/10 rounded-full opacity-0 transition-opacity duration-500 hover:opacity-20"></span>
-                  </a>
                 </div>
               </RevealWrapper>
             </div>
@@ -328,112 +268,7 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonial Slider Section */}
-      <section className="py-16 ">
-        <div className="section-wid px-6 md:px-24">
-          {/* Section Title */}
-          <RevealWrapper>
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="pb-0 first-head flex items-center gap-4">
-                  <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]"></span>
-                  VOICES OF WORKALYN
-                  <span className="w-[7px] h-[7px] bg-[#00998A] rotate-45 mt-[-1px]"></span>
-                </div>
-              </div>
-              <h2 className="main-head">Testimonials</h2>
-            </div>
-          </RevealWrapper>
-
-          {/* Slider */}
-          <div className="relative max-w-3xl mx-auto text-center">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentTestimonial}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="w-full"
-              >
-                <div className="flex flex-col items-center">
-                  {/* <img
-                    src={testimonials[currentTestimonial].image}
-                    alt={testimonials[currentTestimonial].name}
-                    className="w-28 h-28 rounded-full object-cover mb-8 shadow-lg border-4 border-white"
-                  /> */}
-                  <p className="text-xl md:text-2xl leading-relaxed text-[#1B1C21] mb-8 serif">
-                    "{testimonials[currentTestimonial].quote}"
-                  </p>
-                  <h4 className="sub-head uppercase tracking-widest">
-                    {testimonials[currentTestimonial].name}
-                  </h4>
-                  <p className="text-sm text-[#666666]">
-                    {testimonials[currentTestimonial].title}
-                  </p>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-
-            {/* Slider Navigation */}
-            <button
-              onClick={prevTestimonial}
-              className="absolute top-1/2 -translate-y-1/2 left-[-20px] md:left-[-100px] w-14 h-14 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-500 hover:text-black hover:border-gray-300 hover:shadow-md transition-all duration-300"
-              aria-label="Previous testimonial"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-            <button
-              onClick={nextTestimonial}
-              className="absolute top-1/2 -translate-y-1/2 right-[-20px] md:right-[-100px] w-14 h-14 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-500 hover:text-black hover:border-gray-300 hover:shadow-md transition-all duration-300"
-              aria-label="Next testimonial"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Placeholder */}
-      <section className="h-[400px] bg-gray-200 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          {/* <span className="text-gray-400 sub-head  font-bold uppercase tracking-widest"> */}
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7888796779785!2d101.64830868324835!3d3.1503172449777734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49025bc42019%3A0x804e968b8e38d7f7!2sPlaza%20Damansara%2C%2051%2C%20Jalan%20Medan%20Setia%201%2C%20Bukit%20Damansara%2C%2050490%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sin!4v1771589911221!5m2!1sen!2sin"
-            className="w-full h-full border-0"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Plaza Damansara Location"
-          />
-
-          {/* </span> */}
-        </div>
-      </section>
+      
     </div>
   );
 };

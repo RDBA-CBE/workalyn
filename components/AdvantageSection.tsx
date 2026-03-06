@@ -7,23 +7,23 @@ const advantages = [
     icon: "/Advantage-icon/instant-access.svg",
    
     title: "Instant Access",
-    desc: "Step directly from your car or ride into a refined workspace. No turnstiles, no security queues, no waiting for lifts.",
+    desc: "Seamless access from building parking to the Plaza Level workspace.",
   },
   {
      icon: "/Advantage-icon/natural-light.svg",
     
     title: "Natural Light",
-    desc: "Floor‑to‑ceiling windows flood our interiors with daylight—a rarity in high‑rise spaces where lower floors often lack sun.",
+    desc: "Floor-to-ceiling windows fill the workspace with natural light — a rarity in many office environments.",
   },
   { icon: "/Advantage-icon/effortless-flow.svg",
    
     title: "Effortless Flow",
-    desc: "Walk to client meetings, lunch reservations, or gym sessions—all within 50 metres of your desk.",
+    desc: "Restaurants, cafés, and fitness facilities are all within walking distance of your desk.",
   },
   {
     icon: "/Advantage-icon/exclusive-enclave.svg",
     title: "Exclusive Enclave",
-    desc: "Nestled within a prestigious residential neighbourhood, Workalyn offers serenity without sacrificing centrality.",
+    desc: "Situated within the established Bukit Damansara neighbourhood — offering calm without sacrificing centrality.",
   },
 ];
 
@@ -48,7 +48,7 @@ const AdvantageSection: React.FC = () => {
               The Plaza Level Advantage
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto leading-relaxed  tracking-wider">
-              In a city of skyscrapers, standing out often means standing apart. Workalyn is the only premium coworking space in Kuala Lumpur deliberately positioned on the Plaza Level—a distinction that transforms every visit into a seamless, stress‑free experience.
+             Located on the Plaza Level of Plaza Damansara, Workalyn offers direct ground access, eliminating unnecessary transitions and allowing workdays to begin the moment you arrive
 
             </p>
           </RevealWrapper>

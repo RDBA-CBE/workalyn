@@ -113,7 +113,7 @@ const Header: React.FC = () => {
         <ul className="flex items-center gap-8">
           <NavItem path="/about" label="About" />{" "}
           <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
-          <NavItem path="/workspaces" label="Workspaces Solutions" />{" "}
+          <NavItem path="/workspaces" label="Workspaces" />{" "}
           <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
           <NavItem path="/amenities" label="Amenities" />{" "}
           <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
@@ -122,7 +122,10 @@ const Header: React.FC = () => {
             label="Community & Clientele"
           />{" "}
           <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
-          <NavItem path="/contact" label="Contact Us" />
+          <NavItem path="/contact" label="Location" />
+
+          <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
+          <NavItem path="/contact#book-a-tour" label="Book a tour" />
         </ul>
       </nav>
 
@@ -186,7 +189,16 @@ const Header: React.FC = () => {
                   pathname === "/contact" ? "text-emerald-600" : "text-gray-800"
                 }`}
               >
-                Contact
+                Locations
+              </button>
+
+              <button
+                onClick={() => handleNavClick("/contact#book-a-tour")}
+                className={`text-lg font-bold uppercase tracking-widest ${
+                  pathname === "/contact#book-a-tour" ? "text-emerald-600" : "text-gray-800"
+                }`}
+              >
+                Book a tour
               </button>
             </nav>
           </motion.div>

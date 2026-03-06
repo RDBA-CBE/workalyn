@@ -8,9 +8,9 @@ import { RevealWrapper } from "./ParallaxWrapper";
 const solutions: SolutionItem[] = [
   {
     id: "1",
-    title: "HOT DESK – For the Global Nomad",
+    title: "Hot Desk - Flexible Workspace Access.",
     description:
-      "Arrive, connect, create—no strings attached. Perfect for consultants, creatives, and entrepreneurs who work on their own terms.",
+      "Arrive, connect, and work without long-term commitments. Ideal for consultants, independent professionals, and remote teams.",
     image: "/workspace-solution/Image1.png",
     rating: 4.9,
     reviews: 42,
@@ -20,7 +20,7 @@ const solutions: SolutionItem[] = [
     id: "2",
     title: "FIXED DESK – For the Resident Professional",
     description:
-      "Your permanent workstation in our premium shared hall. Store your equipment, set your rhythm, and enjoy consistency without the long‑term lease.",
+      "A dedicated workstation within our shared workspace. Store your equipment and enjoy consistency without committing to a traditional lease.",
     image: "/workspace-solution/Image2.png",
     rating: 4.9,
     reviews: 128,
@@ -30,7 +30,7 @@ const solutions: SolutionItem[] = [
     id: "3",
     title: "PRIVATE CABIN – For the Discerning Team",
     description:
-      "YAbsolute privacy, absolute focus. Fully furnished rooms shared exclusively with your colleagues—no outsiders, no distractions. Choose your configuration:",
+      "Private offices designed for teams who value focus and discretion. Fully furnished and shared only with your colleagues.",
     image: "/workspace-solution/Image3.png",
     rating: 4.8,
     reviews: 86,
@@ -40,11 +40,11 @@ const solutions: SolutionItem[] = [
     id: "4",
     title: "MEETING & EVENT SUITES – For the Moment That Matters",
     description:
-      "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
+      "First impressions are formed before a single word is spoken. Our meeting rooms are designed to communicate professionalism, preparation, and clarity.",
     image: "/workspace-solution/Image4.png",
     rating: 5.0,
     reviews: 64,
-    features: ["6‑Seater Room – Intimate and intelligent. Perfect for one‑on‑ones and small team syncs.", "10‑Seater Room – Command presence. Equipped with 4K video conferencing and wireless presentation.", "Book by the hour – 2 hr | 4 hr | 8 hr"],
+    features: ["6‑Seater Room", "10‑Seater Room", "4K video conferencing", "Book by the hour  2 hr | 4 hr | 8 hr"],
   },
 ];
 
@@ -79,7 +79,7 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
       {/* Text Side */}
       <div className="lg:w-2/5 p-12 md:p-16 flex flex-col justify-center bg-[#F0F0F0] relative z-10">
         <RevealWrapper>
-          <div className="flex items-center gap-1 mb-4">
+          {/* <div className="flex items-center gap-1 mb-4">
             {[...Array(5)].map((_, i) => (
               <svg
                 key={i}
@@ -94,7 +94,7 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
             <span className="text-sm text-[#1B1C21] ml-3 ">
               {item.rating} Reviews
             </span>
-          </div>
+          </div> */}
 
           <h3 className="sub-head  uppercase  mb-4 ">
             {item.title}
