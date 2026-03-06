@@ -40,6 +40,14 @@ const Footer: React.FC = () => {
                     Our Story
                   </button>
                 </li>
+                 <li>
+                  <button
+                    onClick={() => router.push("/workspaces")}
+                    className="hover:text-white transition-colors"
+                  >
+                    Workspace
+                  </button>
+                </li>
                 <li>
                   <button
                     onClick={() => router.push("/amenities")}
@@ -48,12 +56,13 @@ const Footer: React.FC = () => {
                     Amenities
                   </button>
                 </li>
+               
                 <li>
                   <button
-                    onClick={() => router.push("/workspaces")}
+                    onClick={() => router.push("/community-and-clientele")}
                     className="hover:text-white transition-colors"
                   >
-                    Workspace Solutions
+                    Community & Clientele
                   </button>
                 </li>
                 <li>
@@ -61,7 +70,7 @@ const Footer: React.FC = () => {
                     onClick={() => router.push("/contact")}
                     className="hover:text-white transition-colors"
                   >
-                    Contact
+                    Location
                   </button>
                 </li>
               </ul>
