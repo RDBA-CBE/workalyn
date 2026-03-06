@@ -116,11 +116,11 @@ const Header: React.FC = () => {
           <NavItem path="/workspaces" label="Workspaces" />{" "}
           <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
           <NavItem path="/amenities" label="Amenities" />{" "}
-          <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
-          <NavItem
+          {/* <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div> */}
+          {/* <NavItem
             path="/community-and-clientele"
             label="Community & Clientele"
-          />{" "}
+          />{" "} */}
           <div className="w-[5.5px] h-[5.5px] bg-[#00998A] rotate-45"></div>
           <NavItem path="/contact" label="Location" />
 
@@ -172,7 +172,7 @@ const Header: React.FC = () => {
                 Workspaces
               </button>
 
-              <button
+              {/* <button
                 onClick={() => handleNavClick("/community-and-clientele")}
                 className={`text-lg font-bold uppercase tracking-widest ${
                   pathname === "/community-and-clientele"
@@ -181,7 +181,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 Community & Clientele
-              </button>
+              </button> */}
 
               <button
                 onClick={() => handleNavClick("/contact")}

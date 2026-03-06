@@ -57,14 +57,14 @@ const Footer: React.FC = () => {
                   </button>
                 </li>
                
-                <li>
+                {/* <li>
                   <button
                     onClick={() => router.push("/community-and-clientele")}
                     className="hover:text-white transition-colors"
                   >
                     Community & Clientele
                   </button>
-                </li>
+                </li> */}
                 <li>
                   <button
                     onClick={() => router.push("/contact")}

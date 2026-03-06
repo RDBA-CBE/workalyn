@@ -11,6 +11,7 @@ const testimonials = [
     name: "Ahmad Zulkifli",
     title: "CEO, Quantum Ventures",
     image: "/testimonials/ahmad.webp",
+    rating: 4.9,
   },
   {
     quote:
@@ -18,6 +19,7 @@ const testimonials = [
     name: "Dr. Arina Sofea",
     title: "Founder, BioInnovate",
     image: "/testimonials/arina.webp",
+    rating: 4.9,
   },
   {
     quote:
@@ -25,6 +27,7 @@ const testimonials = [
     name: "Chen Wei",
     title: "Lead Architect, Urban Form",
     image: "/testimonials/chen.webp",
+    rating: 4.9,
   },
 ];
 
@@ -302,9 +305,7 @@ const ContactPage: React.FC = () => {
                     href="#"
                     className="relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00B3A3] to-[#007B72] text-white font-semibold text-lg md:text-xl rounded-full shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl overflow-hidden mt-8"
                   >
-                    <span className="relative z-10">
-                      Book a tour
-                    </span>
+                    <span className="relative z-10">Book a tour</span>
                     <svg
                       className="w-6 h-6 relative z-10 transition-all duration-300 group-hover:translate-x-2"
                       fill="none"
@@ -362,9 +363,26 @@ const ContactPage: React.FC = () => {
                     alt={testimonials[currentTestimonial].name}
                     className="w-28 h-28 rounded-full object-cover mb-8 shadow-lg border-4 border-white"
                   /> */}
+                  
                   <p className="text-xl md:text-2xl leading-relaxed text-[#1B1C21] mb-8 serif">
                     "{testimonials[currentTestimonial].quote}"
                   </p>
+                  <div className="flex items-center gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        key={i}
+                        className={`w-5 h-5 text-black`}
+                        // className={`w-5 h-5 ${i < 4 ? "text-black" : "text-gray-300"}`}
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                    <span className="text-sm text-[#1B1C21] ml-3 ">
+                      {testimonials[currentTestimonial].rating} Reviews
+                    </span>
+                  </div>
                   <h4 className="sub-head uppercase tracking-widest">
                     {testimonials[currentTestimonial].name}
                   </h4>
