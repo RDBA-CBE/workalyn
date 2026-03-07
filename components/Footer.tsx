@@ -67,10 +67,10 @@ const Footer: React.FC = () => {
                 </li> */}
                 <li>
                   <button
-                    onClick={() => router.push("/contact")}
+                    onClick={() => router.push("/book-a-tour")}
                     className="hover:text-white transition-colors"
                   >
-                    Location
+                    Book a tour
                   </button>
                 </li>
               </ul>

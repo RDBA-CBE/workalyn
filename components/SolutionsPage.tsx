@@ -3,13 +3,13 @@ import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
 
 const solutions = [
   {
-    title: "HOT DESK – For the Global Nomad",
+    title: "Hot Desk – Flexible Workspace Access",
 
-    desc: "Arrive, connect, create—no strings attached. Perfect for consultants, creatives, and entrepreneurs who work on their own terms.",
+    desc: "Work from any available desk within our shared workspace.",
     image: "/workspace-solution/Image1.png",
     features: ["1‑Day Pass", "7‑Day Pass", "Monthly Hot Desk"],
     includes:
-      "Includes: Ergonomic seating, high‑speed WiFi, unlimited coffee/tea, lounge access.",
+      "Includes: Ergonomic seating, high‑speed WiFi, complimentary coffee/tea, lounge access.",
   },
   {
     title: "FIXED DESK – For the Resident Professional",
@@ -28,11 +28,11 @@ const solutions = [
   {
     title: "PRIVATE CABIN – For the Discerning Team",
     price: "Inquire for Pricing",
-    desc: "Private offices designed for teams that value focus and discretion. Fully furnished and shared exclusively with your colleagues. Best for: Boutique firms, consulting teams, and growing companies.",
+    desc: "Private offices designed for teams that value focus and discretion. Fully furnished and shared exclusively with your colleague",
     image: "/workspace-solution/Image3.png",
-    features: ["2‑Table Cabin", "3‑Table Cabin", "4‑Table Cabin", "6‑Table Cabin"],
+    features: ["2‑Table Cabin", "3‑Table Cabin", "4‑Table Cabin", "6‑Table Cabin", "Flexible pricing available per workstation or for the entire office."],
     includes:
-      "Flexible pricing available per workstation or for the entire office.",
+      "Boutique firms, consulting teams, and growing companies.",
   },
 
   {

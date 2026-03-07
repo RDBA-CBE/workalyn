@@ -63,7 +63,7 @@ const Header: React.FC = () => {
 
         {/* Logo */}
         <button onClick={() => handleNavClick("/")}>
-          <img src="/workalyn-logo-color.svg" alt="Workalyn" />
+          <img src="/Worklyn-w-cap-1.svg" alt="Workalyn" />
         </button>
 
         {/* Right Side */}
