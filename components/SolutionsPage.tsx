@@ -14,7 +14,7 @@ const solutions = [
   {
     title: "FIXED DESK – For the Resident Professional",
     price: "From $550 / mo",
-    desc: "Your permanent workstation in our premium shared hall. Store your equipment, set your rhythm, and enjoy consistency without the long‑term lease.",
+    desc: "A dedicated workstation within our shared workspace. Store your equipment and enjoy a consistent workspace without committing to a traditional office lease. ",
     image: "/workspace-solution/Image2.png",
     features: [
       "Weekly Pass",
@@ -23,16 +23,16 @@ const solutions = [
       "6‑Month Tenure",
     ],
     includes:
-      "*Includes: Lockable storage, ergonomic chair & round the clock accessibility.",
+      "Consultants, startup teams, and professionals who prefer a consistent desk.",
   },
   {
     title: "PRIVATE CABIN – For the Discerning Team",
     price: "Inquire for Pricing",
-    desc: "YAbsolute privacy, absolute focus. Fully furnished rooms shared exclusively with your colleagues—no outsiders, no distractions. Choose your configuration:",
+    desc: "Private offices designed for teams that value focus and discretion. Fully furnished and shared exclusively with your colleagues. Best for: Boutique firms, consulting teams, and growing companies.",
     image: "/workspace-solution/Image3.png",
-    features: ["3‑Table Cabin", "4‑Table Cabin", "5‑Table Cabin"],
+    features: ["2‑Table Cabin", "3‑Table Cabin", "4‑Table Cabin", "6‑Table Cabin"],
     includes:
-      "Pricing per table, with flexible monthly or quarterly commitments. Custom tenures available upon request.",
+      "Flexible pricing available per workstation or for the entire office.",
   },
 
   {
@@ -41,12 +41,12 @@ const solutions = [
     desc: "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
     image: "/workspace-solution/Image4.png",
     features: [
-      "6‑Seater Room – Intimate and intelligent. Perfect for one‑on‑ones and small team syncs.",
-      "10‑Seater Room – Command presence. Equipped with 4K video conferencing and wireless presentation.",
+      "6‑Seater Room",
+      "10‑Seater Room",
       "Book by the hour – 2 hr | 4 hr | 8 hr",
     ],
     includes:
-      "*Includes: 65” 4K screen, whiteboard, flip chart, unlimited coffee/tea.*",
+      "Client meetings, presentations, and team workshops.",
   },
 ];
 
@@ -56,7 +56,7 @@ const SolutionsPage: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-             src="/workspace-solution/subpage/workspace-banner.webp"
+            src="/workspace-solution/subpage/workspace-banner.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />
@@ -65,7 +65,7 @@ const SolutionsPage: React.FC = () => {
           <RevealWrapper>
             <h1 className="main-head  mb-6 text-white"> Workspace Solutions</h1>
             <p className="first-head text-white uppercase  font-bold">
-              Membership Tiers as Fluid as Your Schedule
+              Flexible workspace options designed around your schedule.
             </p>
           </RevealWrapper>
         </div>
@@ -125,35 +125,35 @@ const SolutionsPage: React.FC = () => {
                       ))}
                     </ul>
 
-<div className="mb-8 rounded-lg border border-[#00998A]/25 bg-[#00998A]/5 px-5 py-4">
-  <p className="text leading-relaxed tracking-wide text-[#1B1C21] italic">
-    <span className="font-bold text-[#00998A] not-italic mr-1">
-      Includes:
-    </span>
-    <span className="text-[#1B1C21]">
-      {s.includes.replace(/^(\*?Includes:\s*)/i, "")}
-    </span>
-  </p>
-</div>
-<a
-  href="/contact"
-  className="inline-flex items-center gap-3 font-semibold tracking-wide text-[#00998A] group transition-colors duration-300 hover:text-[#007f73]"
->
-  Enquire Now
-  <svg
-    className="w-4 h-4 transition-all duration-300 group-hover:translate-x-2 group-hover:scale-110"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M17 8l4 4m0 0l-4 4m4-4H3"
-    />
-  </svg>
-</a>
+                    <div className="mb-8 rounded-lg border border-[#00998A]/25 bg-[#00998A]/5 px-5 py-4">
+                      <p className="text leading-relaxed tracking-wide text-[#1B1C21] italic">
+                        <span className="font-bold text-[#00998A] not-italic mr-1">
+                          Best For:
+                        </span>
+                        <span className="text-[#1B1C21]">
+                          {s.includes.replace(/^(\*?Includes:\s*)/i, "")}
+                        </span>
+                      </p>
+                    </div>
+                    <a
+                      href="/contact"
+                      className="inline-flex items-center gap-3 font-semibold tracking-wide text-[#00998A] group transition-colors duration-300 hover:text-[#007f73]"
+                    >
+                      Enquire Now
+                      <svg
+                        className="w-4 h-4 transition-all duration-300 group-hover:translate-x-2 group-hover:scale-110"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </a>
                   </RevealWrapper>
                 </div>
               </div>

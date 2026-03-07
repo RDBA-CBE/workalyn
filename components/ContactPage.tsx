@@ -301,9 +301,19 @@ const ContactPage: React.FC = () => {
                       </a>
                     </p>
                   </div>
+                   <div className="mt-4 rounded-md border border-[#00998A]/25 bg-[#00998A]/5 px-4 py-3 w-fit mx-auto ">
+                    <p className="text-sm italic text-gray-800">
+                      <span className="font-bold text-[#00998A] not-italic mr-1">
+                        Note:
+                      </span>
+                      Coffee & tea are complimentary for all memberships and bookings
+
+                    </p>
+                  </div>
+
                   <a
                     href="#"
-                    className="relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00B3A3] to-[#007B72] text-white font-semibold text-lg md:text-xl rounded-full shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl overflow-hidden mt-8"
+                    className="relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00B3A3] to-[#007B72] text-white font-semibold text-lg md:text-xl rounded-full shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl overflow-hidden mt-6"
                   >
                     <span className="relative z-10">Book a tour</span>
                     <svg
