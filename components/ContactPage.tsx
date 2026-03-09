@@ -78,15 +78,21 @@ const ContactPage: React.FC = () => {
           </div>
 
           {/* Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
-            {/* Left: Info */}
+          <div className="w-full">
             <RevealWrapper>
-              <div className="space-y-10">
-                <div>
-                  <h3 className="sub-head uppercase mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch max-w-5xl mx-auto">
+                {/* Location Card */}
+                <div className="bg-gray-50 p-8 md:p-10 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+                  <div className="w-14 h-14 bg-[#00998A]/10 rounded-full flex items-center justify-center mb-6 text-[#00998A] group-hover:bg-[#00998A] group-hover:text-white transition-colors duration-300">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="sub-head uppercase mb-4 text-lg tracking-wide text-gray-900">
                     Workalyn at Plaza Damansara
                   </h3>
-                  <p className="font-sans text-[#666666] leading-relaxed">
+                  <p className="font-sans text-[#666666] leading-relaxed text-lg">
                     PL 02 & 03, Block A, Plaza Damansara,
                     <br />
                     Jalan Medan Setia 1,
@@ -95,102 +101,28 @@ const ContactPage: React.FC = () => {
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="sub-head uppercase mb-4">Operating Hours</h3>
-                  <p className="font-sans text-[#666666] leading-relaxed">
-                    <b> Monday – Friday: </b>8:00 AM – 8:00 PM
-                    <br />
-                    <b>Saturday:</b> 9:00 AM – 5:00 PM
-                    <br />
-                    <b>Sunday & Public Holidays:</b> By Appointment Only
+                {/* Hours Card */}
+                <div className="bg-gray-50 p-8 md:p-10 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+                  <div className="w-14 h-14 bg-[#00998A]/10 rounded-full flex items-center justify-center mb-6 text-[#00998A] group-hover:bg-[#00998A] group-hover:text-white transition-colors duration-300">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="sub-head uppercase mb-4 text-lg tracking-wide text-gray-900">
+                    Operating Hours
+                  </h3>
+                  <p className="font-sans text-[#666666] leading-relaxed text-lg space-y-2">
+                    <span className="block mb-2">
+                      <span className="font-semibold text-gray-900">Monday – Friday:</span> 8:00 AM – 8:00 PM
+                    </span>
+                    <span className="block mb-2">
+                      <span className="font-semibold text-gray-900">Saturday:</span> 9:00 AM – 5:00 PM
+                    </span>
+                    <span className="block">
+                      <span className="font-semibold text-gray-900">Sunday & Public Holidays:</span> By Appointment Only
+                    </span>
                   </p>
                 </div>
-              </div>
-            </RevealWrapper>
-
-            {/* Right: Contact */}
-            <RevealWrapper>
-              <div className="relative bg-gray-50 p-12 shadow-sm h-full flex flex-col justify-center border-l-4 border-[#00998A]">
-                {/* Highlighted Heading */}
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#00998A]/10 text-[#00998A] group">
-                    <svg
-                      className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
-                      />
-                    </svg>
-                  </span>
-
-                  <h3 className="sub-head uppercase text-[#00998A] tracking-wide">
-                    General Enquiry
-                  </h3>
-                </div>
-
-                {/* Contact Details */}
-                {/* Contact Details */}
-                <p className="text-[#666666] hover:text-[#000] mb-4 transition-colors">
-                  <a
-                    href="mailto:hello@workalyn.com"
-                    className="inline-flex items-center gap-4 group"
-                  >
-                    {/* Email Icon */}
-                    <span className="flex items-center justify-center w-11 h-11 rounded-full bg-[#00998A]/10 text-[#00998A] transition-transform duration-300 group-hover:scale-110">
-                      <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </span>
-
-                    <span className="text-base group-hover:underline">
-                      hello@workalyn.com
-                    </span>
-                  </a>
-                </p>
-
-                <p className="text-[#666666] hover:text-[#000] transition-colors">
-                  <a
-                    href="tel:60312345678"
-                    className="inline-flex items-center gap-4 group"
-                  >
-                    {/* Phone Icon */}
-                    <span className="flex items-center justify-center w-11 h-11 rounded-full bg-[#00998A]/10 text-[#00998A] transition-transform duration-300 group-hover:scale-110">
-                      <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.2 1.1a11.04 11.04 0 005.52 5.52l1.1-2.2a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"
-                        />
-                      </svg>
-                    </span>
-
-                    <span className="text-base group-hover:underline">
-                      +603 1234 5678
-                    </span>
-                  </a>
-                </p>
               </div>
             </RevealWrapper>
           </div>
@@ -236,7 +168,7 @@ const ContactPage: React.FC = () => {
 
                   <div className="space-y-4 text-gray-700 text-base">
                     {/* Time */}
-                    <p className="flex items-center gap-4">
+                    {/* <p className="flex items-center gap-4">
                       <svg
                         className="w-5 h-5 text-gray-700 flex-shrink-0"
                         fill="none"
@@ -252,7 +184,7 @@ const ContactPage: React.FC = () => {
                         />
                       </svg>
                       Monday–Saturday · By appointment
-                    </p>
+                    </p> */}
 
                     {/* Email */}
                     <p className="flex items-center gap-4">
@@ -301,17 +233,17 @@ const ContactPage: React.FC = () => {
                       </a>
                     </p>
                   </div>
-                   <div className="mt-4 rounded-md border border-[#00998A]/25 bg-[#00998A]/5 px-4 py-3 w-fit mx-auto ">
+                  <div className="mt-4 rounded-md border border-[#00998A]/25 bg-[#00998A]/5 px-4 py-3 w-fit mx-auto ">
                     <p className="text-sm italic text-gray-800">
                       <span className="font-bold text-[#00998A] not-italic mr-1">
                         Note:
                       </span>
-                      Coffee & tea are complimentary for all memberships and bookings
-
+                      Coffee & tea are complimentary for all memberships and
+                      bookings
                     </p>
                   </div>
 
-                  <a
+                  {/* <a
                     href="#"
                     className="relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00B3A3] to-[#007B72] text-white font-semibold text-lg md:text-xl rounded-full shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl overflow-hidden mt-6"
                   >
@@ -329,9 +261,9 @@ const ContactPage: React.FC = () => {
                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                       />
                     </svg>
-                    {/* Animated overlay */}
+                  
                     <span className="absolute inset-0 bg-white/10 rounded-full opacity-0 transition-opacity duration-500 hover:opacity-20"></span>
-                  </a>
+                  </a> */}
                 </div>
               </RevealWrapper>
             </div>
@@ -373,7 +305,7 @@ const ContactPage: React.FC = () => {
                     alt={testimonials[currentTestimonial].name}
                     className="w-28 h-28 rounded-full object-cover mb-8 shadow-lg border-4 border-white"
                   /> */}
-                  
+
                   <p className="text-xl md:text-2xl leading-relaxed text-[#1B1C21] mb-8 serif">
                     "{testimonials[currentTestimonial].quote}"
                   </p>
