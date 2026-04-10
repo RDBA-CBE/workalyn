@@ -147,7 +147,7 @@ const ContactPage: React.FC = () => {
                     </span>
 
                     <span className="text-base group-hover:underline">
-                      +603 1234 5678
+                      +60 3 2011 2865 
                     </span>
                   </a>
                 </p>
@@ -257,7 +257,7 @@ const ContactPage: React.FC = () => {
                         href="tel:+60312345678"
                         className="hover:text-black transition"
                       >
-                        +603 1234 5678
+                        +60 3 2011 2865 
                       </a>
                     </p>
                   </div>

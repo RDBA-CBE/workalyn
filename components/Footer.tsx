@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
 "
                       className="hover:text-white transition-colors"
                     >
-                      +603 1234 5678
+                     +60 3 2011 2865 
 
                     </a>
                   </span>
@@ -136,7 +136,7 @@ Bukit Damansara,
                   <FaInstagram className="text-[25px]" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/workalyn-sdn-bhd-07ab59275/" target="_blank"
                   className="text-white hover:text-emerald-500 transition-colors"
                 >
                   <FaLinkedin className="text-[25px]" />

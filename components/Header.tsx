@@ -51,7 +51,7 @@ const Header: React.FC = () => {
          <a href="https://www.instagram.com/workalyn/" target="_blank" className="hover:text-emerald-600 transition-colors">
   <FaInstagram className="text-[24px]" />
 </a>
-          <a href="#" className="hover:text-emerald-600 transition-colors">
+          <a href="https://www.linkedin.com/in/workalyn-sdn-bhd-07ab59275/" className="hover:text-emerald-600 transition-colors" target="_blank">
             <FaLinkedin className="text-[24px]" />
           </a>
 
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-4">
           <div className="hidden lg:flex text-md font-medium text-gray-800 font-sans">
             <FaPhone className="text-[18px] me-3 mt-1" />{" "}
-            <a href="tel:60312345678">(603) 1234 5678</a>
+            <a href="tel:60312345678">+60 3 2011 2865</a>
           </div>
 
           {/* Mobile Toggle */}
