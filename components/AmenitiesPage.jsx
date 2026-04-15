@@ -3,32 +3,32 @@ import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
 
 const solutions = [
   {
-    title: "THE POD ROOM",
+    title: "The POD Room",
     desc: " A soundproof space for private calls, video meetings, and focused work. Available on demand.",
     image: "/amenities/subpage/pod-room.webp",
   },
   {
-    title: "THE DINING LOUNGE",
+    title: "The Dining Lounge",
     desc: "A dedicated space with refrigerator, microwave, and sink — allowing members to take a break without leaving the building.",
     image: "/amenities/subpage/dining-lounge.webp",
   },
   {
-    title: "BARISTA-GRADE COFFEE & ARTISAN TEAS",
+    title: "Barista-Grade Coffee & Artisan Teas",
     desc: "Single-origin espresso, loose-leaf teas, and chilled filtered water — available complimentary for members and guests.",
     image: "/amenities/subpage/barista.webp",
   },
   {
-    title: "SMART FILTRATION",
+    title: "Smart Filtration",
     desc: "Filtered alkaline drinking water available throughout the workspace",
     image: "/amenities/subpage/smart-filteration.webp",
   },
   {
-    title: "ADJACENT PREMIER GYM",
+    title: "Adjacent Premier Gym",
     desc: " Located next door, offering convenient lunchtime workouts with preferred member rates available for Workalyn members.",
     image: "/amenities/subpage/adjacent-premier-gym.webp",
   },
   {
-    title: "CURATED F&B DISTRICT",
+    title: "Curated F&B District",
     desc: "From cherished Malaysian classics to Michelin-recommended dining, refined Western fare, and intimate cafés—all within a short walk.",
     includes:
       "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
