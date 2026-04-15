@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                     onClick={() => router.push("/book-a-tour")}
                     className="hover:text-white transition-colors"
                   >
-                    Book a tour
+                    Book a Tour
                   </button>
                 </li>
               </ul>
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
 Plaza Damansara,
 Jalan Medan Setia 1,
 Bukit Damansara,
-50490 Kuala Lumpur
+50490 Kuala Lumpur.
 
                   </span>
                 </li>
