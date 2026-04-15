@@ -14,7 +14,7 @@ const solutions: SolutionItem[] = [
     image: "/workspace-solution/Image1.png",
     rating: 4.9,
     reviews: 42,
-    features: ["1‑Day Pass", "7‑Day Pass", "Monthly Hot Desk"],
+    features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
   },
   {
     id: "2",
@@ -24,7 +24,7 @@ const solutions: SolutionItem[] = [
     image: "/workspace-solution/Image2.png",
     rating: 4.9,
     reviews: 128,
-    features: ["Weekly Pass", "Monthly Pass", "3‑Month Tenure", "6‑Month Tenure"],
+    features: ["Weekly Pass — RM249", "Monthly Pass — RM949", "Quarterly Pass — RM2499", "Biannual Pass — RM4499", "Annually Pass — RM7499"],
   },
   {
     id: "3",
@@ -34,7 +34,14 @@ const solutions: SolutionItem[] = [
     image: "/workspace-solution/Image3.png",
     rating: 4.8,
     reviews: 86,
-    features: ["3‑Table Cabin", "4‑Table Cabin", "5‑Table Cabin"],
+    subtitle: "Monthly Plans",
+    features: [
+      "1 Pax — RM899",
+      "2 Pax — RM1499",
+      "3 Pax — RM2399",
+      "4 Pax — RM3199",
+      "6 Pax — RM4499"
+    ],
   },
   {
     id: "4",
@@ -44,8 +51,17 @@ const solutions: SolutionItem[] = [
     image: "/workspace-solution/Image4.png",
     rating: 5.0,
     reviews: 64,
-    features: ["6‑Seater Room", "10‑Seater Room", "4K video conferencing", "Book by the hour  2 hr | 4 hr | 8 hr"],
-  },
+    groups: [
+      {
+        subtitle: "6 PAX",
+        features: ["1 Hr: RM99", "4 Hr: RM329", "8 Hr: RM649"],
+      },
+      {
+        subtitle: "10 PAX",
+        features: ["1 Hr: RM169", "4 Hr: RM599", "8 Hr: RM999"],
+      },
+    ],
+  }
 ];
 
 const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
@@ -102,15 +118,68 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
           <p className="mb-4 leading-[1.8]">
             {item.description}
           </p>
+              {/* Subtitle */}
+{item.groups ? (
+  item.groups.map((group, index) => (
+    <div key={index} className="mb-6">
+      {/* Subtitle */}
+      {group.subtitle && (
+        <h4 className="card-subtitle">{group.subtitle}</h4>
+      )}
 
-          <ul className="space-y-3 mb-8">
-            {item.features?.map((feature, i) => (
-              <li key={i} className="flex items-center gap-3">
-                <svg className="w-5 h-5 text-[#00998A] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span className=" ">{feature}</span>
-              </li>
-            ))}
-          </ul>
+      {/* Features */}
+      <ul className="space-y-3 mb-4">
+        {group.features.map((feature, i) => (
+          <li key={i} className="flex items-center gap-3">
+            <svg
+              className="w-5 h-5 text-[#00998A] flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+            <span>{feature}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))
+) : (
+  <>
+    {/* Subtitle */}
+    {item.subtitle && (
+      <h4 className="card-subtitle">{item.subtitle}</h4>
+    )}
+
+    {/* Features */}
+    <ul className="space-y-3 mb-8">
+      {item.features?.map((feature, i) => (
+        <li key={i} className="flex items-center gap-3">
+          <svg
+            className="w-5 h-5 text-[#00998A] flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            ></path>
+          </svg>
+          <span>{feature}</span>
+        </li>
+      ))}
+    </ul>
+  </>
+)}
 
           {/* <p className=" mb-10 border-t border-gray-300 pt-4">
             <span className="">Also Includes:</span> Ergonomic seating, high‑speed WiFi, unlimited coffee/tea, lounge access.

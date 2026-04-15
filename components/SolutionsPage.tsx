@@ -6,8 +6,8 @@ const solutions = [
     title: "Hot Desk – Flexible Workspace Access",
 
     desc: "Work from any available desk within our shared workspace.",
-    image: "/workspace-solution/Image1.png",
-    features: ["1‑Day Pass", "7‑Day Pass", "Monthly Hot Desk"],
+    image: "/workspace-solution/ws-1.webp",
+    features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
     includes:
       "Includes: Ergonomic seating, high‑speed WiFi, complimentary coffee/tea, lounge access.",
   },
@@ -15,13 +15,8 @@ const solutions = [
     title: "FIXED DESK – For the Resident Professional",
     price: "From $550 / mo",
     desc: "A dedicated workstation within our shared workspace. Store your equipment and enjoy a consistent workspace without committing to a traditional office lease. ",
-    image: "/workspace-solution/Image2.png",
-    features: [
-      "Weekly Pass",
-      "Monthly Pass",
-      "3‑Month Tenure",
-      "6‑Month Tenure",
-    ],
+    image: "/workspace-solution/ws-3.webp",
+    features: ["Weekly Pass — RM249", "Monthly Pass — RM949", "Quarterly Pass — RM2499", "Biannual Pass — RM4499", "Annually Pass — RM7499"],
     includes:
       "Consultants, startup teams, and professionals who prefer a consistent desk.",
   },
@@ -29,8 +24,16 @@ const solutions = [
     title: "PRIVATE CABIN – For the Discerning Team",
     price: "Inquire for Pricing",
     desc: "Private offices designed for teams that value focus and discretion. Fully furnished and shared exclusively with your colleague",
-    image: "/workspace-solution/Image3.png",
-    features: ["2‑Table Cabin", "3‑Table Cabin", "4‑Table Cabin", "6‑Table Cabin", "Flexible pricing available per workstation or for the entire office."],
+    image: "/workspace-solution/ws-4.webp",
+   // features: ["2‑Table Cabin", "3‑Table Cabin", "4‑Table Cabin", "6‑Table Cabin", "Flexible pricing available per workstation or for the entire office."],
+       subtitle: "Monthly Plans",
+    features: [
+      "1 Pax — RM899",
+      "2 Pax — RM1499",
+      "3 Pax — RM2399",
+      "4 Pax — RM3199",
+      "6 Pax — RM4499"
+    ],
     includes:
       "Boutique firms, consulting teams, and growing companies.",
   },
@@ -39,11 +42,16 @@ const solutions = [
     title: "MEETING & EVENT SUITES – For the Moment That Matters",
     price: "Inquire for Pricing",
     desc: "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
-    image: "/workspace-solution/Image4.png",
-    features: [
-      "6‑Seater Room",
-      "10‑Seater Room",
-      "Book by the hour – 2 hr | 4 hr | 8 hr",
+    image: "/workspace-solution/ws-2.webp",
+     groups: [
+      {
+        subtitle: "6 PAX",
+        features: ["1 Hr: RM99", "4 Hr: RM329", "8 Hr: RM649"],
+      },
+      {
+        subtitle: "10 PAX",
+        features: ["1 Hr: RM169", "4 Hr: RM599", "8 Hr: RM999"],
+      },
     ],
     includes:
       "Client meetings, presentations, and team workshops.",
@@ -100,31 +108,69 @@ const SolutionsPage: React.FC = () => {
                   <RevealWrapper>
                     {/* <span className="text-gold font-bold text-lg serif mb-4 block">{s.price}</span> */}
                     <h2 className="sub-head mb-6">{s.title}</h2>
-                    <p className="mb-6  ">{s.desc}</p>
-                    <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
-                      {s.features.map((f) => (
-                        <li
-                          key={f}
-                          className="flex items-center gap-3   tracking-wider"
-                        >
-                          <svg
-                            className="w-5 h-5 text-[#00998A] flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            ></path>
-                          </svg>
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
+<p className="mb-6">{s.desc}</p>
 
+{/* GROUPS (Meeting Rooms) */}
+{s.groups && (
+  <div className="grid grid-cols-2 gap-6 mb-6">
+    {s.groups.map((group, idx) => (
+      <div key={idx}>
+        <h4 className="card-subtitle mb-3">{group.subtitle}</h4>
+
+        <ul className="space-y-3">
+          {group.features.map((f, i) => (
+            <li key={i} className="flex items-center gap-3">
+              <svg
+                className="w-5 h-5 text-[#00998A] flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span>{f}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+)}
+
+{/* NORMAL (Private Cabin) */}
+{!s.groups && (
+  <>
+    {s.subtitle && (
+      <h4 className="card-subtitle mb-3">{s.subtitle}</h4>
+    )}
+
+    <ul className="grid grid-cols-2 gap-y-4 gap-x-8 mb-6">
+      {s.features?.map((f, i) => (
+        <li key={i} className="flex items-center gap-3">
+          <svg
+            className="w-5 h-5 text-[#00998A] flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          <span>{f}</span>
+        </li>
+      ))}
+    </ul>
+  </>
+)}
                     <div className="mb-8 rounded-lg border border-[#00998A]/25 bg-[#00998A]/5 px-5 py-4">
                       <p className="text leading-relaxed tracking-wide text-[#1B1C21] italic">
                         <span className="font-bold text-[#00998A] not-italic mr-1">

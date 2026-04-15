@@ -260,3 +260,5 @@ html {
     justify-content: start;
   }
 }
+
+.card-subtitle{color: #00998a; font-size:18px; margin-bottom: 12px;}
