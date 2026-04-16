@@ -70,7 +70,7 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-4">
           <div className="hidden lg:flex text-md font-medium text-gray-800 font-sans">
             <FaPhone className="text-[18px] me-3 mt-1" />{" "}
-            <a href="tel:60312345678">+60 3 2011 2865</a>
+            <a href="tel:+60320112865">+60 3 2011 2865</a>
           </div>
 
           {/* Mobile Toggle */}

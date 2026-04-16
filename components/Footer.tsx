@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
                   <span className="text-[15px] block text-white/70 tracking-widest mb-1">
                     Phone:{" "}
                     <a
-                      href="tel:+60312345678
+                      href="tel:+60320112865
 "
                       className="hover:text-white transition-colors"
                     >

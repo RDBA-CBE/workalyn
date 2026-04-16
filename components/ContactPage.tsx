@@ -226,7 +226,7 @@ const ContactPage: React.FC = () => {
                         />
                       </svg>
                       <a
-                        href="tel:+60312345678"
+                        href="tel:+60320112865"
                         className="hover:text-black transition"
                       >
                         +60 3 2011 2865 
