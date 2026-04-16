@@ -149,7 +149,7 @@ Bukit Damansara,
                 </a>
               
               </div>
-              <div className="flex gap-3 text-[15px]  tracking-wider text-white/70">
+              <div className="flex gap-3 text-[15px]  tracking-wider text-white/70" style={{display:"none"}}>
                 <a href="#" className="hover:text-white transition-colors">
                   Terms of Use
                 </a>
