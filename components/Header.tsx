@@ -150,16 +150,7 @@ const Header: React.FC = () => {
                 About
               </button>
 
-              <button
-                onClick={() => handleNavClick("/amenities")}
-                className={`text-lg font-bold uppercase tracking-widest ${
-                  pathname === "/amenities"
-                    ? "text-emerald-600"
-                    : "text-gray-800"
-                }`}
-              >
-                Amenities
-              </button>
+             
 
               <button
                 onClick={() => handleNavClick("/workspaces")}
@@ -170,6 +161,16 @@ const Header: React.FC = () => {
                 }`}
               >
                 Workspaces
+              </button>
+               <button
+                onClick={() => handleNavClick("/amenities")}
+                className={`text-lg font-bold uppercase tracking-widest ${
+                  pathname === "/amenities"
+                    ? "text-emerald-600"
+                    : "text-gray-800"
+                }`}
+              >
+                Amenities
               </button>
 
               {/* <button
