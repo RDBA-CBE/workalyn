@@ -73,7 +73,7 @@ const WhySection: React.FC = () => {
       <div className="relative w-full lg:w-3/5 flex-shrink-0">
         <ParallaxWrapper offset={40} className="z-10">
           <img
-            src="/why-workalyn.png"
+            src="/work-images/Why-img.webp"
             className="w-full h-auto object-cover"
             alt=""
           />

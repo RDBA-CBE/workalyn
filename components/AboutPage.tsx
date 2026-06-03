@@ -73,7 +73,7 @@ const AboutPage: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="/about/about-banner.webp"
+            src="/work-images/about-ban.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />
@@ -156,7 +156,7 @@ const AboutPage: React.FC = () => {
           <ParallaxWrapper offset={40} direction="down">
             <div className="relative aspect-square">
               <img
-                src="/about/welcome.webp"
+                src="/work-images/image-7.JPG"
                 className="w-full h-full object-cover shadow-3xl"
                 alt="Founder Story"
               />
@@ -330,7 +330,7 @@ const AboutPage: React.FC = () => {
       <div className="relative">
         <ParallaxWrapper offset={40} className="z-10">
           <img
-            src="/about/why-workalyn.webp"
+            src="/work-images/About.jpeg"
             className="w-full h-auto object-cover"
             alt=""
           />

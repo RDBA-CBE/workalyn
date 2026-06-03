@@ -5,17 +5,17 @@ const solutions = [
   {
     title: "The POD Room",
     desc: " A soundproof space for private calls, video meetings, and focused work. Available on demand.",
-    image: "/amenities/subpage/pod-room.webp",
+    image: "/work-images/image-4.JPG",
   },
   {
     title: "The Dining Lounge",
     desc: "A dedicated space with refrigerator, microwave, and sink — allowing members to take a break without leaving the building.",
-    image: "/amenities/subpage/dining-lounge.webp",
+    image: "/work-images/image-9.jpg",
   },
   {
     title: "Barista-Grade Coffee & Artisan Teas",
     desc: "Single-origin espresso, loose-leaf teas, and chilled filtered water — available complimentary for members and guests.",
-    image: "/amenities/subpage/barista.webp",
+    image: "/work-images/image-8.jpg",
   },
   {
     title: "Smart Filtration",
@@ -32,14 +32,14 @@ const solutions = [
     desc: "From cherished Malaysian classics to Michelin-recommended dining, refined Western fare, and intimate cafés—all within a short walk.",
     includes:
       "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
-    image: "/amenities/subpage/curated-f&b-district.webp",
+    image: "/work-images/image-8.jpg",
   },
 
   {
     title: "Public Bank Branch & ATM",
     desc: "A Public Bank branch with full banking services and ATM facilities is located within a short walking distance",
 
-    image: "/amenities/subpage/curated-f&b-district.webp",
+    image: "/work-images/image-7.jpg",
   },
 ];
 
@@ -50,7 +50,7 @@ const AmenitiesPage = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="/amenities/subpage/amenities-banner.webp"
+            src="/work-images/Amenities.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />

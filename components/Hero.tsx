@@ -10,14 +10,14 @@ const slides = [
     title: "Collaborate With Like-Minded People",
     highlight: "People",
     description: "Join a vibrant ecosystem of entrepreneurs, creatives, and tech innovators. Networking built into your routine.",
-    image: "/banner1.png",
+    image: "/work-images/zoom-banner.png",
   },
   {
     label: "ARCHITECTURAL EXCELLENCE",
     title: "Discover Your New Creative Sanctuary",
     highlight: "Sanctuary",
     description: "More than just a workspace. An environment designed to inspire clarity and catalyze your most ambitious goals.",
-    image: "/banner2.png",
+    image: "/work-images/Banner-img-2.webp",
   },
   // {
   //   label: "GLOBAL CONNECTIVITY",
@@ -71,7 +71,8 @@ const Hero: React.FC = () => {
           <img
             src={slides[current].image}
             alt="Workspace"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
+            style={{ objectPosition: "left" }}
           />
         </motion.div>
       </AnimatePresence>

@@ -64,7 +64,7 @@ const SolutionsPage: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="/workspace-solution/subpage/workspace-banner.webp"
+            src="/work-images/Workspaces.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />

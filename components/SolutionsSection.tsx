@@ -11,7 +11,7 @@ const solutions: SolutionItem[] = [
     title: "Hot Desk - Flexible Workspace Access.",
     description:
       "Arrive, connect, and work without long-term commitments. Ideal for consultants, independent professionals, and remote teams.",
-    image: "/workspace-solution/Image1.png",
+    image: "/work-images/image-5.jpg",
     rating: 4.9,
     reviews: 42,
     features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
@@ -21,7 +21,7 @@ const solutions: SolutionItem[] = [
     title: "FIXED DESK – For the Resident Professional",
     description:
       "A dedicated workstation within our shared workspace. Store your equipment and enjoy consistency without committing to a traditional lease.",
-    image: "/workspace-solution/Image2.png",
+    image: "/work-images/image-4.jpg",
     rating: 4.9,
     reviews: 128,
     features: ["Weekly Pass — RM249", "Monthly Pass — RM949", "Quarterly Pass — RM2499", "Biannual Pass — RM4499", "Annually Pass — RM7499"],
@@ -31,7 +31,7 @@ const solutions: SolutionItem[] = [
     title: "PRIVATE CABIN – For the Discerning Team",
     description:
       "Private offices designed for teams who value focus and discretion. Fully furnished and shared only with your colleagues.",
-    image: "/workspace-solution/Image3.png",
+    image: "/work-images/image-1.jpg",
     rating: 4.8,
     reviews: 86,
     subtitle: "Monthly Plans",
@@ -48,7 +48,7 @@ const solutions: SolutionItem[] = [
     title: "MEETING & EVENT SUITES – For the Moment That Matters",
     description:
       "First impressions are formed before a single word is spoken. Our meeting rooms are designed to communicate professionalism, preparation, and clarity.",
-    image: "/workspace-solution/Image4.png",
+    image: "/work-images/image-3.jpg",
     rating: 5.0,
     reviews: 64,
     groups: [
