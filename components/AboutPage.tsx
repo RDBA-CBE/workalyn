@@ -1,4 +1,4 @@
-import React from "react";
+oruimport React from "react";
 import { motion } from "framer-motion";
 import { RevealWrapper, ParallaxWrapper } from "./ParallaxWrapper";
 
@@ -156,7 +156,7 @@ const AboutPage: React.FC = () => {
           <ParallaxWrapper offset={40} direction="down">
             <div className="relative aspect-square">
               <img
-                src="/work-images/image-7.JPG"
+                src="/work-images/image-7.jpg"
                 className="w-full h-full object-cover shadow-3xl"
                 alt="Founder Story"
               />
