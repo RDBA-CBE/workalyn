@@ -5,7 +5,7 @@ const solutions = [
   {
     title: "The POD Room",
     desc: " A soundproof space for private calls, video meetings, and focused work. Available on demand.",
-    image: "/work-images/image-4.JPG",
+    image: "/work-images/image-4.jpg",
   },
   {
     title: "The Dining Lounge",
