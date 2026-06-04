@@ -10,7 +10,7 @@ const slides = [
     title: "Collaborate With Like-Minded People",
     highlight: "People",
     description: "Join a vibrant ecosystem of entrepreneurs, creatives, and tech innovators. Networking built into your routine.",
-    image: "/work-images/zoom-banner.png",
+    image: "/work-images/zoom-banner.jpeg",
   },
   {
     label: "ARCHITECTURAL EXCELLENCE",
