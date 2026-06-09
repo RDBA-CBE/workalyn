@@ -6,7 +6,7 @@ const solutions = [
     title: "Hot Desk – Flexible Workspace Access",
 
     desc: "Work from any available desk within our shared workspace.",
-    image: "/workspace-solution/ws-1.webp",
+    image: "/work-images/ws-2.png",
     features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
     includes:
       "Includes: Ergonomic seating, high‑speed WiFi, complimentary coffee/tea, lounge access.",
@@ -15,7 +15,7 @@ const solutions = [
     title: "FIXED DESK – For the Resident Professional",
     price: "From $550 / mo",
     desc: "A dedicated workstation within our shared workspace. Store your equipment and enjoy a consistent workspace without committing to a traditional office lease. ",
-    image: "/workspace-solution/ws-3.webp",
+    image: "/work-images/ws-4.png",
     features: ["Weekly Pass — RM249", "Monthly Pass — RM949", "Quarterly Pass — RM2499", "Biannual Pass — RM4499", "Annually Pass — RM7499"],
     includes:
       "Consultants, startup teams, and professionals who prefer a consistent desk.",
@@ -24,7 +24,7 @@ const solutions = [
     title: "PRIVATE CABIN – For the Discerning Team",
     price: "Inquire for Pricing",
     desc: "Private offices designed for teams that value focus and discretion. Fully furnished and shared exclusively with your colleague",
-    image: "/workspace-solution/ws-4.webp",
+    image: "/work-images/ws-3.png",
    // features: ["2‑Table Cabin", "3‑Table Cabin", "4‑Table Cabin", "6‑Table Cabin", "Flexible pricing available per workstation or for the entire office."],
        subtitle: "Monthly Plans",
     features: [
@@ -42,7 +42,7 @@ const solutions = [
     title: "MEETING & EVENT SUITES – For the Moment That Matters",
     price: "Inquire for Pricing",
     desc: "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
-    image: "/workspace-solution/ws-2.webp",
+    image: "/work-images/ws-1.png",
      groups: [
       {
         subtitle: "6 PAX",

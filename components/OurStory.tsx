@@ -115,7 +115,7 @@ const OurStory: React.FC = () => {
 
                 <div className="mt-10">
                   <img
-                    src="/work-images/our-story-2.webp"
+                    src="/work-images/ing-1.webp"
                     alt="Collaboration Space"
                     className="w-full  object-cover"
                   />

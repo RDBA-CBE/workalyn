@@ -5,41 +5,41 @@ const solutions = [
   {
     title: "The POD Room",
     desc: " A soundproof space for private calls, video meetings, and focused work. Available on demand.",
-    image: "/work-images/image-4.jpg",
+    image: "/work-images/amenities-in-3.png",
   },
   {
     title: "The Dining Lounge",
     desc: "A dedicated space with refrigerator, microwave, and sink — allowing members to take a break without leaving the building.",
-    image: "/work-images/image-9.jpg",
+    image: "/work-images/amenities-in-4.png",
   },
   {
     title: "Barista-Grade Coffee & Artisan Teas",
     desc: "Single-origin espresso, loose-leaf teas, and chilled filtered water — available complimentary for members and guests.",
-    image: "/work-images/image-8.jpg",
+    image: "/work-images/amenities-in-5.png",
   },
   {
     title: "Smart Filtration",
     desc: "Filtered alkaline drinking water available throughout the workspace",
-    image: "/amenities/subpage/smart-filteration.webp",
+    image: "/work-images/amenities-in-1.png",
   },
   {
     title: "Adjacent Premier Gym",
     desc: " Located next door, offering convenient lunchtime workouts with preferred member rates available for Workalyn members.",
-    image: "/amenities/subpage/adjacent-premier-gym.webp",
+    image: "/work-images/amenities-in-7.png",
   },
   {
     title: "Curated F&B District",
     desc: "From cherished Malaysian classics to Michelin-recommended dining, refined Western fare, and intimate cafés—all within a short walk.",
     includes:
       "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
-    image: "/work-images/image-8.jpg",
+    image: "/work-images/amenities-in-8.png",
   },
 
   {
     title: "Public Bank Branch & ATM",
     desc: "A Public Bank branch with full banking services and ATM facilities is located within a short walking distance",
 
-    image: "/work-images/image-7.jpg",
+    image: "/work-images/amenities-in-6.png",
   },
 ];
 
@@ -50,7 +50,7 @@ const AmenitiesPage = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="/work-images/Amenities.webp"
+            src="/work-images/abt-ban.jpeg"
             className="w-full h-full object-cover"
             alt="About Header"
           />

@@ -10,37 +10,37 @@ const amenities: AmenityItem[] = [
     id: "1",
     title: "THE DINING LOUNGE",
     // image: "/amenities/card-amentities1.png",
-    image:"/work-images/image-8.jpg"
+    image:"/work-images/amenities-1.png"
   },
   {
     id: "2",
     title: "THE POD ROOM",
     // image: "/amenities/card-amentities2.png",
-    image:"/work-images/image-5.jpg"
+    image:"/work-images/amenities-8.png"
   },
   {
     id: "3",
     title: "BARISTA-GRADE COFFEE & ARTISAN TEAS",
     // image: "/amenities/card-amentities3.png",
-    image:"/work-images/image-9.jpg"
+    image:"/work-images/amenities-5.png"
   },
   {
     id: "4",
     title: "CURATED F&B DISTRICT",
     // image: "/amenities/card-amentities4.png",
-    image:"/work-images/image-6.jpg"
+    image:"/work-images/amenities-6.png"
   },
   {
     id: "5",
     title: "ADJACENT PREMIER GYM",
     // image: "/amenities/card-amentities6.png",
-    image:"/work-images/image-1.jpg"
+    image:"/work-images/amenities-4.png"
   },
   {
     id: "6",
     title: "BANKING",
     // image: "/workspace-solution/Image2.png",
-    image:"/work-images/image-7.jpg"
+    image:"/work-images/amenities-10.png"
   },
 ];
 

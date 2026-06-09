@@ -31,7 +31,7 @@ const solutions: SolutionItem[] = [
     title: "PRIVATE CABIN – For the Discerning Team",
     description:
       "Private offices designed for teams who value focus and discretion. Fully furnished and shared only with your colleagues.",
-    image: "/work-images/image-1.jpg",
+    image: "/work-images/about-3.png",
     rating: 4.8,
     reviews: 86,
     subtitle: "Monthly Plans",
@@ -48,7 +48,7 @@ const solutions: SolutionItem[] = [
     title: "MEETING & EVENT SUITES – For the Moment That Matters",
     description:
       "First impressions are formed before a single word is spoken. Our meeting rooms are designed to communicate professionalism, preparation, and clarity.",
-    image: "/work-images/image-3.jpg",
+    image: "/work-images/about-2.png",
     rating: 5.0,
     reviews: 64,
     groups: [
