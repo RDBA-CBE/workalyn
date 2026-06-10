@@ -45,8 +45,8 @@ const amenities: ExtendedAmenityItem[] = [
     id: "6",
     title: "BANKING",
     // image: "/workspace-solution/Image2.png",
-    image:"/work-images/img-1.jpeg",
-    mblImage : "/work-images/img-6.jpeg"
+    image:"/work-images/img-12.jpeg",
+    mblImage : "/work-images/img-9.png"
   },
 ];
 

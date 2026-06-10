@@ -7,7 +7,8 @@ const solutions = [
 
     desc: "Work from any available desk within our shared workspace.",
     image: "/work-images/ws-4.png",
-    features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
+    // features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
+    features: [{title:"Day Pass —" , fe: "RM50"}, {title:"Weekly Pass —", fe:" RM199"}, {title:"Monthly Pass —",fe: "RM799"}],
     includes:
       "Includes: Ergonomic seating, high‑speed WiFi, complimentary coffee/tea, lounge access.",
   },
@@ -16,7 +17,7 @@ const solutions = [
     price: "From $550 / mo",
     desc: "A dedicated workstation within our shared workspace. Store your equipment and enjoy a consistent workspace without committing to a traditional office lease. ",
     image: "/work-images/amenities-in-10.jpeg",
-    features: ["Weekly Pass — RM249", "Monthly Pass — RM949", "Quarterly Pass — RM2499", "Biannual Pass — RM4499", "Annually Pass — RM7499"],
+    features: [{title:"Weekly Pass —", fe:"RM249"}, {title:"Monthly Pass —", fe: "RM949"}, {title:"Quarterly Pass —", fe: "RM2499"}, {title:"Biannual Pass —", fe: "RM4499"}, {title:"Annually Pass —",fe: "RM7499"}],
     includes:
       "Consultants, startup teams, and professionals who prefer a consistent desk.",
   },
@@ -59,6 +60,19 @@ const solutions = [
 ];
 
 const SolutionsPage: React.FC = () => {
+  const renderPrice = (text: string) => {
+    const p = text.trim();
+    if (p.startsWith("RM")) {
+      return (
+        <span className="inline-flex items-baseline gap-0.5">
+          <span className="text-[12px] uppercase">RM</span>
+          <span className="text-2xl font-sans">{p.replace("RM", "").trim()}</span>
+        </span>
+      );
+    }
+    return text;
+  };
+
   return (
     <div className="bg-[#f8fffe]">
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
@@ -133,7 +147,19 @@ const SolutionsPage: React.FC = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span>{f}</span>
+              <span>
+                {f.includes(":") ? (
+                  <>
+                    {f.split(":")[0]}:{" "}
+                    <span className="font-semibold text-[#00998A]">
+                      {renderPrice(f.split(":").slice(1).join(":"))}
+                    </span>
+                  </>
+                ) : (
+                  f
+                )}
+              </span>
+
             </li>
           ))}
         </ul>
@@ -165,7 +191,23 @@ const SolutionsPage: React.FC = () => {
               d="M5 13l4 4L19 7"
             />
           </svg>
-          <span>{f}</span>
+        <span>
+          {typeof f === "object" && f !== null ? (
+            <>
+              {f.title}{" "}
+              <span className="font-semibold text-[#00998A]">{renderPrice(f.fe)}</span>
+            </>
+          ) : typeof f === "string" && f.includes("—") ? (
+            <>
+              {f.split("—")[0]}—{" "}
+              <span className="font-semibold text-[#00998A]">
+                {renderPrice(f.split("—").slice(1).join("—"))}
+              </span>
+            </>
+          ) : (
+            f
+          )}
+        </span>
         </li>
       ))}
     </ul>

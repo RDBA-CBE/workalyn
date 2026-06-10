@@ -27,19 +27,31 @@ const solutions = [
     desc: " Located next door, offering convenient lunchtime workouts with preferred member rates available for Workalyn members.",
     image: "/work-images/amenities-in-7.png",
   },
-  {
-    title: "Curated F&B District",
-    desc: "From cherished Malaysian classics to Michelin-recommended dining, refined Western fare, and intimate cafés—all within a short walk.",
-    includes:
-      "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
-    image: "/work-images/amenities-in-8.png",
-  },
+  
 
   {
     title: "Public Bank & CIMB Bank Branch with ATM.",
     desc: "A Public Bank branch with full banking services and ATM facilities is located within a short walking distance",
 
-    image: "/work-images/img-2.jpeg",
+    image: "/work-images/img-8.jpeg",
+  },
+  {
+    title: "Curated F&B District",
+    desc: "From cherished Malaysian classics to Michelin-recommended dining, refined Western fare, and intimate cafés—all within a short walk.",
+    includes:
+      "Your client’s next lunch isn’t just nearby; it’s an effortless, elevated stroll away.",
+    image: "/work-images/img-7.jpeg",
+    categories: [
+      {
+        items: ["Dominos Pizza", "Aliyaa", "Brasa", "Cekik", "Tasty Chapathi", "GulaiNya", "Stefania Osteria", "Char Line Asado Bar", "Jaaii KL Restaurant", "Gyusei Gyukatsu Wagyu-Steakhouse"]
+      },
+      {
+        items: ["Huckleberry", "Croisserie Artisan"]
+      },
+      {
+        items: ["Sams", "Sticky Wicket", "Union", "Elli Rocks", "Rockafellas", "Chica Bonita @ Republik"]
+      }
+    ]
   },
 ];
 
@@ -71,48 +83,108 @@ const AmenitiesPage = () => {
         <div className="mx-auto">
           <RevealWrapper>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-              {solutions.map((s, i) => (
-                <div
-                  key={i}
-                  className="group relative bg-white shadow-md hover:shadow-xl transition-transform duration-500 transform hover:-translate-y-2"
-                >
-                  {/* Theme accent line */}
-                  <div className="h-1 w-full bg-[#00998A] "></div>
+              {solutions.map((s, i) => {
+                const isLast = i === solutions.length - 1;
+                return (
+                  <div
+                    key={i}
+                    className={`group relative bg-white shadow-md hover:shadow-xl transition-all duration-500 transform ${
+                      isLast
+                        ? "col-span-1 sm:col-span-2 lg:col-span-3 flex flex-col lg:flex-row"
+                        : "flex flex-col hover:-translate-y-2"
+                    }`}
+                  >
+                    {/* Theme accent line */}
+                    <div className="h-1 w-full bg-[#00998A] absolute top-0 left-0 z-10"></div>
 
-                  {/* Image */}
-                  <div className="relative overflow-hidden">
-                    <ParallaxWrapper offset={20}>
-                      <img
-                        src={s.image}
-                        alt={s.title}
-                        className="w-full h-[260px] object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                    </ParallaxWrapper>
+                    {/* Image */}
+                    <div className={`relative overflow-hidden ${isLast ? "w-full md:w-1/7" : ""}`}>
+                      <ParallaxWrapper offset={20} className="h-full">
+                        <img
+                          src={s.image}
+                          alt={s.title}
+                          className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
+                            isLast ? "h-full min-h-[260px]" : "h-[260px]"
+                          }`}
+                        />
+                      </ParallaxWrapper>
+                    </div>
+
+                    {/* Content */}
+                    <div className={`p-6 md:p-8 ${isLast ? "w-full md:w-6/7 md:p-12 flex flex-col justify-center" : ""}`}>
+                      <RevealWrapper>
+                        <h2 className="sub-head mb-4">{s.title}</h2>
+
+                        <p className="text-gray-800 leading-relaxed mb-4">
+                          {s.desc}
+                        </p>
+
+                        {isLast && s.categories && (
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 my-2">
+                            {/* Column 1: Dining */}
+                            <ul className="space-y-2 text-sm text-gray-700">
+                              {s.categories[0].items.map((item) => (
+                                <li key={item} className="flex items-center gap-2">
+                                  <svg
+              className="w-5 h-5 text-[#00998A] flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                            {/* Column 2: Cafes and Bars */}
+                            <div className="space-y-6">
+                              {s.categories.slice(1).map((cat, idx) => (
+                                <ul key={idx} className="space-y-2 text-sm text-gray-700">
+                                  {cat.items.map((item) => (
+                                    <li key={item} className="flex items-center gap-2">
+                                      <svg
+              className="w-5 h-5 text-[#00998A] flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+                                      {item}
+                                    </li>
+                                  ))}
+                                </ul>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {s.includes && (
+                          <div className="mt-4 rounded-md border border-[#00998A]/25 bg-[#00998A]/5 px-4 py-3">
+                            <p className="text-sm italic text-gray-800">
+                              <span className="font-bold text-[#00998A] not-italic mr-1">
+                                Note:
+                              </span>
+                              {s.includes}
+                            </p>
+                          </div>
+                        )}
+                      </RevealWrapper>
+                    </div>
                   </div>
-
-                  {/* Content */}
-                  <div className="p-6 md:p-8">
-                    <RevealWrapper>
-                      <h2 className="sub-head mb-4">{s.title}</h2>
-
-                      <p className="text-gray-800 leading-relaxed mb-4">
-                        {s.desc}
-                      </p>
-
-                      {s.includes && (
-                        <div className="mt-4 rounded-md border border-[#00998A]/25 bg-[#00998A]/5 px-4 py-3">
-                          <p className="text-sm italic text-gray-800">
-                            <span className="font-bold text-[#00998A] not-italic mr-1">
-                              Note:
-                            </span>
-                            {s.includes}
-                          </p>
-                        </div>
-                      )}
-                    </RevealWrapper>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </RevealWrapper>
 

@@ -68,6 +68,19 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
   item,
   idx,
 }) => {
+  const renderPrice = (text: string) => {
+    const p = text.trim();
+    if (p.startsWith("RM")) {
+      return (
+        <span className="inline-flex items-baseline gap-0.5">
+          <span className="text-[12px] uppercase">RM</span>
+          <span className="text-2xl font-sans">{p.replace("RM", "").trim()}</span>
+        </span>
+      );
+    }
+    return text;
+  };
+
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -144,7 +157,18 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
                 d="M5 13l4 4L19 7"
               ></path>
             </svg>
-            <span>{feature}</span>
+            <span>
+              {feature.includes(":") ? (
+                <>
+                  {feature.split(":")[0]}:{" "}
+                  <span className="font-semibold text-[#00998A]">
+                    {renderPrice(feature.split(":").slice(1).join(":"))}
+                  </span>
+                </>
+              ) : (
+                feature
+              )}
+            </span>
           </li>
         ))}
       </ul>
@@ -174,7 +198,18 @@ const SolutionCard: React.FC<{ item: SolutionItem; idx: number }> = ({
               d="M5 13l4 4L19 7"
             ></path>
           </svg>
-          <span>{feature}</span>
+        <span>
+          {feature.includes("—") ? (
+            <>
+              {feature.split("—")[0]}—{" "}
+              <span className="font-semibold text-[#00998A]">
+                {renderPrice(feature.split("—").slice(1).join("—"))}
+              </span>
+            </>
+          ) : (
+            feature
+          )}
+        </span>
         </li>
       ))}
     </ul>
