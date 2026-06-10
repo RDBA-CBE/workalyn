@@ -1,11 +1,16 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { AmenityItem } from "../types";
 import { RevealWrapper } from "./ParallaxWrapper";
 
-const amenities: AmenityItem[] = [
+// Extend the AmenityItem type to include the optional mblImage property
+interface ExtendedAmenityItem extends AmenityItem {
+  mblImage?: string;
+}
+
+const amenities: ExtendedAmenityItem[] = [
   {
     id: "1",
     title: "THE DINING LOUNGE",
@@ -40,12 +45,13 @@ const amenities: AmenityItem[] = [
     id: "6",
     title: "BANKING",
     // image: "/workspace-solution/Image2.png",
-    image:"/work-images/img-1.jpeg"
+    image:"/work-images/img-1.jpeg",
+    mblImage : "/work-images/img-6.jpeg"
   },
 ];
 
 const AmenityTile: React.FC<{
-  item: AmenityItem;
+  item: ExtendedAmenityItem;
   isSpanned: boolean;
   delay: number;
 }> = ({ item, isSpanned, delay }) => {
@@ -54,6 +60,21 @@ const AmenityTile: React.FC<{
     target: ref,
     offset: ["start end", "end start"],
   });
+
+  const [displayImage, setDisplayImage] = useState(item.image);
+
+  useEffect(() => {
+    const updateImage = () => {
+      if (item.mblImage && window.innerWidth < 500) {
+        setDisplayImage(item.mblImage);
+      } else {
+        setDisplayImage(item.image);
+      }
+    };
+    updateImage();
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, [item.image, item.mblImage]);
 
   const y = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
 
@@ -68,7 +89,7 @@ const AmenityTile: React.FC<{
         className="relative group overflow-hidden h-[300px] lg:h-[300px]"
       >
         <motion.img
-          src={item.image}
+          src={displayImage}
           alt={item.title}
           style={{ y, scale: 1.2 }}
           className="absolute  w-[100%] h-[130%] object-cover transition-transform duration-1000 group-hover:scale-125"

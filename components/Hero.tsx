@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-[45px] sm:text-[45px] md:text-[54px] lg:text-[64px] text-white mb-4 lg:mb-6 leading-[1.05] font-light serif">
+        <h1 className="text-[38px] sm:text-[38px] md:text-[54px] lg:text-[64px] text-white mb-4 lg:mb-6 leading-[1.05] font-light serif">
           {slides[current].title}
         </h1>
 
@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-wrap gap-4">
           <button
             onClick={() => router.push('/workspaces')}
-            className="bg-[#1B1C21] text-white px-6 lg:px-8 py-3 lg:py-4 font-bold uppercase hover:bg-white hover:text-black transition-all duration-500 min-w-[180px] lg:min-w-[200px]"
+            className="bg-[#1B1C21] text-white px-5 py-2 lg:px-8 py-3 lg:py-4 text-[14px] lg:text-[16px] font-bold uppercase hover:bg-white hover:text-black transition-all duration-500 min-w-[180px] lg:min-w-[200px]"
           >
             Explore Spaces
           </button>
