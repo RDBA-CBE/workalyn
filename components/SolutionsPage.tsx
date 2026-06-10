@@ -78,7 +78,7 @@ const SolutionsPage: React.FC = () => {
           </RevealWrapper>
         </div>
       </section>
-      <section className="pt-24 pb-20 section-wid">
+      <section className="pt-14 md:pt-24 pb-20 section-wid">
         <div className=" mx-auto">
           {/* <RevealWrapper className="text-center mb-24">
             <h1 className="main-head serif text-dark-green mb-8">

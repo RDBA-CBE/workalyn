@@ -97,7 +97,7 @@ const ContactPage: React.FC = () => {
                     <br />
                     Jalan Medan Setia 1,
                     <br />
-                    Bukit Damansara, 50490 Kuala Lumpur
+                    Bukit Damansara, <br className="block md:hidden"/> 50490 Kuala Lumpur
                   </p>
                 </div>
 
@@ -113,7 +113,7 @@ const ContactPage: React.FC = () => {
                   </h3>
                   <p className="font-sans text-[#666666] leading-relaxed text-lg space-y-2">
                     <span className="block mb-2">
-                      <span className="font-semibold text-gray-900">Monday – Friday:</span> 9:00 AM – 6:00 PM
+                      <span className="font-semibold text-gray-900">Monday – Friday:</span> <br  className="block md:hidden "/> 9:00 AM – 6:00 PM
                     </span>
                     {/* <span className="block mb-2">
                       <span className="font-semibold text-gray-900">Saturday:</span> 9:00 AM – 5:00 PM
