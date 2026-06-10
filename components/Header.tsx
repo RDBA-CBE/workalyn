@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone, FaWhatsapp } from "react-icons/fa6";
 
 const Header: React.FC = () => {
   const router = useRouter();
@@ -69,7 +69,7 @@ const Header: React.FC = () => {
         {/* Right Side */}
         <div className="flex items-center gap-4">
           <div className="hidden lg:flex text-md font-medium text-gray-800 font-sans">
-            <FaPhone className="text-[18px] me-3 mt-1" />{" "}
+            <FaWhatsapp className="text-[23px] me-3 mt-0" />{" "}
             <a href="tel:+60320112865">+60 3 2011 2865</a>
           </div>
 

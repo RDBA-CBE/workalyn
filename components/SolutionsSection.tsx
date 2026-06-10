@@ -31,7 +31,7 @@ const solutions: SolutionItem[] = [
     title: "PRIVATE CABIN – For the Discerning Team",
     description:
       "Private offices designed for teams who value focus and discretion. Fully furnished and shared only with your colleagues.",
-    image: "/work-images/about-3.png",
+    image: "/work-images/image-11.jpeg",
     rating: 4.8,
     reviews: 86,
     subtitle: "Monthly Plans",
@@ -45,7 +45,7 @@ const solutions: SolutionItem[] = [
   },
   {
     id: "4",
-    title: "MEETING & EVENT SUITES – For the Moment That Matters",
+    title: "MEETING ROOMS – For the Moment That Matters",
     description:
       "First impressions are formed before a single word is spoken. Our meeting rooms are designed to communicate professionalism, preparation, and clarity.",
     image: "/work-images/about-2.png",
@@ -53,11 +53,11 @@ const solutions: SolutionItem[] = [
     reviews: 64,
     groups: [
       {
-        subtitle: "6 PAX",
+        subtitle: "6 PAX Meeting Room",
         features: ["1 Hr: RM99", "4 Hr: RM329", "8 Hr: RM649"],
       },
       {
-        subtitle: "10 PAX",
+        subtitle: "10 PAX Meeting Room",
         features: ["1 Hr: RM169", "4 Hr: RM599", "8 Hr: RM999"],
       },
     ],

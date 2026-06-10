@@ -6,7 +6,7 @@ const solutions = [
     title: "Hot Desk – Flexible Workspace Access",
 
     desc: "Work from any available desk within our shared workspace.",
-    image: "/work-images/ws-2.png",
+    image: "/work-images/ws-4.png",
     features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
     includes:
       "Includes: Ergonomic seating, high‑speed WiFi, complimentary coffee/tea, lounge access.",
@@ -15,7 +15,7 @@ const solutions = [
     title: "FIXED DESK – For the Resident Professional",
     price: "From $550 / mo",
     desc: "A dedicated workstation within our shared workspace. Store your equipment and enjoy a consistent workspace without committing to a traditional office lease. ",
-    image: "/work-images/ws-4.png",
+    image: "/work-images/amenities-in-10.jpeg",
     features: ["Weekly Pass — RM249", "Monthly Pass — RM949", "Quarterly Pass — RM2499", "Biannual Pass — RM4499", "Annually Pass — RM7499"],
     includes:
       "Consultants, startup teams, and professionals who prefer a consistent desk.",
@@ -39,17 +39,17 @@ const solutions = [
   },
 
   {
-    title: "MEETING & EVENT SUITES – For the Moment That Matters",
+    title: "MEETING ROOMS – For the Moment That Matters",
     price: "Inquire for Pricing",
     desc: "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
-    image: "/work-images/ws-1.png",
+    image: "/work-images/amenities-in-9.jpeg",
      groups: [
       {
-        subtitle: "6 PAX",
+        subtitle: "6 PAX Meeting Room",
         features: ["1 Hr: RM99", "4 Hr: RM329", "8 Hr: RM649"],
       },
       {
-        subtitle: "10 PAX",
+        subtitle: "10 PAX Meeting Room",
         features: ["1 Hr: RM169", "4 Hr: RM599", "8 Hr: RM999"],
       },
     ],

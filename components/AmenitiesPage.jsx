@@ -18,7 +18,7 @@ const solutions = [
     image: "/work-images/amenities-in-5.png",
   },
   {
-    title: "Smart Filtration",
+    title: "Coway Water Filter",
     desc: "Filtered alkaline drinking water available throughout the workspace",
     image: "/work-images/amenities-in-1.png",
   },
@@ -36,10 +36,10 @@ const solutions = [
   },
 
   {
-    title: "Public Bank Branch & ATM",
+    title: "Public Bank & CIMB Bank Branch with ATM.",
     desc: "A Public Bank branch with full banking services and ATM facilities is located within a short walking distance",
 
-    image: "/work-images/amenities-in-6.png",
+    image: "/work-images/img-2.jpeg",
   },
 ];
 

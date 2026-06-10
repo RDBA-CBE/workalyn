@@ -40,7 +40,7 @@ const amenities: AmenityItem[] = [
     id: "6",
     title: "BANKING",
     // image: "/workspace-solution/Image2.png",
-    image:"/work-images/amenities-10.png"
+    image:"/work-images/img-1.jpeg"
   },
 ];
 

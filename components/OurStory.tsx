@@ -42,7 +42,7 @@ const OurStory: React.FC = () => {
                       relative ourstory-stats md:mt-8
                       flex flex-wrap xl:flex-nowrap items-start
                       xl:justify-start
-                      gap-8  2xl:gap-8
+                      gap-y-3 gap-x-0 lg:gap-x-0   xl:gap-8
                       lg:border-t pt-6 lg:pt-10
                     "
                   >
@@ -50,32 +50,59 @@ const OurStory: React.FC = () => {
                       About
                     </h2>
 
-                    <div className="px-2 sm:px-3 xl:px-5">
+                    {/* <div className="px-2 sm:px-3 xl:px-5">
                       <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
                         7,600
                       </h4>
                       <p className="pt-1 text-[14px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
                         Sq ft. of Workspace
                       </p>
+                    </div> */}
+
+                    <div className="px-2 sm:px-3 md:px-5">
+                      <h4 className="text-3xl sm:text-2xl md:text-3xl md:text-4xl text-[#1B1C21]">
+                        32
+                      </h4>
+                      <p className="pt-1 text-[14px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                        Fixed Desks
+                      </p>
                     </div>
 
-                    <div className="px-2 sm:px-4 xl:px-10 xl:border-s xl:border-e border-[#1B1C21]">
-                      <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
-                        30
+                    <div className="px-2 sm:px-4 md:px-10 md:border-s md:border-e border-[#1B1C21]">
+                      <h4 className="text-3xl sm:text-2xl md:text-3xl md:text-4xl text-[#1B1C21]">
+                        22
                       </h4>
                       <p className="pt-1 text-[14px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
                         Hot Desks
                       </p>
                     </div>
 
-                    <div className="px-2 sm:px-3 xl:px-5">
+                    <div className="px-2 sm:px-4   md:border-e border-[#1B1C21]">
+                      <h4 className="text-3xl sm:text-2xl md:text-3xl md:text-4xl text-[#1B1C21]">
+                        2
+                      </h4>
+                      <p className="pt-1 text-[14px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                        Meeting Rooms
+                      </p>
+                    </div>
+
+                     <div className="px-2 sm:px-3 xl:px-5">
+                      <h4 className="text-3xl sm:text-2xl md:text-3xl md:text-4xl text-[#1B1C21]">
+                        6
+                      </h4>
+                      <p className="pt-1 text-[14px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
+                        Private Cabin
+                      </p>
+                    </div>
+
+                    {/* <div className="px-2 sm:px-3 xl:px-5">
                       <h4 className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl text-[#1B1C21]">
                         23
                       </h4>
                       <p className="pt-1 text-[14px] sm:text-sm text-[#1B1C21] whitespace-nowrap">
                         Fixed Desks, Private Offices & Meeting Rooms
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
