@@ -2,6 +2,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FiMapPin } from "react-icons/fi";
 
 const Footer: React.FC = () => {
   const router = useRouter();
@@ -23,7 +24,7 @@ const Footer: React.FC = () => {
               <p className="text-[15px] font-bold uppercase tracking-[0.1em] mb-8 text-white">
                 Navigation
               </p>
-              <ul className="space-y-2 text-white/70 text-[15px]">
+              <ul className="space-y-3 text-white/70 text-[15px]">
                 <li>
                   <button
                     onClick={() => router.push("/")}
@@ -116,6 +117,11 @@ Bukit Damansara,
 50490 Kuala Lumpur.
 
                   </span>
+
+                 <a href="https://www.google.com/maps/place/Workalyn/data=!4m2!3m1!1s0x0:0xafa3d9f88e938c4f?sa=X&ved=1t:2428&ictx=111" target="_blank"
+                 className="flex gap-2 pt-3 text-white hover:text-white/80 text-[15px] font-medium">
+                  <FiMapPin className="mt-0.5 "/>
+                  View Location</a> 
                 </li>
               </ul>
             </div>

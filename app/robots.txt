@@ -1,0 +1,7 @@
+User-agent: *
+
+# Allow all public pages
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.workalyn.com/sitemap.xml
