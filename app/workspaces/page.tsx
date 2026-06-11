@@ -3,8 +3,11 @@ import SolutionsPage from '../../components/SolutionsPage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Workspaces | Workalyn',
-  description: 'Explore Workalyn’s flexible workspace solutions — hot desks, fixed desks, private cabins, and meeting & event suites tailored to every work style.',
+  title: 'Professional Workspace Solutions for Business Growth | Workalyn',
+  description: 'Discover modern workspaces tailored for businesses and teams. Enhance productivity, collaboration, and operational efficiency with Workalyn.',
+  alternates: {
+    canonical: "https://www.workalyn.com/workspaces",
+  },
 };
 
 export default function WorkspacesPage() {

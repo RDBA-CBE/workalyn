@@ -3,8 +3,11 @@ import ContactPage from '../../components/ContactPage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Workalyn',
-  description: 'Get in touch with Workalyn. We’re here to help you find the perfect workspace solution. Reach out to our team today.',
+  title: 'Contact Workalyn | Get in Touch for Workspace Solutions',
+  description: 'Connect with Workalyn to learn more about our workspace solutions, amenities, and business services. Contact our team to find the right workspace for your needs.',
+  alternates: {
+    canonical: "https://www.workalyn.com/contact",
+  },
 };
 
 export default function ContactPageRoute() {

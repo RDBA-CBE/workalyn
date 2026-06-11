@@ -3,8 +3,11 @@ import AmenitiesPage from '../../components/AmenitiesPage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Amenities | Workalyn',
-  description: 'Explore Workalyn’s world-class amenities — from the dining lounge and barista-grade coffee to the pod room, curated F&B district, and adjacent premier gym.',
+  title: 'Amenities Designed for Productivity & Comfort | Workalyn',
+  description: 'Explore premium amenities that support productivity, collaboration, and business success, including modern facilities, essential services, and workplace conveniences.',
+  alternates: {
+    canonical: "https://www.workalyn.com/amenities",
+  },
 };
 
 export default function GalleryPage() {

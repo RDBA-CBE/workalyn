@@ -3,8 +3,11 @@ import Homepage from '../components/Homepage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Workalyn | Premium Co-Working Spaces',
-  description: 'Workalyn offers premium co-working spaces designed for focused, uninterrupted work. Explore our thoughtfully curated workspaces, amenities, and community.',
+  title: 'Flexible Workspaces for Teams & Businesses | Workalyn',
+  description: 'Discover flexible workspaces designed for businesses, startups, and growing teams. Work, collaborate, and scale in a professional environment with Workalyn.',
+  alternates: {
+    canonical: "https://www.workalyn.com/",
+  },
 };
 
 export default function Page() {

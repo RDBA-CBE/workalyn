@@ -203,10 +203,10 @@ const ContactPage: React.FC = () => {
                         />
                       </svg>
                       <a
-                        href="mailto:hello@workalyn.my"
+                        href="mailto:hello@workalyn.com"
                         className="hover:text-black transition"
                       >
-                        hello@workalyn.my
+                        hello@workalyn.com
                       </a>
                     </p>
 
@@ -266,9 +266,9 @@ const ContactPage: React.FC = () => {
       </section>
 
       {/* Testimonial Slider Section */}
-      <section className="py-16 ">
+      {/* <section className="py-16 ">
         <div className="section-wid px-6 md:px-24">
-          {/* Section Title */}
+       
           <RevealWrapper>
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="flex items-center justify-center gap-3 mb-4">
@@ -282,7 +282,7 @@ const ContactPage: React.FC = () => {
             </div>
           </RevealWrapper>
 
-          {/* Slider */}
+         
           <div className="relative max-w-3xl mx-auto text-center">
             <AnimatePresence mode="wait">
               <motion.div
@@ -294,11 +294,7 @@ const ContactPage: React.FC = () => {
                 className="w-full"
               >
                 <div className="flex flex-col items-center">
-                  {/* <img
-                    src={testimonials[currentTestimonial].image}
-                    alt={testimonials[currentTestimonial].name}
-                    className="w-28 h-28 rounded-full object-cover mb-8 shadow-lg border-4 border-white"
-                  /> */}
+                  
 
                   <p className="text-xl md:text-2xl leading-relaxed text-[#1B1C21] mb-8 serif">
                     "{testimonials[currentTestimonial].quote}"
@@ -308,7 +304,6 @@ const ContactPage: React.FC = () => {
                       <svg
                         key={i}
                         className={`w-5 h-5 text-black`}
-                        // className={`w-5 h-5 ${i < 4 ? "text-black" : "text-gray-300"}`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -329,7 +324,7 @@ const ContactPage: React.FC = () => {
               </motion.div>
             </AnimatePresence>
 
-            {/* Slider Navigation */}
+           
             <button
               onClick={prevTestimonial}
               className="absolute top-1/2 -translate-y-1/2 left-[-20px] md:left-[-100px] w-14 h-14 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-500 hover:text-black hover:border-gray-300 hover:shadow-md transition-all duration-300"
@@ -370,21 +365,20 @@ const ContactPage: React.FC = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Map Placeholder */}
       <section className="h-[400px] bg-gray-200 relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           {/* <span className="text-gray-400 sub-head  font-bold uppercase tracking-widest"> */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7888796779785!2d101.64830868324835!3d3.1503172449777734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49025bc42019%3A0x804e968b8e38d7f7!2sPlaza%20Damansara%2C%2051%2C%20Jalan%20Medan%20Setia%201%2C%20Bukit%20Damansara%2C%2050490%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sin!4v1771589911221!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7914412825344!2d101.6538016!3d3.1496478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49001f8ed3bb%3A0xafa3d9f88e938c4f!2sWorkalyn!5e0!3m2!1sen!2sin!4v1781153658489!5m2!1sen!2sin"
             className="w-full h-full border-0"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Plaza Damansara Location"
           />
-
           {/* </span> */}
         </div>
       </section>

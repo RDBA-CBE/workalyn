@@ -225,10 +225,10 @@ const ContactPage: React.FC = () => {
                         />
                       </svg>
                       <a
-                        href="mailto:hello@workalyn.my"
+                        href="mailto:hello@workalyn.com"
                         className="hover:text-black transition"
                       >
-                        hello@workalyn.my
+                        hello@workalyn.com
                       </a>
                     </p>
 
