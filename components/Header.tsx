@@ -194,7 +194,7 @@ const Header: React.FC = () => {
               </button> */}
 
               <button
-                onClick={() => handleNavClick("/contact#book-a-tour")}
+                onClick={() => handleNavClick("/book-a-tour")}
                 className={`text-lg font-bold uppercase tracking-widest ${
                   pathname === "/book-a-tour" ? "text-emerald-600" : "text-gray-800"
                 }`}
