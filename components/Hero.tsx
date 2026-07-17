@@ -10,14 +10,14 @@ const slides = [
     title: "Collaborate With Like-Minded People Globally",
     highlight: "People",
     description: "Join a vibrant ecosystem of entrepreneurs, creatives, and tech innovators. Networking built into your routine.",
-    image: "/work-images/zoom-banner.jpeg",
+    image: "/work-images/Final-Banner1.webp",
   },
   {
     label: "ARCHITECTURAL EXCELLENCE",
     title: "Discover Your New Creative Sanctuary Hub",
     highlight: "Sanctuary",
     description: "More than just a workspace. An environment designed to inspire clarity and catalyze your most ambitious goals.",
-    image: "/work-images/Banner-img-2.webp",
+    image: "/work-images/Final-Banner3.webp",
   },
   // {
   //   label: "GLOBAL CONNECTIVITY",

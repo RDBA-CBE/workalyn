@@ -111,8 +111,8 @@ const AmenityTile: React.FC<{
 
 const AmenitiesSectionCopy: React.FC = () => {
   return (
-    <section className="section-wid">
-      <div id="amenities" className="pb-24 ">
+    <section className="section-wid ">
+      <div id="amenities" className="pb-24 md:pt-36">
         <div className="flex flex-col xl:flex-row    gap-4">
           {/* Amenities Tiles */}
           <div className="w-full xl:w-3/4 gap-6">

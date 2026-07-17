@@ -7,16 +7,19 @@ import WhySection from "./WhySection";
 import AmenitiesSection from "./AmenitiesSection";
 import OurStory from "./OurStory";
 import AmenitiesSectionCopy from "./AmenitiesSectionCopy";
+import SpaceSnapshot from "./SpaceSnapshot";
 
 const Homepage: React.FC = () => {
   return (
     <>
       <Hero />
+      
       <OurStory/>
       
       <AdvantageSection />
       <SolutionsSection />
       <WhySection />
+      <SpaceSnapshot />
       {/* <AmenitiesSection /> */}
       <AmenitiesSectionCopy/>
     </>
