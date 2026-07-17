@@ -17,7 +17,7 @@ const slides = [
     title: "Discover Your New Creative Sanctuary Hub",
     highlight: "Sanctuary",
     description: "More than just a workspace. An environment designed to inspire clarity and catalyze your most ambitious goals.",
-    image: "/work-images/Final-Banner3.webp",
+    image: "/work-images/Final-Banner-4.webp",
   },
   // {
   //   label: "GLOBAL CONNECTIVITY",

@@ -10,7 +10,7 @@ const solutions = [
   {
     title: "The Dining Lounge",
     desc: "A dedicated space with refrigerator, microwave, and sink — allowing members to take a break without leaving the building.",
-    image: "/work-images/amenities-in-4.png",
+    image: "/work-images/amen-dining.webp",
   },
   {
     title: "Barista-Grade Coffee & Artisan Teas",
@@ -62,7 +62,7 @@ const AmenitiesPage = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="/work-images/abt-ban.jpeg"
+            src="/work-images/Amenities-banner.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />
