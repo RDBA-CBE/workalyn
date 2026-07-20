@@ -97,7 +97,7 @@ const ContactPage: React.FC = () => {
                     <br />
                     Jalan Medan Setia 1,
                     <br />
-                    Bukit Damansara, <br className="block md:hidden"/> 50490 Kuala Lumpur
+                    Bukit Damansara, <br /> 50490 Kuala Lumpur
                   </p>
                 </div>
 
