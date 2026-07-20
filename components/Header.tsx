@@ -51,7 +51,7 @@ const Header: React.FC = () => {
          <a href="https://www.instagram.com/workalyn/" target="_blank" className="hover:text-emerald-600 transition-colors">
   <FaInstagram className="text-[24px]" />
 </a>
-          <a href="https://www.linkedin.com/in/workalyn-sdn-bhd-07ab59275/" className="hover:text-emerald-600 transition-colors" target="_blank">
+          <a href="https://www.linkedin.com/company/workalyn/" className="hover:text-emerald-600 transition-colors" target="_blank">
             <FaLinkedin className="text-[24px]" />
           </a>
 

@@ -142,7 +142,7 @@ Bukit Damansara,
                   <FaInstagram className="text-[25px]" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/workalyn-sdn-bhd-07ab59275/" target="_blank"
+                  href="https://www.linkedin.com/company/workalyn/" target="_blank"
                   className="text-white hover:text-emerald-500 transition-colors"
                 >
                   <FaLinkedin className="text-[25px]" />

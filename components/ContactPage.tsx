@@ -121,7 +121,17 @@ const ContactPage: React.FC = () => {
                     <span className="block">
                       <span className="font-semibold text-gray-900">Weekends & Public Holidays:</span> Closed
                     </span>
+
+                    
                   </p>
+                  <div className="mt-4 rounded-md border border-[#00998A]/25 bg-[#00998A]/5 px-4 py-3 w-fit mx-auto ">
+                    <p className="text-sm italic text-gray-800">
+                      <span className="font-bold text-[#00998A] not-italic mr-1">
+                        Note:
+                      </span>
+                      24/7 accesss for Private Cabins & Fixed Desk customers
+                    </p>
+                  </div>
                 </div>
               </div>
             </RevealWrapper>
