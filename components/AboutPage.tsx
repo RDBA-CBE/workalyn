@@ -330,7 +330,7 @@ const AboutPage: React.FC = () => {
       <div className="relative">
         <ParallaxWrapper offset={40} className="z-10">
           <img
-            src="/work-images/About.jpeg"
+            src="/work-images/Aboutus.webp"
             className="w-full h-auto object-cover"
             alt=""
           />

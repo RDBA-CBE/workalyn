@@ -25,7 +25,7 @@ const solutions = [
     title: "PRIVATE CABIN – For the Discerning Team",
     price: "Inquire for Pricing",
     desc: "Private offices designed for teams that value focus and discretion. Fully furnished and shared exclusively with your colleague",
-    image: "/work-images/ws-3.png",
+    image: "/work-images/work-3.webp",
    // features: ["2‑Table Cabin", "3‑Table Cabin", "4‑Table Cabin", "6‑Table Cabin", "Flexible pricing available per workstation or for the entire office."],
        subtitle: "Monthly Plans",
     features: [
@@ -43,7 +43,7 @@ const solutions = [
     title: "MEETING ROOMS – For the Moment That Matters",
     price: "Inquire for Pricing",
     desc: "First impressions are formed before a single word is spoken. Our meeting rooms communicate professionalism, preparation, and taste.",
-    image: "/work-images/amenities-in-9.jpeg",
+    image: "/work-images/work-4.webp",
      groups: [
       {
         subtitle: "6 PAX Meeting Room",
@@ -78,7 +78,7 @@ const SolutionsPage: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img
-            src="/work-images/Workspaces.webp"
+            src="/work-images/work-ban.webp"
             className="w-full h-full object-cover"
             alt="About Header"
           />
