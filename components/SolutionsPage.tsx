@@ -6,7 +6,7 @@ const solutions = [
     title: "Hot Desk – Flexible Workspace Access",
 
     desc: "Work from any available desk within our shared workspace.",
-    image: "/work-images/ws-4.png",
+    image: "/work-images/work-fd.webp",
     // features: ["Day Pass — RM50", "Weekly Pass — RM199", "Monthly Pass — RM799"],
     features: [{title:"Day Pass —" , fe: "RM50"}, {title:"Weekly Pass —", fe:" RM199"}, {title:"Monthly Pass —",fe: "RM799"}],
     includes:
@@ -16,7 +16,7 @@ const solutions = [
     title: "FIXED DESK – For the Resident Professional",
     price: "From $550 / mo",
     desc: "A dedicated workstation within our shared workspace. Store your equipment and enjoy a consistent workspace without committing to a traditional office lease. ",
-    image: "/work-images/amenities-in-10.jpeg",
+    image: "/work-images/work-hd.webp",
     features: [{title:"Weekly Pass —", fe:"RM249"}, {title:"Monthly Pass —", fe: "RM949"}, {title:"Quarterly Pass —", fe: "RM2499"}, {title:"Biannual Pass —", fe: "RM4499"}, {title:"Annually Pass —",fe: "RM7499"}],
     includes:
       "Consultants, startup teams, and professionals who prefer a consistent desk.",
