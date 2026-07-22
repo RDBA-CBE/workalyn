@@ -10,7 +10,7 @@ const OurStory: React.FC = () => {
             <div className="ourstory-left ">
               <div className="relative z-10">
                 <img
-                  src="/work-images/our-story-1.webp"
+                  src="/work-images/our-story-3.webp"
                   alt="Workspace"
                   className="w-full  object-cover"
                 />

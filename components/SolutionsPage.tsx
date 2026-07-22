@@ -74,7 +74,7 @@ const SolutionsPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#f8fffe]">
+    <div className="bg-[#fff]">
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black/90">
         <ParallaxWrapper offset={100} className="absolute inset-0 opacity-40">
           <img

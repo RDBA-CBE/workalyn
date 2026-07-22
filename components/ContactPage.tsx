@@ -377,6 +377,139 @@ const ContactPage: React.FC = () => {
         </div>
       </section> */}
 
+      {/* Our Offices */}
+<section className="pt-16 pb-20 bg-white">
+  <div className="section-wid px-6 md:px-24">
+    <RevealWrapper>
+      <div className="text-center mb-14">
+        <h2 className="main-head mb-4">Our Offices</h2>
+
+      
+      </div>
+    </RevealWrapper>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+      {/* Malaysia */}
+      <RevealWrapper delay={0.1}>
+        <div className="bg-gray-50 border border-gray-100 hover:shadow-xl  rounded-2xl p-6 transition-all duration-300 h-full">
+
+          <div className="flex items-center gap-6">
+
+            {/* Left */}
+            <div className="relative w-40 shrink-0 flex items-center justify-center">
+
+              <img
+                src="/work-images/map-frame-1.webp"
+                alt="Malaysia"
+                className="w-36 object-contain "
+              />
+
+              {/* <div className="absolute top-2 left-2 w-14 h-14 rounded-full bg-[#00998A]/10 flex items-center justify-center text-[#00998A]">
+                <svg
+                  className="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.8"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  />
+                </svg>
+              </div> */}
+
+            </div>
+
+            {/* Right */}
+            <div className="flex-1">
+
+              <h3 className="sub-head uppercase mb-4 text-lg tracking-wide text-gray-900">
+                Malaysia Regional Office
+              </h3>
+
+              <p className="font-sans text-[#666666] leading-relaxed text-lg">
+                 PL 02 & 03, Block A, Plaza Damansara,
+                    <br />
+                    Jalan Medan Setia 1,
+                    <br />
+                    Bukit Damansara, <br /> 50490 Kuala Lumpur
+              </p>
+
+              {/* <div className="flex items-center gap-2 mt-5 text-[#666666]">
+                <svg
+                  className="w-5 h-5 text-[#00998A]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z" />
+                </svg>
+
+                Kuala Lumpur, Malaysia
+              </div> */}
+
+            </div>
+
+          </div>
+
+        </div>
+      </RevealWrapper>
+
+      {/* India */}
+      <RevealWrapper delay={0.2}>
+        <div className="bg-gray-50   rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full">
+
+          <div className="flex items-center gap-6 h-full">
+
+            {/* Left */}
+            <div className="relative w-40 shrink-0 flex items-center justify-center">
+
+              <img
+                src="/work-images/map-frame-2.webp"
+                alt="India"
+                className="w-32 object-contain "
+              />
+
+              
+
+            </div>
+
+            {/* Right */}
+            <div className="flex-1">
+
+              <h3 className="sub-head uppercase mb-4 text-lg tracking-wide text-gray-900">
+                Head Quarters &amp; R&amp;D Center 
+              </h3>
+
+              <p className="font-sans text-[#666666] leading-relaxed text-lg">
+                  Chennai, India
+              </p>
+
+              {/* <div className="flex items-center gap-2  mt-5 text-[#666666]">
+                <svg
+                  className="w-5 h-5 text-[#00998A]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z" />
+                </svg>
+
+                Chennai, India
+              </div> */}
+
+            </div>
+
+          </div>
+
+        </div>
+      </RevealWrapper>
+
+    </div>
+  </div>
+</section>
+
       {/* Map Placeholder */}
       <section className="h-[400px] bg-gray-200 relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
