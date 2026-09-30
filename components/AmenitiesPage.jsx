@@ -10,7 +10,7 @@ const solutions = [
   {
     title: "The Dining Lounge",
     desc: "A dedicated space with refrigerator, microwave, and sink — allowing members to take a break without leaving the building.",
-    image: "/work-images/amen-dining.webp",
+    image: "/work-images/pantry-in.png",
   },
   {
     title: "Barista-Grade Coffee & Artisan Teas",
@@ -20,7 +20,7 @@ const solutions = [
   {
     title: "Coway Water Filter",
     desc: "Filtered alkaline drinking water available throughout the workspace",
-    image: "/work-images/amenities-in-1.png",
+    image: "/work-images/ame-water.png",
   },
   {
     title: "Adjacent Premier Gym",

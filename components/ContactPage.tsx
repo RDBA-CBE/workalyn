@@ -147,7 +147,7 @@ const ContactPage: React.FC = () => {
             <div className="relative h-full w-full">
               <RevealWrapper className="w-full h-full">
                 <img
-                  src="/work-images/book-a-tour-in.webp"
+                  src="/work-images/book-a-tour-1.png"
                   alt="A modern and bright meeting room at Workalyn"
                   className="w-full h-full object-cover shadow-xl rounded-md"
                 />

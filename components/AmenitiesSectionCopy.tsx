@@ -15,7 +15,7 @@ const amenities: ExtendedAmenityItem[] = [
     id: "1",
     title: "THE DINING LOUNGE",
     // image: "/amenities/card-amentities1.png",
-    image:"/work-images/Dining-Homepage.webp"
+    image:"/work-images/pantry-home.png"
   },
   {
     id: "2",
